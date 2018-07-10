@@ -1,0 +1,31 @@
+name: "acs_ygr_race_with_hispanic"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B03002"
+    value_label: "hispanic_race_population"
+    dimension_labels: [
+        "ethnicity",
+        "race::race",
+        "race::race_subgroup",
+    ]
+    columns:
+        003E: "NotHispanicOrLatino_WhiteAlone_WhiteAlone"
+        004E: "NotHispanicOrLatino_BlackOrAfricanAmericanAlone_BlackOrAfricanAmericanAlone"
+        005E: "NotHispanicOrLatino_AmericanIndianAndAlaskaNativeAlone_AmericanIndianAndAlaskaNativeAlone"
+        006E: "NotHispanicOrLatino_AsianAlone_AsianAlone"
+        007E: "NotHispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAlone_NativeHawaiianAndOtherPacificIslanderAlone"
+        008E: "NotHispanicOrLatino_SomeOtherRaceAlone_SomeOtherRaceAlone"
+        010E: "NotHispanicOrLatino_TwoOrMoreRaces_TwoRacesIncludingSomeOtherRace"
+        011E: "NotHispanicOrLatino_TwoOrMoreRaces_TwoRacesExcludingSomeOtherRace,AndThreeOrMoreRaces"
+        013E: "HispanicOrLatino_WhiteAlone_WhiteAlone"
+        014E: "HispanicOrLatino_BlackOrAfricanAmericanAlone_BlackOrAfricanAmericanAlone"
+        015E: "HispanicOrLatino_AmericanIndianAndAlaskaNativeAlone_AmericanIndianAndAlaskaNativeAlone"
+        016E: "HispanicOrLatino_AsianAlone_AsianAlone"
+        017E: "HispanicOrLatino_NativeHawaiianAndOtherPacificIslanderAlone_NativeHawaiianAndOtherPacificIslanderAlone"
+        018E: "HispanicOrLatino_SomeOtherRaceAlone_SomeOtherRaceAlone"
+        020E: "HispanicOrLatino_TwoOrMoreRaces_TwoRacesIncludingSomeOtherRace"
+        021E: "HispanicOrLatino_TwoOrMoreRaces_TwoRacesExcludingSomeOtherRace,AndThreeOrMoreRaces"
+
+

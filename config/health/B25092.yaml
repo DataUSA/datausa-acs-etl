@@ -1,0 +1,16 @@
+name: "acs_ygh_homeowners_with_mortgage_spending_30_percent_on_costs"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B25092"
+    value_label: "housing_unit_with_mortgage"
+    dimension_labels: [
+        "mortgage_status",
+    ]
+    columns:
+        002E: "WithMortgage"
+        003E: "WithoutMortgage"
+
+
+calc_percent: true

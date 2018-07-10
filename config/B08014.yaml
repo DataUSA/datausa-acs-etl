@@ -1,0 +1,24 @@
+name: "acs_ygsv_sex_of_workers_by_vehicles_available"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B08014"
+    value_label: "vehicles_available_population"
+    dimension_labels: [
+        "sex",
+        "vehicles_available",
+    ]
+    columns:
+        009E: "Male_NoVehicleAvailable"
+        010E: "Male_1VehicleAvailable"
+        011E: "Male_2VehiclesAvailable"
+        012E: "Male_3VehiclesAvailable"
+        013E: "Male_4VehiclesAvailable"
+        014E: "Male_5OrMoreVehiclesAvailable"
+        016E: "Female_NoVehicleAvailable"
+        017E: "Female_1VehicleAvailable"
+        018E: "Female_2VehiclesAvailable"
+        019E: "Female_3VehiclesAvailable"
+        020E: "Female_4VehiclesAvailable"
+        021E: "Female_5OrMoreVehiclesAvailable"

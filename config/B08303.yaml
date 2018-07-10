@@ -1,0 +1,24 @@
+name: "acs_ygt_travel_time_to_work"
+tag: "acs"
+min_year: 2012
+max_year: 2017
+acs_table:
+    id: "B08303"
+    value_label: "minutes"
+    value_details: "Travel time to work among workers 16 years and over who did not work at home."
+    dimension_labels: [
+        "travel_time",
+    ]
+    columns:
+        002E: "< 5 Minutes"
+        003E: "5-9 Minutes"
+        004E: "10-14 Minutes"
+        005E: "15-19 Minutes"
+        006E: "20-24 Minutes"
+        007E: "25-29 Minutes"
+        008E: "30-34 Minutes"
+        009E: "35-39 Minutes"
+        010E: "40-44 Minutes"
+        011E: "45-59 Minutes"
+        012E: "60-89 Minutes"
+        013E: "90+ Minutes"

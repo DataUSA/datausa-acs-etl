@@ -1,0 +1,15 @@
+name: "acs_ygs_median_age_total"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B01002"
+    value_label: "median_age"
+    dimension_labels: [
+        "sex",
+    ]
+    columns:
+        002E: "Male"
+        003E: "Female"
+
+

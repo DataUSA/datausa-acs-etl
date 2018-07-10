@@ -1,0 +1,30 @@
+name: "acs_ygh_households_with_no_internet"
+tag: "acs"
+min_year: 2013
+max_year: 2017
+acs_table:
+    id: "B28002"
+    value_label: "internet_households"
+    dimension_labels: [
+        "internet_access::access_group",
+        "internet_access::access_subgroup",
+        "internet_access::access_type",
+    ]
+    columns:
+        003E: "WithAnInternetSubscription_Dial-upAlone_Dial-upAlone"
+        005E: "WithAnInternetSubscription_DSL_DSLWithMobileBroadband"
+        006E: "WithAnInternetSubscription_DSL_DSLWithoutMobileBroadband"
+        008E: "WithAnInternetSubscription_CableModem_CableModemWithMobileBroadband"
+        009E: "WithAnInternetSubscription_CableModem_CableModemWithoutMobileBroadband"
+        011E: "WithAnInternetSubscription_Fiber-optic_Fiber-opticWithMobileBroadband"
+        012E: "WithAnInternetSubscription_Fiber-optic_Fiber-opticWithoutMobileBroadband"
+        014E: "WithAnInternetSubscription_SatelliteInternetService_SatelliteInternetServiceWithMobileBroadband"
+        015E: "WithAnInternetSubscription_SatelliteInternetService_SatelliteInternetServiceWithoutMobileBroadband"
+        017E: "WithAnInternetSubscription_TwoOrMoreFixedBroadbandTypes,OrOther_TwoOrMoreBroadbandWithMobileBroadband"
+        018E: "WithAnInternetSubscription_TwoOrMoreFixedBroadbandTypes,OrOther_TwoOrMoreBroadbandWithoutMobileBroadband"
+        019E: "WithAnInternetSubscription_MobileBroadbandAloneOrWithDialup_MobileBroadbandAloneOrWithDialup"
+        020E: "InternetAccessWithoutASubscription_InternetAccessWithoutASubscription_InternetAccessWithoutASubscription"
+        021E: "NoInternetAccess_NoInternetAccess_NoInternetAcess"
+
+
+calc_percent: true

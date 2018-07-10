@@ -1,0 +1,68 @@
+name: "acs_ygso_sex_by_occupation_for_median_earnings"
+tag: "acs"
+min_year: 2012
+max_year: 2017
+acs_table:
+    id: "B24012"
+    value_label: "occupation_median_earnings"
+    dimension_labels: [
+        "sex",
+        "occupation::group",
+        "occupation::subgroup",
+        "occupation::occupation",
+    ]
+    columns:
+
+        005E: "Male_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_ManagementOccupations"
+        006E: "Male_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_BusinessAndFinancialOperationsOccupations"
+        008E: "Male_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ComputerAndMathematicalOccupations"
+        009E: "Male_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ArchitectureAndEngineeringOccupations"
+        010E: "Male_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_Life,Physical,AndSocialScienceOccupations"
+        012E: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_CommunityAndSocialServiceOccupations"
+        013E: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_LegalOccupations"
+        014E: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Training,AndLibraryOccupations"
+        015E: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Arts,Design,Entertainment,Sports,AndMediaOccupations"
+        017E: "Male_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthDiagnosingAndTreatingPractitionersAndOtherTechnicalOccupations"
+        018E: "Male_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthTechnologistsAndTechnicians"
+        020E: "Male_ServiceOccupations_ServiceOccupations_HealthcareSupportOccupations"
+        022E: "Male_ServiceOccupations_ProtectiveServiceOccupations_FireFightingAndPrevention,AndOtherProtectiveServiceWorkersIncludingSupervisors"
+        023E: "Male_ServiceOccupations_ProtectiveServiceOccupations_LawEnforcementWorkersIncludingSupervisors"
+        024E: "Male_ServiceOccupations_ServiceOccupations_FoodPreparationAndServingRelatedOccupations"
+        025E: "Male_ServiceOccupations_ServiceOccupations_BuildingAndGroundsCleaningAndMaintenanceOccupations"
+        026E: "Male_ServiceOccupations_ServiceOccupations_PersonalCareAndServiceOccupations"
+        028E: "Male_SalesAndOfficeOccupations_SalesAndOfficeOccupations_SalesAndRelatedOccupations"
+        029E: "Male_SalesAndOfficeOccupations_SalesAndOfficeOccupations_OfficeAndAdministrativeSupportOccupations"
+        031E: "Male_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_Farming,Fishing,AndForestryOccupations"
+        032E: "Male_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_ConstructionAndExtractionOccupations"
+        033E: "Male_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_Installation,Maintenance,AndRepairOccupations"
+        035E: "Male_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_ProductionOccupations"
+        036E: "Male_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_TransportationOccupations"
+        037E: "Male_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations"
+        041E: "Female_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_ManagementOccupations"
+        042E: "Female_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_BusinessAndFinancialOperationsOccupations"
+        044E: "Female_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ComputerAndMathematicalOccupations"
+        045E: "Female_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ArchitectureAndEngineeringOccupations"
+        046E: "Female_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_Life,Physical,AndSocialScienceOccupations"
+        048E: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_CommunityAndSocialServiceOccupations"
+        049E: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_LegalOccupations"
+        050E: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Training,AndLibraryOccupations"
+        051E: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Arts,Design,Entertainment,Sports,AndMediaOccupations"
+        053E: "Female_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthDiagnosingAndTreatingPractitionersAndOtherTechnicalOccupations"
+        054E: "Female_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthTechnologistsAndTechnicians"
+        056E: "Female_ServiceOccupations_ServiceOccupations_HealthcareSupportOccupations"
+        058E: "Female_ServiceOccupations_ProtectiveServiceOccupations_FireFightingAndPrevention,AndOtherProtectiveServiceWorkersIncludingSupervisors"
+        059E: "Female_ServiceOccupations_ProtectiveServiceOccupations_LawEnforcementWorkersIncludingSupervisors"
+        060E: "Female_ServiceOccupations_ServiceOccupations_FoodPreparationAndServingRelatedOccupations"
+        061E: "Female_ServiceOccupations_ServiceOccupations_BuildingAndGroundsCleaningAndMaintenanceOccupations"
+        062E: "Female_ServiceOccupations_ServiceOccupations_PersonalCareAndServiceOccupations"
+        064E: "Female_SalesAndOfficeOccupations_SalesAndOfficeOccupations_SalesAndRelatedOccupations"
+        065E: "Female_SalesAndOfficeOccupations_SalesAndOfficeOccupations_OfficeAndAdministrativeSupportOccupations"
+        067E: "Female_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_Farming,Fishing,AndForestryOccupations"
+        068E: "Female_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_ConstructionAndExtractionOccupations"
+        069E: "Female_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_Installation,Maintenance,AndRepairOccupations"
+        071E: "Female_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_ProductionOccupations"
+        072E: "Female_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_TransportationOccupations"
+        073E: "Female_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations"
+
+
+

@@ -1,0 +1,29 @@
+name: "acs_ygv_veterans"
+acs_table:
+    id: "B21002"
+    value_label: "veteran_population"
+    columns:
+        002E: "GulfWar(9/2001OrLater),NoGulfWar(8/1990To8/2001),NoVietnamEra"
+        003E: "GulfWar(9/2001OrLater)AndGulfWar(8/1990To8/2001),NoVietnamEra"
+        004E: "GulfWar(9/2001OrLater),AndGulfWar(8/1990To8/2001),AndVietnamEra"
+        005E: "GulfWar(8/1990To8/2001),NoVietnamEra"
+        006E: "GulfWar(8/1990To8/2001)AndVietnamEra"
+        007E: "VietnamEra,NoKoreanWar,NoWorldWarII"
+        008E: "VietnamEraAndKoreanWar,NoWorldWarII"
+        009E: "VietnamEraAndKoreanWarAndWorldWarII"
+        010E: "KoreanWar,NoVietnamEra,NoWorldWarII"
+        011E: "KoreanWarAndWorldWarII,NoVietnamEra"
+        012E: "WorldWarII,NoKoreanWar,NoVietnamEra"
+        013E: "BetweenGulfWarAndVietnamEraOnly"
+        014E: "BetweenVietnamEraAndKoreanWarOnly"
+        015E: "BetweenKoreanWarAndWorldWarIIOnly"
+        016E: "Pre-WorldWarIIOnly"
+
+    # order matters, should be same as column labels
+    dimension_labels: [
+        "period_of_service",
+    ]
+
+tag: "acs"
+#TODO check this first
+

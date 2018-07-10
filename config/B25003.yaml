@@ -1,0 +1,15 @@
+name: "acs_ygo_tenure"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B25003"
+    value_label: "tenure_population"
+    dimension_labels: [
+        "occupied_by",
+    ]
+    columns:
+        002E: "OwnerOccupied"
+        003E: "RenterOccupied"
+
+

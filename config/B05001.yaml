@@ -1,0 +1,18 @@
+name: "acs_ygc_citizenship_status"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B05001"
+    value_label: "citizenship_status_population"
+    dimension_labels: [
+        "citizenship_status",
+    ]
+    columns:
+        002E: "U.S.Citizen,BornInTheUnitedStates"
+        003E: "U.S.Citizen,BornInPuertoRicoOrU.S.IslandAreas"
+        004E: "U.S.Citizen,BornAbroadOfAmericanParent(s)"
+        005E: "U.S.CitizenByNaturalization"
+        006E: "NotAU.S.Citizen"
+
+

@@ -1,0 +1,20 @@
+name: "acs_ygcs_median_age_by_citizenship_status_by_sex"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B05004"
+    value_label: "citizenship_median_age"
+    dimension_labels: [
+        "nativity_status::nativity_status",
+        "nativity_status::naturalize_status",
+        "sex",
+    ]
+    columns:
+        005E: "Native_Native_Male"
+        006E: "Native_Native_Female"
+        011E: "ForeignBorn_NaturalizedU.S.Citizen_Male"
+        012E: "ForeignBorn_NaturalizedU.S.Citizen_Female"
+        014E: "ForeignBorn_NotAU.S.Citizen_Male"
+        015E: "ForeignBorn_NotAU.S.Citizen_Female"
+

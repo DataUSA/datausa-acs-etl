@@ -1,0 +1,56 @@
+name: "acs_ygsi_sex_by_industry_c"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "C24030"
+    value_label: "industry_population"
+    dimension_labels: [
+        "sex",
+        "industry::group",
+        "industry::subgroup",
+    ]
+    columns:
+        004E: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
+        005E: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
+        006E: "Male_Construction_Construction"
+        007E: "Male_Manufacturing_Manufacturing"
+        008E: "Male_WholesaleTrade_WholesaleTrade"
+        009E: "Male_RetailTrade_RetailTrade"
+        011E: "Male_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
+        012E: "Male_TransportationAndWarehousing,AndUtilities_Utilities"
+        013E: "Male_Information_Information"
+        015E: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
+        016E: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
+        018E: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
+        019E: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
+        020E: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
+        022E: "Male_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
+        023E: "Male_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
+        025E: "Male_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_Arts,Entertainment,AndRecreation"
+        026E: "Male_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_AccommodationAndFoodServices"
+        027E: "Male_OtherServices,ExceptPublicAdministration_OtherServices,ExceptPublicAdministration"
+        028E: "Male_PublicAdministration_PublicAdministration"
+        031E: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
+        032E: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
+        033E: "Female_Construction_Construction"
+        034E: "Female_Manufacturing_Manufacturing"
+        035E: "Female_WholesaleTrade_WholesaleTrade"
+        036E: "Female_RetailTrade_RetailTrade"
+        038E: "Female_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
+        039E: "Female_TransportationAndWarehousing,AndUtilities_Utilities"
+        040E: "Female_Information_Information"
+        042E: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
+        043E: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
+        045E: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
+        046E: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
+        047E: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
+        049E: "Female_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
+        050E: "Female_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
+        052E: "Female_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_Arts,Entertainment,AndRecreation"
+        053E: "Female_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_AccommodationAndFoodServices"
+        054E: "Female_OtherServices,ExceptPublicAdministration_OtherServices,ExceptPublicAdministration"
+        055E: "Female_PublicAdministration_PublicAdministration"
+
+
+calc_rca: True

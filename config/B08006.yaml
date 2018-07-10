@@ -1,0 +1,40 @@
+name: "acs_ygst_sex_of_workers_by_transportation_to_work"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B08006"
+    value_label: "work_transportation_population"
+    dimension_labels: [
+        "sex",
+        "transportation::group",
+        "transportation::subgroup",
+        "transportation::transportation_means",
+    ]
+    columns:
+        020E: "Male_Car,Truck,OrVan_Car,Truck,OrVan_DroveAlone"
+        022E: "Male_Car,Truck,OrVan_Carpooled_In2-personCarpool"
+        023E: "Male_Car,Truck,OrVan_Carpooled_In3-personCarpool"
+        024E: "Male_Car,Truck,OrVan_Carpooled_In4-or-more-personCarpool"
+        026E: "Male_PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_BusOrTrolleyBus"
+        027E: "Male_PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_StreetcarOrTrolleyCar(carroPublicoInPuertoRico)"
+        028E: "Male_PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_SubwayOrElevated"
+        029E: "Male_PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_Railroad"
+        030E: "Male_PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_Ferryboat"
+        031E: "Male_Bicycle_Bicycle_Bicycle"
+        032E: "Male_Walked_Walked_Walked"
+        033E: "Male_Taxicab,Motorcycle,OrOtherMeans_Taxicab,Motorcycle,OrOtherMeans_Taxicab,Motorcycle,OrOtherMeans"
+        034E: "Male_WorkedAtHome_WorkedAtHome_WorkedAtHome"
+        037E: "Female_Car,Truck,OrVan_Car,Truck,OrVan_DroveAlone"
+        039E: "Female_Car,Truck,OrVan_Carpooled_In2-personCarpool"
+        040E: "Female_Car,Truck,OrVan_Carpooled_In3-personCarpool"
+        041E: "Female_Car,Truck,OrVan_Carpooled_In4-or-more-personCarpool"
+        043E: "Female_PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_BusOrTrolleyBus"
+        044E: "Female_PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_StreetcarOrTrolleyCar(carroPublicoInPuertoRico)"
+        045E: "Female_PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_SubwayOrElevated"
+        046E: "Female_PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_Railroad"
+        047E: "Female_PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_Ferryboat"
+        048E: "Female_Bicycle_Bicycle_Bicycle"
+        049E: "Female_Walked_Walked_Walked"
+        050E: "Female_Taxicab,Motorcycle,OrOtherMeans_Taxicab,Motorcycle,OrOtherMeans_Taxicab,Motorcycle,OrOtherMeans"
+        051E: "Female_WorkedAtHome_WorkedAtHome_WorkedAtHome"

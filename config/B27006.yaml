@@ -1,0 +1,34 @@
+# config modified to fit into health insurance concat table
+name: "acs_yghsa_medicare_coverage_by_sex_by_age"
+tag: "acs"
+min_year: 2012
+max_year: 2017
+acs_table:
+    id: "B27006"
+    value_label: "health_care_coverage_population"
+    dimension_labels: [
+        "sex",
+        "age",
+    ]
+    columns:
+        004E: "Male_Under6Years"
+        007E: "Male_6To17Years"
+        010E: "Male_18To24Years"
+        013E: "Male_25To34Years"
+        016E: "Male_35To44Years"
+        019E: "Male_45To54Years"
+        022E: "Male_55To64Years"
+        025E: "Male_65To74Years"
+        028E: "Male_75YearsAndOver"
+        032E: "Female_Under6Years"
+        035E: "Female_6To17Years"
+        038E: "Female_18To24Years"
+        041E: "Female_25To34Years"
+        044E: "Female_35To44Years"
+        047E: "Female_45To54Years"
+        050E: "Female_55To64Years"
+        053E: "Female_65To74Years"
+        056E: "Female_75YearsAndOver"
+
+
+health_insurance_tag: "with_medicare_coverage"

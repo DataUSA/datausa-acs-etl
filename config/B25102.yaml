@@ -1,0 +1,25 @@
+name: "acs_ygmt_mortgage_status_by_real_estate_taxes"
+tag: "acs"
+min_year: 2010
+max_year: 2017
+acs_table:
+    id: "B25102"
+    value_label: "mortgage_status_population"
+    dimension_labels: [
+        "mortgage_status",
+        "real_estate_taxes_paid",
+    ]
+    columns:
+        003E: "WithAMortgage_LessThan$800"
+        004E: "WithAMortgage_$800To$1,499"
+        005E: "WithAMortgage_$1,500To$1,999"
+        006E: "WithAMortgage_$2,000To$2,999"
+        007E: "WithAMortgage_$3,000OrMore"
+        008E: "WithAMortgage_NoRealEstateTaxesPaid"
+        010E: "NotMortgaged_LessThan$800"
+        011E: "NotMortgaged_$800To$1,499"
+        012E: "NotMortgaged_$1,500To$1,999"
+        013E: "NotMortgaged_$2,000To$2,999"
+        014E: "NotMortgaged_$3,000OrMore"
+        015E: "NotMortgaged_NoRealEstateTaxesPaid"
+

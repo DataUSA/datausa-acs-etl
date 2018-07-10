@@ -1,0 +1,12 @@
+name: "acs_ygr_median_household_income_race"
+tag: "acs"
+race_tag: "pacificislander_alone"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B19013E"
+    value_label: "household_income_dollars"
+    dimension_labels: [
+    ]
+    columns:
+        001E: "MedianHouseholdIncome"

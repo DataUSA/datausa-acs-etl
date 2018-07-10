@@ -1,0 +1,34 @@
+name: "acs_ygi_industry_for_median_earnings"
+tag: "acs"
+min_year: 2012
+max_year: 2017
+acs_table:
+    id: "B24031"
+    value_label: "industry_median_earnings_dollars"
+    dimension_labels: [
+        "industry::group",
+        "industry::subgroup",
+    ]
+    columns:
+        003E: "Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
+        004E: "Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
+        005E: "Construction_Construction"
+        006E: "Manufacturing_Manufacturing"
+        007E: "WholesaleTrade_WholesaleTrade"
+        008E: "RetailTrade_RetailTrade"
+        010E: "TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
+        011E: "TransportationAndWarehousing,AndUtilities_Utilities"
+        012E: "Information_Information"
+        014E: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
+        015E: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
+        017E: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
+        018E: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
+        019E: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
+        021E: "EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
+        022E: "EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
+        024E: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation"
+        025E: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
+        026E: "OtherServicesExceptPublicAdministration_OtherServicesExceptPublicAdministration"
+        027E: "PublicAdministration_PublicAdministration"
+
+

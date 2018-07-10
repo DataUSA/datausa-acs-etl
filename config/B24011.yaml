@@ -1,0 +1,40 @@
+name: "acs_ygo_occupation_for_median_earnings"
+tag: "acs"
+min_year: 2012
+max_year: 2017
+acs_table:
+    id: "B24011"
+    value_label: "occupation_median_earnings"
+    dimension_labels: [
+        "occupation::group",
+        "occupation::subgroup",
+        "occupation::occupation",
+    ]
+    columns:
+        004E: "Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_ManagementOccupations"
+        005E: "Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_BusinessAndFinancialOperationsOccupations"
+        007E: "Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ComputerAndMathematicalOccupations"
+        008E: "Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ArchitectureAndEngineeringOccupations"
+        009E: "Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_Life,Physical,AndSocialScienceOccupations"
+        011E: "Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_CommunityAndSocialServiceOccupations"
+        012E: "Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_LegalOccupations"
+        013E: "Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Training,AndLibraryOccupations"
+        014E: "Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Arts,Design,Entertainment,Sports,AndMediaOccupations"
+        016E: "Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthDiagnosingAndTreatingPractitionersAndOtherTechnicalOccupations"
+        017E: "Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthTechnologistsAndTechnicians"
+        019E: "ServiceOccupations_ServiceOccupations_HealthcareSupportOccupations"
+        021E: "ServiceOccupations_ProtectiveServiceOccupations_FireFightingAndPrevention,AndOtherProtectiveServiceWorkersIncludingSupervisors"
+        022E: "ServiceOccupations_ProtectiveServiceOccupations_LawEnforcementWorkersIncludingSupervisors"
+        023E: "ServiceOccupations_ServiceOccupations_FoodPreparationAndServingRelatedOccupations"
+        024E: "ServiceOccupations_ServiceOccupations_BuildingAndGroundsCleaningAndMaintenanceOccupations"
+        025E: "ServiceOccupations_ServiceOccupations_PersonalCareAndServiceOccupations"
+        027E: "SalesAndOfficeOccupations_SalesAndOfficeOccupations_SalesAndRelatedOccupations"
+        028E: "SalesAndOfficeOccupations_SalesAndOfficeOccupations_OfficeAndAdministrativeSupportOccupations"
+        030E: "NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_Farming,Fishing,AndForestryOccupations"
+        031E: "NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_ConstructionAndExtractionOccupations"
+        032E: "NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_Installation,Maintenance,AndRepairOccupations"
+        034E: "Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_ProductionOccupations"
+        035E: "Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_TransportationOccupations"
+        036E: "Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations"
+
+

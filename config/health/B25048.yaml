@@ -1,0 +1,15 @@
+name: "acs_ygh_occupied_households_lacking_plumbing"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B25048"
+    value_label: "occupied_households"
+    dimension_labels: [
+        "plumbing facilities",
+    ]
+    columns:
+        002E: "CompletePlumbingFacilities"
+        003E: "LackingCompletePlumbingFacilities"
+
+calc_percent: true

@@ -1,0 +1,58 @@
+name: "acs_ygpa_place_of_birth_by_age"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "B06001"
+    value_label: "place_of_birth_population"
+    dimension_labels: [
+        "place_of_birth",
+        "age",
+    ]
+    columns:
+        014E: "BornInStateOfResidence_Under5Years"
+        015E: "BornInStateOfResidence_5To17Years"
+        016E: "BornInStateOfResidence_18To24Years"
+        017E: "BornInStateOfResidence_25To34Years"
+        018E: "BornInStateOfResidence_35To44Years"
+        019E: "BornInStateOfResidence_45To54Years"
+        020E: "BornInStateOfResidence_55To59Years"
+        021E: "BornInStateOfResidence_60And61Years"
+        022E: "BornInStateOfResidence_62To64Years"
+        023E: "BornInStateOfResidence_65To74Years"
+        024E: "BornInStateOfResidence_75YearsAndOver"
+        026E: "BornInOtherStateInTheUnitedStates_Under5Years"
+        027E: "BornInOtherStateInTheUnitedStates_5To17Years"
+        028E: "BornInOtherStateInTheUnitedStates_18To24Years"
+        029E: "BornInOtherStateInTheUnitedStates_25To34Years"
+        030E: "BornInOtherStateInTheUnitedStates_35To44Years"
+        031E: "BornInOtherStateInTheUnitedStates_45To54Years"
+        032E: "BornInOtherStateInTheUnitedStates_55To59Years"
+        033E: "BornInOtherStateInTheUnitedStates_60And61Years"
+        034E: "BornInOtherStateInTheUnitedStates_62To64Years"
+        035E: "BornInOtherStateInTheUnitedStates_65To74Years"
+        036E: "BornInOtherStateInTheUnitedStates_75YearsAndOver"
+        038E: "Native;BornOutsideTheUnitedStates_Under5Years"
+        039E: "Native;BornOutsideTheUnitedStates_5To17Years"
+        040E: "Native;BornOutsideTheUnitedStates_18To24Years"
+        041E: "Native;BornOutsideTheUnitedStates_25To34Years"
+        042E: "Native;BornOutsideTheUnitedStates_35To44Years"
+        043E: "Native;BornOutsideTheUnitedStates_45To54Years"
+        044E: "Native;BornOutsideTheUnitedStates_55To59Years"
+        045E: "Native;BornOutsideTheUnitedStates_60And61Years"
+        046E: "Native;BornOutsideTheUnitedStates_62To64Years"
+        047E: "Native;BornOutsideTheUnitedStates_65To74Years"
+        048E: "Native;BornOutsideTheUnitedStates_75YearsAndOver"
+        050E: "ForeignBorn_Under5Years"
+        051E: "ForeignBorn_5To17Years"
+        052E: "ForeignBorn_18To24Years"
+        053E: "ForeignBorn_25To34Years"
+        054E: "ForeignBorn_35To44Years"
+        055E: "ForeignBorn_45To54Years"
+        056E: "ForeignBorn_55To59Years"
+        057E: "ForeignBorn_60And61Years"
+        058E: "ForeignBorn_62To64Years"
+        059E: "ForeignBorn_65To74Years"
+        060E: "ForeignBorn_75YearsAndOver"
+
+

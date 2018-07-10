@@ -1,0 +1,55 @@
+name: "acs_ygsi_sex_by_industry_for_median_earnings"
+tag: "acs"
+min_year: 2012
+max_year: 2017
+acs_table:
+    id: "B24032"
+    value_label: "industry_median_earnings_dollars"
+    dimension_labels: [
+        "sex",
+        "industry::group",
+        "industry::subgroup",
+    ]
+    columns:
+        003E: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
+        004E: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
+        005E: "Male_Construction_Construction"
+        006E: "Male_Manufacturing_Manufacturing"
+        007E: "Male_WholesaleTrade_WholesaleTrade"
+        008E: "Male_RetailTrade_RetailTrade"
+        010E: "Male_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
+        011E: "Male_TransportationAndWarehousing,AndUtilities_Utilities"
+        012E: "Male_Information_Information"
+        014E: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
+        015E: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
+        017E: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
+        018E: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
+        019E: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
+        021E: "Male_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
+        022E: "Male_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
+        024E: "Male_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation"
+        025E: "Male_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
+        026E: "Male_OtherServicesExceptPublicAdministration_OtherServicesExceptPublicAdministration"
+        027E: "Male_PublicAdministration_PublicAdministration"
+        030E: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
+        031E: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
+        032E: "Female_Construction_Construction"
+        033E: "Female_Manufacturing_Manufacturing"
+        034E: "Female_WholesaleTrade_WholesaleTrade"
+        035E: "Female_RetailTrade_RetailTrade"
+        037E: "Female_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
+        038E: "Female_TransportationAndWarehousing,AndUtilities_Utilities"
+        039E: "Female_Information_Information"
+        041E: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
+        042E: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
+        044E: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
+        045E: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
+        046E: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
+        048E: "Female_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
+        049E: "Female_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
+        051E: "Female_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation"
+        052E: "Female_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
+        053E: "Female_OtherServicesExceptPublicAdministration_OtherServicesExceptPublicAdministration"
+        054E: "Female_PublicAdministration_PublicAdministration"
+
+

@@ -1,0 +1,21 @@
+name: "acs_ygt_aggregate_travel_time_workers_by_transportation_to_work"
+tag: "acs"
+min_year: 2015
+max_year: 2017
+acs_table:
+    id: "B08136"
+    value_label: "aggregate_travel_time_to_work_minutes"
+    dimension_labels: [
+        "transportation::group",
+        "transportation::subgroup",
+        "transportation::transportation_means",
+    ]
+    columns:
+        003E: "Car,Truck,OrVan_Car,Truck,OrVan_DroveAlone"
+        005E: "Car,Truck,OrVan_Carpooled_In2-personCarpool"
+        006E: "Car,Truck,OrVan_Carpooled_In3-or-more-personCarpool"
+        008E: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_BusOrTrolleyBus"
+        009E: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_StreetcarOrTrolleyCar(carroPublicoInPuertoRico),SubwayOrElevated"
+        010E: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_RailroadOrFerryboat"
+        011E: "Walked_Walked_Walked"
+        012E: "Taxicab,Motorcycle,Bicycle,OrOtherMeans_Taxicab,Motorcycle,Bicycle,OrOtherMeans_Taxicab,Motorcycle,Bicycle,OrOtherMeans"
