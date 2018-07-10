@@ -1,4 +1,6 @@
 name: "acs_ygv_veterans"
+min_year: 2009
+max_year: 2017
 acs_table:
     id: "B21002"
     value_label: "veteran_population"
