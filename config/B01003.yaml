@@ -8,6 +8,6 @@ acs_table:
     dimension_labels: [
     ]
     columns:
-        001E: "TotalPopulation"
+        001: "TotalPopulation"
 
 

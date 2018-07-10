@@ -9,7 +9,7 @@ acs_table:
         "occupied_by",
     ]
     columns:
-        002E: "OwnerOccupied"
-        003E: "RenterOccupied"
+        002: "OwnerOccupied"
+        003: "RenterOccupied"
 
 

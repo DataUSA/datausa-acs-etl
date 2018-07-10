@@ -10,16 +10,16 @@ acs_table:
         "real_estate_taxes_paid",
     ]
     columns:
-        003E: "WithAMortgage_LessThan$800"
-        004E: "WithAMortgage_$800To$1,499"
-        005E: "WithAMortgage_$1,500To$1,999"
-        006E: "WithAMortgage_$2,000To$2,999"
-        007E: "WithAMortgage_$3,000OrMore"
-        008E: "WithAMortgage_NoRealEstateTaxesPaid"
-        010E: "NotMortgaged_LessThan$800"
-        011E: "NotMortgaged_$800To$1,499"
-        012E: "NotMortgaged_$1,500To$1,999"
-        013E: "NotMortgaged_$2,000To$2,999"
-        014E: "NotMortgaged_$3,000OrMore"
-        015E: "NotMortgaged_NoRealEstateTaxesPaid"
+        003: "WithAMortgage_LessThan$800"
+        004: "WithAMortgage_$800To$1,499"
+        005: "WithAMortgage_$1,500To$1,999"
+        006: "WithAMortgage_$2,000To$2,999"
+        007: "WithAMortgage_$3,000OrMore"
+        008: "WithAMortgage_NoRealEstateTaxesPaid"
+        010: "NotMortgaged_LessThan$800"
+        011: "NotMortgaged_$800To$1,499"
+        012: "NotMortgaged_$1,500To$1,999"
+        013: "NotMortgaged_$2,000To$2,999"
+        014: "NotMortgaged_$3,000OrMore"
+        015: "NotMortgaged_NoRealEstateTaxesPaid"
 

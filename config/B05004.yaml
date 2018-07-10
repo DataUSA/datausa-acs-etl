@@ -11,10 +11,10 @@ acs_table:
         "sex",
     ]
     columns:
-        005E: "Native_Native_Male"
-        006E: "Native_Native_Female"
-        011E: "ForeignBorn_NaturalizedU.S.Citizen_Male"
-        012E: "ForeignBorn_NaturalizedU.S.Citizen_Female"
-        014E: "ForeignBorn_NotAU.S.Citizen_Male"
-        015E: "ForeignBorn_NotAU.S.Citizen_Female"
+        005: "Native_Native_Male"
+        006: "Native_Native_Female"
+        011: "ForeignBorn_NaturalizedU.S.Citizen_Male"
+        012: "ForeignBorn_NaturalizedU.S.Citizen_Female"
+        014: "ForeignBorn_NotAU.S.Citizen_Male"
+        015: "ForeignBorn_NotAU.S.Citizen_Female"
 

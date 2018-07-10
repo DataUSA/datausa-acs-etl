@@ -3,7 +3,7 @@ acs_table:
     id: "B19083"
     value_label: "gini"
     columns:
-        001E: "GiniIndex"
+        001: "GiniIndex"
 
     # order matters, should be same as column labels
     dimension_labels: [

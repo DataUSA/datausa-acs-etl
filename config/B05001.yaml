@@ -9,10 +9,10 @@ acs_table:
         "citizenship_status",
     ]
     columns:
-        002E: "U.S.Citizen,BornInTheUnitedStates"
-        003E: "U.S.Citizen,BornInPuertoRicoOrU.S.IslandAreas"
-        004E: "U.S.Citizen,BornAbroadOfAmericanParent(s)"
-        005E: "U.S.CitizenByNaturalization"
-        006E: "NotAU.S.Citizen"
+        002: "U.S.Citizen,BornInTheUnitedStates"
+        003: "U.S.Citizen,BornInPuertoRicoOrU.S.IslandAreas"
+        004: "U.S.Citizen,BornAbroadOfAmericanParent(s)"
+        005: "U.S.CitizenByNaturalization"
+        006: "NotAU.S.Citizen"
 
 

@@ -8,6 +8,6 @@ acs_table:
     dimension_labels: [
     ]
     columns:
-        001E: "MedianValue(dollars)"
+        001: "MedianValue(dollars)"
 
 

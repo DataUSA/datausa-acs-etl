@@ -9,8 +9,8 @@ acs_table:
         "mortgage_status",
     ]
     columns:
-        002E: "WithMortgage"
-        003E: "WithoutMortgage"
+        002: "WithMortgage"
+        003: "WithoutMortgage"
 
 
 calc_percent: true

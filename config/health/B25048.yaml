@@ -9,7 +9,7 @@ acs_table:
         "plumbing facilities",
     ]
     columns:
-        002E: "CompletePlumbingFacilities"
-        003E: "LackingCompletePlumbingFacilities"
+        002: "CompletePlumbingFacilities"
+        003: "LackingCompletePlumbingFacilities"
 
 calc_percent: true

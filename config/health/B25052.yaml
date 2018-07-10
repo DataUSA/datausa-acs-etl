@@ -9,8 +9,8 @@ acs_table:
         "kitchen_facilities",
     ]
     columns:
-        002E: "CompleteKitchenFacilities"
-        003E: "LackingCompleteKitchenFacilities"
+        002: "CompleteKitchenFacilities"
+        003: "LackingCompleteKitchenFacilities"
 
 
 calc_percent: true
