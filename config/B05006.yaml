@@ -19,7 +19,7 @@ acs_table:
         009: "Europe_NorthernEurope_NorthernEurope_Denmark"
         010: "Europe_NorthernEurope_NorthernEurope_Norway"
         011: "Europe_NorthernEurope_NorthernEurope_Sweden"
-        012: "Europe_NorthernEurope_OtherNorthernEurope"
+        012: "Europe_NorthernEurope_NorthernEurope_OtherNorthernEurope"
         014: "Europe_WesternEurope_WesternEurope_Austria"
         015: "Europe_WesternEurope_WesternEurope_Belgium"
         016: "Europe_WesternEurope_WesternEurope_France"
