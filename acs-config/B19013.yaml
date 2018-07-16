@@ -1,4 +1,4 @@
-name: "acs_yg_median_household_income"
+name: "acs_ygr_median_household_income_race"
 tag: "acs"
 min_year: 2009
 max_year: 2017

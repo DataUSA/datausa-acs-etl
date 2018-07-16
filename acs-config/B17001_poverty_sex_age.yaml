@@ -1,4 +1,4 @@
-name: "acs_ygpsa_poverty_by_sex_age"
+name: "acs_ygpsar_poverty_by_sex_age_race"
 tag: "acs"
 min_year: 2009
 max_year: 2017
