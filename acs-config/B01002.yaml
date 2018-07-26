@@ -9,6 +9,7 @@ acs_table:
         "sex",
     ]
     columns:
+        001: "Total"
         002: "Male"
         003: "Female"
 
