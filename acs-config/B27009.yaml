@@ -1,5 +1,5 @@
 # config modified to fit into health insurance concat table
-name: "acs_yghsa_va_health_care_by_sex_by_age"
+name: "acs_yghsa_health_coverage_type_by_sex_by_age"
 tag: "acs"
 min_year: 2012
 max_year: 2017
