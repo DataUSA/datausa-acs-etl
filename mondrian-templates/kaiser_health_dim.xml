@@ -1,0 +1,102 @@
+    <!-- foreignKey depends on posiition of health coverage dim in B27010 config-->
+    <Dimension name="Kaiser Health Coverage" foreignKey="dim_1">
+      <Hierarchy hasAll="true">
+        <InlineTable alias="dm_kaiser_health">
+          <ColumnDefs>
+            <ColumnDef name="acs_id" type="Numeric"/>
+            <ColumnDef name="acs" type="String"/>
+            <ColumnDef name="kaiser_id" type="Numeric"/>
+            <ColumnDef name="kaiser" type="String"/>
+          </ColumnDefs>
+          <Rows>
+            <Row>
+              <Value column="acs_id">0</Value>
+              <Value column="acs">OneType-WithEmployer-basedHealthInsuranceOnly</Value>
+              <Value column="kaiser_id">2</Value>
+              <Value column="kaiser">Employer</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">1</Value>
+              <Value column="acs">OneType-WithDirect-purchaseHealthInsuranceOnly</Value>
+              <Value column="kaiser_id">4</Value>
+              <Value column="kaiser">NonGroup</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">2</Value>
+              <Value column="acs">OneType-WithMedicareCoverageOnly</Value>
+              <Value column="kaiser_id">1</Value>
+              <Value column="kaiser">Medicare</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">3</Value>
+              <Value column="acs">OneType-WithMedicaid/means-testedPublicCoverageOnly</Value>
+              <Value column="kaiser_id">0</Value>
+              <Value column="kaiser">Medicaid</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">4</Value>
+              <Value column="acs">OneType-WithTRICARE/militaryHealthCoverageOnly</Value>
+              <Value column="kaiser_id">3</Value>
+              <Value column="kaiser">OtherPublic</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">5</Value>
+              <Value column="acs">OneType-WithVAHealthCareOnly</Value>
+              <Value column="kaiser_id">3</Value>
+              <Value column="kaiser">OtherPublic</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">6</Value>
+              <Value column="acs">TwoOrMoreTypes-WithEmployer-basedAndDirect-purchaseCoverage</Value>
+              <Value column="kaiser_id">2</Value>
+              <Value column="kaiser">Employer</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">7</Value>
+              <Value column="acs">TwoOrMoreTypes-WithEmployer-basedAndMedicareCoverage</Value>
+              <Value column="kaiser_id">1</Value>
+              <Value column="kaiser">Medicare</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">8</Value>
+              <Value column="acs">TwoOrMoreTypes-WithMedicareAndMedicaid</Value>
+              <Value column="kaiser_id">0</Value>
+              <Value column="kaiser">Medicaid</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">9</Value>
+              <Value column="acs">TwoOrMoreTypes-OtherPrivateOnlyCombinations</Value>
+              <Value column="kaiser_id">4</Value>
+              <Value column="kaiser">NonGroup</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">10</Value>
+              <Value column="acs">TwoOrMoreTypes-OtherPublicOnlyCombinations</Value>
+              <Value column="kaiser_id">3</Value>
+              <Value column="kaiser">OtherPublic</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">11</Value>
+              <Value column="acs">TwoOrMoreTypes-OtherCoverageCombinations</Value>
+              <Value column="kaiser_id">4</Value>
+              <Value column="kaiser">NonGroup</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">12</Value>
+              <Value column="acs">NoHealthInsuranceCoverage</Value>
+              <Value column="kaiser_id">5</Value>
+              <Value column="kaiser">Uninsured</Value>
+            </Row>
+            <Row>
+              <Value column="acs_id">13</Value>
+              <Value column="acs">TwoOrMoreTypes-WithDirect-purchaseAndMedicareCoverage</Value>
+              <Value column="kaiser_id">1</Value>
+              <Value column="kaiser">Medicare</Value>
+            </Row>
+          </Rows>
+        </InlineTable>
+          <Level column="kaiser_id" hideMemberIf="IfParentsName" name="Kaiser Coverage" nameColumn="kaiser" uniqueMembers="true"/>
+          <Level column="acs_id" hideMemberIf="IfParentsName" name="ACS Coverage" nameColumn="acs" uniqueMembers="true"/>
+      </Hierarchy>
+    </Dimension>
+

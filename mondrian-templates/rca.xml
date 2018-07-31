@@ -1,0 +1,67 @@
+{% for dim in dim_contexts %}
+    <!-- b is x dim total and current geography -->
+    <CalculatedMember dimension="Measures" name="{{ dim.title }} yg_rca_b" visible="false">
+      <Formula>
+        (
+          Measures.[{{ value_label_title }}],
+          [Year].[Year].CurrentMember,
+          [{{ dim.title }}].[{{ dim.title }}].[All {{ dim.title }}s]
+        )
+      </Formula>
+    </CalculatedMember>
+
+    <!-- c is x dim current and total geography (nation) -->
+    <CalculatedMember dimension="Measures" name="{{ dim.title }} yg_rca_c" visible="false">
+      <Formula>
+        (
+          Measures.[{{ value_label_title }}],
+          [Year].[Year].CurrentMember,
+          [{{ dim.title }}].[{{ dim.title }}].CurrentMember,
+          [Geography].[Tract].[All Tracts],
+          [Geography].[Place].[All Places],
+          [Geography].[Zip].[All Zips],
+          [Geography].[County].[All Countys],
+          [Geography].[State].[All States],
+          [Geography].[Nation].[All Nations],
+          [Geography].[Puma].[All Pumas],
+          [Geography].[Msa].[All Msas],
+          [Geography].[County Subdivision].[All County Subdivisions]
+        )
+      </Formula>
+    </CalculatedMember>
+
+    <!-- d is x dim total and total geography (nation) -->
+    <CalculatedMember dimension="Measures" name="{{ dim.title }} yg_rca_d" visible="false">
+      <Formula>
+        (
+          Measures.[{{ value_label_title }}],
+          [Year].[Year].CurrentMember,
+          [{{ dim.title }}].[{{ dim.title }}].[All {{ dim.title }}s],
+          [Geography].[Tract].[All Tracts],
+          [Geography].[Place].[All Places],
+          [Geography].[Zip].[All Zips],
+          [Geography].[County].[All Countys],
+          [Geography].[State].[All States],
+          [Geography].[Nation].[All Nations],
+          [Geography].[Puma].[All Pumas],
+          [Geography].[Msa].[All Msas],
+          [Geography].[County Subdivision].[All County Subdivisions]
+        )
+      </Formula>
+    </CalculatedMember>
+
+    <!-- RCA is (a/b) / (c/d) -->
+    <CalculatedMember dimension="Measures" name="{{ dim.title }} yg RCA" visible="true">
+      <Annotations>
+        <Annotation name="aggregation_method">RCA</Annotation>
+        <Annotation name="dimensions">Year,Geography,{{ dim.title }}</Annotation>
+        <Annotation name="measure">{{ value_label_title }}</Annotation>
+      </Annotations>
+      <Formula>
+        IIF([Measures].[{{ dim.title }} yg_rca_c] > 0 and [Measures].[{{ dim.title }} yg_rca_d] > 0,
+          ([Measures].[{{ value_label_title }}] / [Measures].[{{ dim.title }} yg_rca_b]) /
+          ([Measures].[{{ dim.title }} yg_rca_c] / [Measures].[{{ dim.title }} yg_rca_d])
+        , NULL)
+      </Formula>
+    </CalculatedMember>
+{% endfor %}

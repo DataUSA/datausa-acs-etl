@@ -1,0 +1,50 @@
+    <Dimension foreignKey="health" name="Health Coverage">
+      <Annotations>
+        <Annotation name="is_aggregatable">false</Annotation>
+        <Annotation name="is_required">true</Annotation>
+      </Annotations>
+      <Hierarchy hasAll="true">
+        <InlineTable alias="dm_health_coverage">
+          <ColumnDefs>
+            <ColumnDef name="health" type="String"/>
+            <ColumnDef name="health_code" type="Numeric"/>
+          </ColumnDefs>
+          <Rows>
+            <Row>
+              <Value column="health">Private</Value>
+              <Value column="health_code">0</Value>
+            </Row>
+            <Row>
+              <Value column="health">Public</Value>
+              <Value column="health_code">1</Value>
+            </Row>
+            <Row>
+              <Value column="health">Employer</Value>
+              <Value column="health_code">2</Value>
+            </Row>
+            <Row>
+              <Value column="health">Direct</Value>
+              <Value column="health_code">3</Value>
+            </Row>
+            <Row>
+              <Value column="health">Medicare</Value>
+              <Value column="health_code">4</Value>
+            </Row>
+            <Row>
+              <Value column="health">Medicaid</Value>
+              <Value column="health_code">5</Value>
+            </Row>
+            <Row>
+              <Value column="health">Military</Value>
+              <Value column="health_code">6</Value>
+            </Row>
+            <Row>
+              <Value column="health">VA</Value>
+              <Value column="health_code">7</Value>
+            </Row>
+          </Rows>
+        </InlineTable>
+        <Level column="health_code" hideMemberIf="IfParentsName" name="Health Coverage" nameColumn="health" uniqueMembers="true"/>
+      </Hierarchy>
+    </Dimension>
+
