@@ -144,4 +144,4 @@ max_year: 2017
 min_year: 2009
 name: acs_ygsi_sex_by_industry
 tag: acs
-calc_rca: True
+calc_rca: true

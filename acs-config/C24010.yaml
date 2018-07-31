@@ -64,4 +64,4 @@ acs_table:
         073: "Female_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations"
 
 
-calc_rca: True
+calc_rca: true

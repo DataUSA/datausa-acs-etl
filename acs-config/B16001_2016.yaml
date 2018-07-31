@@ -96,4 +96,4 @@ acs_table:
         127: "OtherAndUnspecifiedLanguages_SpeakEnglish\"veryWell\""
         128: "OtherAndUnspecifiedLanguages_SpeakEnglishLessThan\"veryWell\""
  
-calc_rca: True
+calc_rca: true

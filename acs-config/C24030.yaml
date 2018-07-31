@@ -53,4 +53,4 @@ acs_table:
         055: "Female_PublicAdministration_PublicAdministration"
 
 
-calc_rca: True
+calc_rca: true
