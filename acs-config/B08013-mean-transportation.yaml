@@ -1,10 +1,11 @@
 name: "acs_ygt_mean_transportation_time_to_work"
 tag: "acs"
-min_year: 2013
+min_year: 2009
 max_year: 2017
 acs_table:
     id: "B08013"
-    value_label: "aggregate_travel_time_to_work_minutes"
+    # for mean transportation time
+    value_label: "mean_transportation_time_to_work_minutes"
     dimension_labels: [
     ]
     columns:
