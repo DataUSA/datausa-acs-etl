@@ -1,0 +1,11 @@
+name: "acs_ygt_mean_transportation_time_to_work"
+tag: "acs"
+min_year: 2013
+max_year: 2017
+acs_table:
+    id: "B08006"
+    value_label: "work_transportation_population"
+    dimension_labels: [
+    ]
+    columns:
+        001: "Total"
