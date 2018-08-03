@@ -39,7 +39,7 @@
     <Hierarchy hasAll="true" name="Puma">
       <Table name="pumas" schema="{{ db_schema }}"/>
       <Level column="state_id" name="State" nameColumn="state_name" uniqueMembers="true"/>
-      <Level column="geoid" name="Puma" nameColumn="namelsad10" uniqueMembers="true"/>
+      <Level column="geoid" name="Puma" nameColumn="name" uniqueMembers="true"/>
     </Hierarchy>
     <Hierarchy hasAll="true" name="County Subdivision">
       <Table name="county_subdivisions" schema="{{ db_schema }}"/>
