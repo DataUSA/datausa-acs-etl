@@ -1,4 +1,4 @@
 acs-cache/
 acs-out/
 *.log
-.env
+.envrc
