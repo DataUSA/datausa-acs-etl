@@ -192,3 +192,5 @@ acs_table:
         207: "Female_OtherServices,ExceptPublicAdministration_Religious,Grantmaking,Civic,Professional,AndSimilarOrganizations"
         208: "Female_OtherServices,ExceptPublicAdministration_PrivateHouseholds"
         209: "Female_PublicAdministration"
+
+calc_rca: true

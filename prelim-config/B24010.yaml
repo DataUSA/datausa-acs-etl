@@ -4,13 +4,13 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B24010"
-    value_label: "occupation_population"
+    value_label: "occupation population"
     dimension_labels: [
         "sex",
-        "occupation::occupation_group0",
-        "occupation::occupation_group1",
-        "occupation::occupation_group2",
-        "occupation::occupation_group3",
+        "occupation::occupation_group_0",
+        "occupation::occupation_group_1",
+        "occupation::occupation_group_2",
+        "occupation::occupation_group_3",
         "occupation::occupation",
     ]
     columns:
@@ -244,3 +244,5 @@ acs_table:
         300: "Female_Production,Transportation,AndMaterialMovingOccupations_TransportationOccupations_OtherTransportationWorkers"
         302: "Female_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations_LaborersAndMaterialMovers,Hand"
         303: "Female_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations_MaterialMovingWorkersExceptSupervisorsAndLaborersAndMaterialMovers,Hand"
+
+calc_rca: true

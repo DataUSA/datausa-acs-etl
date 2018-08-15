@@ -1,55 +1,70 @@
 name: "acs_ygsi_sex_by_industry_for_median_earnings"
 tag: "acs"
-min_year: 2012
+min_year: 2009
 max_year: 2017
 acs_table:
     id: "B24032"
     value_label: "industry_median_earnings_dollars"
     dimension_labels: [
         "sex",
-        "industry::group",
-        "industry::subgroup",
+        "industry_group",
+        "industry",
     ]
     columns:
+        001: "Male"
+        002: "Male_Agriculture,Forestry,FishingAndHunting,AndMining"
         003: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
         004: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
-        005: "Male_Construction_Construction"
-        006: "Male_Manufacturing_Manufacturing"
-        007: "Male_WholesaleTrade_WholesaleTrade"
-        008: "Male_RetailTrade_RetailTrade"
+        005: "Male_Construction"
+        006: "Male_Manufacturing"
+        007: "Male_WholesaleTrade"
+        008: "Male_RetailTrade"
+        009: "Male_TransportationAndWarehousing,AndUtilities"
         010: "Male_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
         011: "Male_TransportationAndWarehousing,AndUtilities_Utilities"
-        012: "Male_Information_Information"
+        012: "Male_Information"
+        013: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing"
         014: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
         015: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
+        016: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices"
         017: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
         018: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
         019: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
+        020: "Male_EducationalServices,AndHealthCareAndSocialAssistance"
         021: "Male_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
         022: "Male_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
+        023: "Male_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
         024: "Male_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation"
         025: "Male_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
-        026: "Male_OtherServicesExceptPublicAdministration_OtherServicesExceptPublicAdministration"
-        027: "Male_PublicAdministration_PublicAdministration"
+        026: "Male_OtherServicesExceptPublicAdministration"
+        027: "Male_PublicAdministration"
+        028: "Female"
+        029: "Female_Agriculture,Forestry,FishingAndHunting,AndMining"
         030: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
         031: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
-        032: "Female_Construction_Construction"
-        033: "Female_Manufacturing_Manufacturing"
-        034: "Female_WholesaleTrade_WholesaleTrade"
-        035: "Female_RetailTrade_RetailTrade"
+        032: "Female_Construction"
+        033: "Female_Manufacturing"
+        034: "Female_WholesaleTrade"
+        035: "Female_RetailTrade"
+        036: "Female_TransportationAndWarehousing,AndUtilities"
         037: "Female_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
         038: "Female_TransportationAndWarehousing,AndUtilities_Utilities"
-        039: "Female_Information_Information"
+        039: "Female_Information"
+        040: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing"
         041: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
         042: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
+        043: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices"
         044: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
         045: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
         046: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
+        047: "Female_EducationalServices,AndHealthCareAndSocialAssistance"
         048: "Female_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
         049: "Female_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
+        050: "Female_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
         051: "Female_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation"
         052: "Female_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
-        053: "Female_OtherServicesExceptPublicAdministration_OtherServicesExceptPublicAdministration"
-        054: "Female_PublicAdministration_PublicAdministration"
+        053: "Female_OtherServicesExceptPublicAdministration"
+        054: "Female_PublicAdministration"
 
-
+non_agg: true
+no_schema: true

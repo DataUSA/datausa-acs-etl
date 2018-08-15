@@ -1,0 +1,55 @@
+name: "acs_ygsi_sex_by_industry_c"
+tag: "acs"
+min_year: 2009
+max_year: 2017
+acs_table:
+    id: "C24030"
+    value_label: "industry_population"
+    dimension_labels: [
+        "sex",
+        "industry::group",
+        "industry::industry",
+    ]
+    columns:
+        004: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
+        005: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
+        006: "Male_Construction"
+        007: "Male_Manufacturing"
+        008: "Male_WholesaleTrade"
+        009: "Male_RetailTrade"
+        011: "Male_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
+        012: "Male_TransportationAndWarehousing,AndUtilities_Utilities"
+        013: "Male_Information"
+        015: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
+        016: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
+        018: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
+        019: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
+        020: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
+        022: "Male_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
+        023: "Male_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
+        025: "Male_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_Arts,Entertainment,AndRecreation"
+        026: "Male_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_AccommodationAndFoodServices"
+        027: "Male_OtherServices,ExceptPublicAdministration"
+        028: "Male_PublicAdministration"
+        031: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
+        032: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
+        033: "Female_Construction"
+        034: "Female_Manufacturing"
+        035: "Female_WholesaleTrade"
+        036: "Female_RetailTrade"
+        038: "Female_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
+        039: "Female_TransportationAndWarehousing,AndUtilities_Utilities"
+        040: "Female_Information"
+        042: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
+        043: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
+        045: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
+        046: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
+        047: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
+        049: "Female_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
+        050: "Female_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
+        052: "Female_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_Arts,Entertainment,AndRecreation"
+        053: "Female_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_AccommodationAndFoodServices"
+        054: "Female_OtherServices,ExceptPublicAdministration"
+        055: "Female_PublicAdministration"
+
+calc_rca: true
