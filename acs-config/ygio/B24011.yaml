@@ -1,0 +1,51 @@
+---
+name: acs_ygo_occupation_for_median_earnings
+acs_table:
+  id: B24011
+  value_label: occupation_median_earnings
+  dimension_labels:
+    - occupation_group
+    - occupation_subgroup
+    - occupation
+  columns:
+    1: Total_Total_Total
+    2: "Management,Business,Science,AndArtsOccupations_Management,Business,Science,AndArtsOccupations_Management,Business,Science,AndArtsOccupations"
+    3: "Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_Management,Business,AndFinancialOccupations"
+    4: "Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_ManagementOccupations"
+    5: "Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_BusinessAndFinancialOperationsOccupations"
+    6: "Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_Computer,Engineering,AndScienceOccupations"
+    7: "Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ComputerAndMathematicalOccupations"
+    8: "Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ArchitectureAndEngineeringOccupations"
+    9: "Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_Life,Physical,AndSocialScienceOccupations"
+    10: "Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations"
+    11: "Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_CommunityAndSocialServiceOccupations"
+    12: "Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_LegalOccupations"
+    13: "Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Training,AndLibraryOccupations"
+    14: "Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Arts,Design,Entertainment,Sports,AndMediaOccupations"
+    15: "Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthcarePractitionersAndTechnicalOccupations"
+    16: "Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthDiagnosingAndTreatingPractitionersAndOtherTechnicalOccupations"
+    17: "Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthTechnologistsAndTechnicians"
+    18: ServiceOccupations_ServiceOccupations_ServiceOccupations
+    19: ServiceOccupations_HealthcareSupportOccupations_HealthcareSupportOccupations
+    20: ServiceOccupations_ProtectiveServiceOccupations_ProtectiveServiceOccupations
+    21: "ServiceOccupations_ProtectiveServiceOccupations_FireFightingAndPrevention,AndOtherProtectiveServiceWorkersIncludingSupervisors"
+    22: ServiceOccupations_ProtectiveServiceOccupations_LawEnforcementWorkersIncludingSupervisors
+    23: ServiceOccupations_FoodPreparationAndServingRelatedOccupations_FoodPreparationAndServingRelatedOccupations
+    24: ServiceOccupations_BuildingAndGroundsCleaningAndMaintenanceOccupations_BuildingAndGroundsCleaningAndMaintenanceOccupations
+    25: ServiceOccupations_PersonalCareAndServiceOccupations_PersonalCareAndServiceOccupations
+    26: SalesAndOfficeOccupations_SalesAndOfficeOccupations_SalesAndOfficeOccupations
+    27: SalesAndOfficeOccupations_SalesAndRelatedOccupations_SalesAndRelatedOccupations
+    28: SalesAndOfficeOccupations_OfficeAndAdministrativeSupportOccupations_OfficeAndAdministrativeSupportOccupations
+    29: "NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations"
+    30: "NaturalResources,Construction,AndMaintenanceOccupations_Farming,Fishing,AndForestryOccupations_Farming,Fishing,AndForestryOccupations"
+    31: "NaturalResources,Construction,AndMaintenanceOccupations_ConstructionAndExtractionOccupations_ConstructionAndExtractionOccupations"
+    32: "NaturalResources,Construction,AndMaintenanceOccupations_Installation,Maintenance,AndRepairOccupations_Installation,Maintenance,AndRepairOccupations"
+    33: "Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations"
+    34: "Production,Transportation,AndMaterialMovingOccupations_ProductionOccupations_ProductionOccupations"
+    35: "Production,Transportation,AndMaterialMovingOccupations_TransportationOccupations_TransportationOccupations"
+    36: "Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations_MaterialMovingOccupations"
+min_year: 2009
+max_year: 2017
+no_schema: true
+non_agg: true
+
