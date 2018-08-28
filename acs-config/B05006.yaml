@@ -30,7 +30,7 @@ acs_table:
         022: "Europe_SouthernEurope_SouthernEurope_Greece"
         023: "Europe_SouthernEurope_SouthernEurope_Italy"
         024: "Europe_SouthernEurope_SouthernEurope_Portugal"
-        025: "Europe_SouthernEurope_SouthernEurope_Portugal!!AzoresIslands"
+        025: "Europe_SouthernEurope_SouthernEurope_Portugal,AzoresIslands"
         026: "Europe_SouthernEurope_SouthernEurope_Spain"
         027: "Europe_SouthernEurope_SouthernEurope_OtherSouthernEurope"
         029: "Europe_EasternEurope_EasternEurope_Albania"
