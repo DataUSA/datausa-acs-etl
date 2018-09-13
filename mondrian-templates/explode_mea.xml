@@ -1,0 +1,175 @@
+{%- for level_idx in range(end=explode_dim.num_levels) %}
+    <Measure aggregator="sum" column="mea_t_lvl_{{ level_idx}}" name="mea_t_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="mea_nation_lvl_{{ level_idx}}" name="mea_nation_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="mea_county_lvl_{{ level_idx}}" name="mea_county_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="mea_zip_lvl_{{ level_idx}}" name="mea_zip_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="mea_state_lvl_{{ level_idx}}" name="mea_state_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="mea_place_lvl_{{ level_idx}}" name="mea_place_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="mea_msa_lvl_{{ level_idx}}" name="mea_msa_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="mea_puma_lvl_{{ level_idx}}" name="mea_puma_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="mea_county_subdivision_lvl_{{ level_idx}}" name="mea_county_subdivision_lvl_{{ level_idx}}" visible="false"/>
+
+    <Measure aggregator="sum" column="moe_t_lvl_{{ level_idx}}" name="moe_t_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="moe_nation_lvl_{{ level_idx}}" name="moe_nation_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="moe_county_lvl_{{ level_idx}}" name="moe_county_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="moe_zip_lvl_{{ level_idx}}" name="moe_zip_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="moe_state_lvl_{{ level_idx}}" name="moe_state_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="moe_place_lvl_{{ level_idx}}" name="moe_place_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="moe_msa_lvl_{{ level_idx}}" name="moe_msa_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="moe_puma_lvl_{{ level_idx}}" name="moe_puma_lvl_{{ level_idx}}" visible="false"/>
+    <Measure aggregator="sum" column="moe_county_subdivision_lvl_{{ level_idx}}" name="moe_county_subdivision_lvl_{{ level_idx}}" visible="false"/>
+{%- endfor %}
+
+    <CalculatedMember dimension="Measures" name="{{ value_label_title }}" visible="true">
+      <Formula>CASE
+{% for level in explode_dim.levels %}
+        WHEN [Geography].[Tract].Level is [Geography].[Tract].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_t_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Tract].Level is [Geography].[Tract].[County]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_t_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Tract].Level is [Geography].[Tract].[Tract]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_t_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Place].Level is [Geography].[Place].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_place_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Place].Level is [Geography].[Place].[Place]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_place_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Zip].Level is [Geography].[Zip].[Zip]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_zip_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[County].Level is [Geography].[County].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_county_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[County].Level is [Geography].[County].[County]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_county_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[State].Level is [Geography].[State].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_state_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Nation].Level is [Geography].[Nation].[Nation]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_nation_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Puma].Level is [Geography].[Puma].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_puma_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Puma].Level is [Geography].[Puma].[Puma]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_puma_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Msa].Level is [Geography].[Msa].[Msa]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_msa_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[County Subdivision].Level is [Geography].[County Subdivision].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_county_subdivision_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[County Subdivision].Level is [Geography].[County Subdivision].[County]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_county_subdivision_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[County Subdivision].Level is [Geography].[County Subdivision].[County Subdivision]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[mea_county_subdivision_lvl_{{ loop.index0 }}]
+{% endfor %}
+        WHEN 1 = 1 THEN [Measures].[mea_nation_lvl_0]
+        END
+      </Formula>
+      <Annotations>
+        <Annotation name="aggregation_method">{% if is_non_agg %}NONE{% else %}SUM{% endif %}</Annotation>
+      {%- if is_non_agg %}
+      <Annotation name="pre_aggregation_method">{{ acs_agg_method }}</Annotation>
+      {%- endif %}
+      </Annotations>
+    </CalculatedMember>
+
+    <CalculatedMember dimension="Measures" name="{{ value_label_title }} Moe" visible="true">
+      <Formula>CASE
+{% for level in explode_dim.levels %}
+        WHEN [Geography].[Tract].Level is [Geography].[Tract].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_t_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Tract].Level is [Geography].[Tract].[County]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_t_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Tract].Level is [Geography].[Tract].[Tract]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_t_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Place].Level is [Geography].[Place].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_place_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Place].Level is [Geography].[Place].[Place]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_place_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Zip].Level is [Geography].[Zip].[Zip]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_zip_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[County].Level is [Geography].[County].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_county_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[County].Level is [Geography].[County].[County]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_county_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[State].Level is [Geography].[State].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_state_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Nation].Level is [Geography].[Nation].[Nation]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_nation_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Puma].Level is [Geography].[Puma].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_puma_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Puma].Level is [Geography].[Puma].[Puma]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_puma_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[Msa].Level is [Geography].[Msa].[Msa]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_msa_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[County Subdivision].Level is [Geography].[County Subdivision].[State]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_county_subdivision_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[County Subdivision].Level is [Geography].[County Subdivision].[County]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_county_subdivision_lvl_{{ loop.index0 }}]
+
+        WHEN [Geography].[County Subdivision].Level is [Geography].[County Subdivision].[County Subdivision]
+            and [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ level }}]
+            THEN [Measures].[moe_county_subdivision_lvl_{{ loop.index0 }}]
+{% endfor %}
+        WHEN 1 = 1 THEN [Measures].[moe_nation_lvl_0]
+        END
+      </Formula>
+      <Annotations>
+        <Annotation name="aggregation_method">MOE</Annotation>
+        <Annotation name="error_for_measure">{{ value_label_title }}</Annotation>
+      </Annotations>
+    </CalculatedMember>
