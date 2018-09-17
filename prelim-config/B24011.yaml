@@ -50,3 +50,4 @@ acs_table:
 
 
 non_agg: true
+explode: true

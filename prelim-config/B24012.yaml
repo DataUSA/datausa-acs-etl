@@ -87,3 +87,4 @@ acs_table:
         073: "Female_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations"
 
 non_agg: true
+explode: true

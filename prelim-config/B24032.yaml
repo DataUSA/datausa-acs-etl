@@ -67,3 +67,4 @@ acs_table:
         054: "Female_PublicAdministration"
 
 non_agg: true
+explode: true
