@@ -62,4 +62,5 @@ acs_table:
 min_year: 2010
 max_year: 2017
 calc_rca: true
+hide_member_if: Never
 

@@ -9,81 +9,81 @@ acs_table:
     - occupation_subgroup
     - occupation
   columns:
-    1: Total_Total_Total_Total
-    2: Male_Total_Total_Total
-    3: "Male_Management,Business,Science,AndArtsOccupations_Management,Business,Science,AndArtsOccupations_Management,Business,Science,AndArtsOccupations"
-    4: "Male_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_Management,Business,AndFinancialOccupations"
+    1: "Total_Total_ _ "
+    2: "Male_Total_ _ "
+    3: "Male_Management,Business,Science,AndArtsOccupations_ _ "
+    4: "Male_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_ "
     5: "Male_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_ManagementOccupations"
     6: "Male_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_BusinessAndFinancialOperationsOccupations"
-    7: "Male_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_Computer,Engineering,AndScienceOccupations"
+    7: "Male_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ "
     8: "Male_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ComputerAndMathematicalOccupations"
     9: "Male_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ArchitectureAndEngineeringOccupations"
     10: "Male_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_Life,Physical,AndSocialScienceOccupations"
-    11: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations"
+    11: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_ "
     12: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_CommunityAndSocialServiceOccupations"
     13: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_LegalOccupations"
     14: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Training,AndLibraryOccupations"
     15: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Arts,Design,Entertainment,Sports,AndMediaOccupations"
-    16: "Male_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthcarePractitionersAndTechnicalOccupations"
+    16: "Male_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_ "
     17: "Male_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthDiagnosingAndTreatingPractitionersAndOtherTechnicalOccupations"
     18: "Male_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthTechnologistsAndTechnicians"
-    19: Male_ServiceOccupations_ServiceOccupations_ServiceOccupations
+    19: "Male_ServiceOccupations_ _ "
     20: Male_ServiceOccupations_HealthcareSupportOccupations_HealthcareSupportOccupations
-    21: Male_ServiceOccupations_ProtectiveServiceOccupations_ProtectiveServiceOccupations
+    21: "Male_ServiceOccupations_ProtectiveServiceOccupations_ "
     22: "Male_ServiceOccupations_ProtectiveServiceOccupations_FireFightingAndPrevention,AndOtherProtectiveServiceWorkersIncludingSupervisors"
     23: Male_ServiceOccupations_ProtectiveServiceOccupations_LawEnforcementWorkersIncludingSupervisors
     24: Male_ServiceOccupations_FoodPreparationAndServingRelatedOccupations_FoodPreparationAndServingRelatedOccupations
     25: Male_ServiceOccupations_BuildingAndGroundsCleaningAndMaintenanceOccupations_BuildingAndGroundsCleaningAndMaintenanceOccupations
     26: Male_ServiceOccupations_PersonalCareAndServiceOccupations_PersonalCareAndServiceOccupations
-    27: Male_SalesAndOfficeOccupations_SalesAndOfficeOccupations_SalesAndOfficeOccupations
+    27: "Male_SalesAndOfficeOccupations_ _ "
     28: Male_SalesAndOfficeOccupations_SalesAndRelatedOccupations_SalesAndRelatedOccupations
     29: Male_SalesAndOfficeOccupations_OfficeAndAdministrativeSupportOccupations_OfficeAndAdministrativeSupportOccupations
-    30: "Male_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations"
+    30: "Male_NaturalResources,Construction,AndMaintenanceOccupations_ _ "
     31: "Male_NaturalResources,Construction,AndMaintenanceOccupations_Farming,Fishing,AndForestryOccupations_Farming,Fishing,AndForestryOccupations"
     32: "Male_NaturalResources,Construction,AndMaintenanceOccupations_ConstructionAndExtractionOccupations_ConstructionAndExtractionOccupations"
     33: "Male_NaturalResources,Construction,AndMaintenanceOccupations_Installation,Maintenance,AndRepairOccupations_Installation,Maintenance,AndRepairOccupations"
-    34: "Male_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations"
+    34: "Male_Production,Transportation,AndMaterialMovingOccupations_ _ "
     35: "Male_Production,Transportation,AndMaterialMovingOccupations_ProductionOccupations_ProductionOccupations"
     36: "Male_Production,Transportation,AndMaterialMovingOccupations_TransportationOccupations_TransportationOccupations"
     37: "Male_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations_MaterialMovingOccupations"
-    38: Female_Total_Total_Total
-    39: "Female_Management,Business,Science,AndArtsOccupations_Management,Business,Science,AndArtsOccupations_Management,Business,Science,AndArtsOccupations"
-    40: "Female_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_Management,Business,AndFinancialOccupations"
+    38: "Female_Total_ _ "
+    39: "Female_Management,Business,Science,AndArtsOccupations_ _ "
+    40: "Female_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_ "
     41: "Female_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_ManagementOccupations"
     42: "Female_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_BusinessAndFinancialOperationsOccupations"
-    43: "Female_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_Computer,Engineering,AndScienceOccupations"
+    43: "Female_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ "
     44: "Female_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ComputerAndMathematicalOccupations"
     45: "Female_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_ArchitectureAndEngineeringOccupations"
     46: "Female_Management,Business,Science,AndArtsOccupations_Computer,Engineering,AndScienceOccupations_Life,Physical,AndSocialScienceOccupations"
-    47: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations"
+    47: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_ "
     48: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_CommunityAndSocialServiceOccupations"
     49: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_LegalOccupations"
     50: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Training,AndLibraryOccupations"
     51: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Arts,Design,Entertainment,Sports,AndMediaOccupations"
-    52: "Female_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthcarePractitionersAndTechnicalOccupations"
+    52: "Female_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_ "
     53: "Female_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthDiagnosingAndTreatingPractitionersAndOtherTechnicalOccupations"
     54: "Female_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthTechnologistsAndTechnicians"
-    55: Female_ServiceOccupations_ServiceOccupations_ServiceOccupations
+    55: "Female_ServiceOccupations_ _ "
     56: Female_ServiceOccupations_HealthcareSupportOccupations_HealthcareSupportOccupations
-    57: Female_ServiceOccupations_ProtectiveServiceOccupations_ProtectiveServiceOccupations
+    57: "Female_ServiceOccupations_ProtectiveServiceOccupations_ "
     58: "Female_ServiceOccupations_ProtectiveServiceOccupations_FireFightingAndPrevention,AndOtherProtectiveServiceWorkersIncludingSupervisors"
     59: Female_ServiceOccupations_ProtectiveServiceOccupations_LawEnforcementWorkersIncludingSupervisors
     60: Female_ServiceOccupations_FoodPreparationAndServingRelatedOccupations_FoodPreparationAndServingRelatedOccupations
     61: Female_ServiceOccupations_BuildingAndGroundsCleaningAndMaintenanceOccupations_BuildingAndGroundsCleaningAndMaintenanceOccupations
     62: Female_ServiceOccupations_PersonalCareAndServiceOccupations_PersonalCareAndServiceOccupations
-    63: Female_SalesAndOfficeOccupations_SalesAndOfficeOccupations_SalesAndOfficeOccupations
+    63: "Female_SalesAndOfficeOccupations_ _ "
     64: Female_SalesAndOfficeOccupations_SalesAndRelatedOccupations_SalesAndRelatedOccupations
     65: Female_SalesAndOfficeOccupations_OfficeAndAdministrativeSupportOccupations_OfficeAndAdministrativeSupportOccupations
-    66: "Female_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations_NaturalResources,Construction,AndMaintenanceOccupations"
+    66: "Female_NaturalResources,Construction,AndMaintenanceOccupations_ _ "
     67: "Female_NaturalResources,Construction,AndMaintenanceOccupations_Farming,Fishing,AndForestryOccupations_Farming,Fishing,AndForestryOccupations"
     68: "Female_NaturalResources,Construction,AndMaintenanceOccupations_ConstructionAndExtractionOccupations_ConstructionAndExtractionOccupations"
     69: "Female_NaturalResources,Construction,AndMaintenanceOccupations_Installation,Maintenance,AndRepairOccupations_Installation,Maintenance,AndRepairOccupations"
-    70: "Female_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations"
+    70: "Female_Production,Transportation,AndMaterialMovingOccupations_ _ "
     71: "Female_Production,Transportation,AndMaterialMovingOccupations_ProductionOccupations_ProductionOccupations"
     72: "Female_Production,Transportation,AndMaterialMovingOccupations_TransportationOccupations_TransportationOccupations"
     73: "Female_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations_MaterialMovingOccupations"
 min_year: 2009
 max_year: 2017
-no_schema: true
 non_agg: true
+hide_member_if: IfBlankName
 

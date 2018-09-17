@@ -7,26 +7,26 @@ acs_table:
     - industry_group
     - industry
   columns:
-    1: Total_Total
-    2: "Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting,AndMining"
+    1: "Total_ "
+    2: "Agriculture,Forestry,FishingAndHunting,AndMining_ "
     3: "Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
     4: "Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
     5: Construction_Construction
     6: Manufacturing_Manufacturing
     7: WholesaleTrade_WholesaleTrade
     8: RetailTrade_RetailTrade
-    9: "TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing,AndUtilities"
+    9: "TransportationAndWarehousing,AndUtilities_ "
     10: "TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
     11: "TransportationAndWarehousing,AndUtilities_Utilities"
     12: Information_Information
-    13: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing"
+    13: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_ "
     14: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
     15: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
-    16: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices"
+    16: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ "
     17: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
     18: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
     19: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
-    20: "EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices,AndHealthCareAndSocialAssistance"
+    20: "EducationalServices,AndHealthCareAndSocialAssistance_ "
     21: "EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
     22: "EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
     23: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
@@ -36,6 +36,6 @@ acs_table:
     27: PublicAdministration_PublicAdministration
 min_year: 2009
 max_year: 2017
-no_schema: true
 non_agg: true
+hide_member_if: IfBlankName
 
