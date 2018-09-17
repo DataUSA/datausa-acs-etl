@@ -5,8 +5,8 @@ acs_table:
   value_label: industry_median_earnings_dollars
   dimension_labels:
     - sex
-    - industry_group
-    - industry
+    - "industry::industry_group"
+    - "industry::industry"
   columns:
     1: "Male_Total_ "
     2: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_ "
@@ -66,4 +66,5 @@ min_year: 2009
 max_year: 2017
 non_agg: true
 hide_member_if: IfBlankName
+explode: true
 

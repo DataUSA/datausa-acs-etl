@@ -4,9 +4,9 @@ acs_table:
   id: B24011
   value_label: occupation_median_earnings
   dimension_labels:
-    - occupation_group
-    - occupation_subgroup
-    - occupation
+    - "occupation::occupation_group"
+    - "occupation::occupation_subgroup"
+    - "occupation::occupation"
   columns:
     1: "Total_ _ "
     2: "Management,Business,Science,AndArtsOccupations_ _ "
@@ -48,4 +48,5 @@ min_year: 2009
 max_year: 2017
 non_agg: true
 hide_member_if: IfBlankName
+explode: true
 

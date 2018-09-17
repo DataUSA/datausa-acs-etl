@@ -4,8 +4,8 @@ acs_table:
   id: B24031
   value_label: industry_median_earnings_dollars
   dimension_labels:
-    - industry_group
-    - industry
+    - "industry::industry_group"
+    - "industry::industry"
   columns:
     1: "Total_ "
     2: "Agriculture,Forestry,FishingAndHunting,AndMining_ "
@@ -38,4 +38,5 @@ min_year: 2009
 max_year: 2017
 non_agg: true
 hide_member_if: IfBlankName
+explode: true
 

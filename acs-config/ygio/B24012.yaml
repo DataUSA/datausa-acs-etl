@@ -5,9 +5,9 @@ acs_table:
   value_label: occupation_median_earnings
   dimension_labels:
     - sex
-    - occupation_group
-    - occupation_subgroup
-    - occupation
+    - "occupation::occupation_group"
+    - "occupation::occupation_subgroup"
+    - "occupation::occupation"
   columns:
     1: "Total_Total_ _ "
     2: "Male_Total_ _ "
@@ -86,4 +86,5 @@ min_year: 2009
 max_year: 2017
 non_agg: true
 hide_member_if: IfBlankName
+explode: true
 
