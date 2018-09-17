@@ -53,3 +53,4 @@ acs_table:
         055: "Female_PublicAdministration"
 
 calc_rca: true
+hide_member_if: "never"

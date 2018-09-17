@@ -1,9 +1,0 @@
-smooth:
-    acs-pipe -f B24010.yaml config smooth --strategy pushdown --start-index 1 > ../acs-config/ygio/B24010.yaml
-    acs-pipe -f B24011.yaml config smooth --strategy non-agg  --start-index 0 > ../acs-config/ygio/B24011.yaml
-    acs-pipe -f B24012.yaml config smooth --strategy non-agg  --start-index 1 > ../acs-config/ygio/B24012.yaml
-    acs-pipe -f B24030.yaml config smooth --strategy pushdown --start-index 1 > ../acs-config/ygio/B24030.yaml
-    acs-pipe -f B24031.yaml config smooth --strategy non-agg  --start-index 0 > ../acs-config/ygio/B24031.yaml
-    acs-pipe -f B24032.yaml config smooth --strategy non-agg  --start-index 1 > ../acs-config/ygio/B24032.yaml
-    acs-pipe -f C24010.yaml config smooth --strategy pushdown --start-index 1 > ../acs-config/ygio/C24010.yaml
-    acs-pipe -f C24030.yaml config smooth --strategy pushdown --start-index 1 > ../acs-config/ygio/C24030.yaml

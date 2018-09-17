@@ -50,4 +50,3 @@ acs_table:
 
 
 non_agg: true
-no_schema: true
