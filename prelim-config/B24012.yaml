@@ -7,9 +7,9 @@ acs_table:
     value_label: "occupation_median_earnings"
     dimension_labels: [
         "sex",
-        "occupation_group",
-        "occupation_subgroup",
-        "occupation",
+        "occupation::occupation_group",
+        "occupation::occupation_subgroup",
+        "occupation::occupation",
     ]
     columns:
         001: "Total:"
