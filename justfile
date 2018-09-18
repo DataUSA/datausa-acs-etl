@@ -22,4 +22,5 @@ smooth:
     acs-pipe -f prelim-config/B24031.yaml config smooth --strategy non-agg    --start-index 0 > acs-config/ygio/B24031.yaml
 
 add-metadata:
-  find * -type f -exec sh -c "echo \"metadata:\n  topic: Diversity\n  subtopic: Heritage\n  units_of_measure: People\" >> {}" \;
+  find acs-config/* -type f -exec sh -c "echo \"metadata:\n  topic: Diversity\n  subtopic: Heritage\n  units_of_measure: People\" >> {}" \;
+  find acs-config/* -type f -exec vim -p {} +
