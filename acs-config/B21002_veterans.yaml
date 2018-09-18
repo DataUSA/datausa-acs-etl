@@ -5,25 +5,26 @@ acs_table:
     id: "B21002"
     value_label: "veteran_population"
     columns:
-        002: "GulfWar(9/2001OrLater),NoGulfWar(8/1990To8/2001),NoVietnamEra"
-        003: "GulfWar(9/2001OrLater)AndGulfWar(8/1990To8/2001),NoVietnamEra"
-        004: "GulfWar(9/2001OrLater),AndGulfWar(8/1990To8/2001),AndVietnamEra"
-        005: "GulfWar(8/1990To8/2001),NoVietnamEra"
-        006: "GulfWar(8/1990To8/2001)AndVietnamEra"
-        007: "VietnamEra,NoKoreanWar,NoWorldWarII"
-        008: "VietnamEraAndKoreanWar,NoWorldWarII"
-        009: "VietnamEraAndKoreanWarAndWorldWarII"
-        010: "KoreanWar,NoVietnamEra,NoWorldWarII"
-        011: "KoreanWarAndWorldWarII,NoVietnamEra"
-        012: "WorldWarII,NoKoreanWar,NoVietnamEra"
-        013: "BetweenGulfWarAndVietnamEraOnly"
-        014: "BetweenVietnamEraAndKoreanWarOnly"
-        015: "BetweenKoreanWarAndWorldWarIIOnly"
-        016: "Pre-WorldWarIIOnly"
+        002: "GulfWar(2001-)_GulfWar(9/2001OrLater),NoGulfWar(8/1990To8/2001),NoVietnamEra"
+        003: "GulfWar(2001-)_GulfWar(9/2001OrLater)AndGulfWar(8/1990To8/2001),NoVietnamEra"
+        004: "GulfWar(2001-)_GulfWar(9/2001OrLater),AndGulfWar(8/1990To8/2001),AndVietnamEra"
+        005: "GulfWar(1990s)_GulfWar(8/1990To8/2001),NoVietnamEra"
+        006: "GulfWar(1990s)_GulfWar(8/1990To8/2001)AndVietnamEra"
+        007: "Vietnam_VietnamEra,NoKoreanWar,NoWorldWarII"
+        008: "Vietnam_VietnamEraAndKoreanWar,NoWorldWarII"
+        009: "Vietnam_VietnamEraAndKoreanWarAndWorldWarII"
+        010: "Korea_KoreanWar,NoVietnamEra,NoWorldWarII"
+        011: "Korea_KoreanWarAndWorldWarII,NoVietnamEra"
+        012: "WorldWarII_WorldWarII,NoKoreanWar,NoVietnamEra"
+        013: "Other_BetweenGulfWarAndVietnamEraOnly"
+        014: "Other_BetweenVietnamEraAndKoreanWarOnly"
+        015: "Other_BetweenKoreanWarAndWorldWarIIOnly"
+        016: "Other_Pre-WorldWarIIOnly"
 
     # order matters, should be same as column labels
     dimension_labels: [
         "period_of_service",
+        "period_of_service_granular",
     ]
 
 tag: "acs"

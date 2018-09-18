@@ -11,7 +11,7 @@ acs_table:
         "transportation::transportation_means",
     ]
     columns:
-        003: "DroveAlone_DroveAloneSubgroup_DroveAlone"
+        003: "DroveAlone_DroveAlone(Subgroup)_DroveAlone"
         005: "Carpooled_Carpooled_In2-personCarpool"
         006: "Carpooled_Carpooled_In3-personCarpool"
         007: "Carpooled_Carpooled_In4-personCarpool"

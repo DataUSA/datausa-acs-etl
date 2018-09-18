@@ -7,12 +7,13 @@ acs_table:
     value_label: "citizenship_status_population"
     dimension_labels: [
         "citizenship_status",
+        "citizenship_status_granular",
     ]
     columns:
-        002: "U.S.Citizen,BornInTheUnitedStates"
-        003: "U.S.Citizen,BornInPuertoRicoOrU.S.IslandAreas"
-        004: "U.S.Citizen,BornAbroadOfAmericanParent(s)"
-        005: "U.S.CitizenByNaturalization"
-        006: "NotAU.S.Citizen"
+        002: "Citizen_U.S.Citizen,BornInTheUnitedStates"
+        003: "Citizen_U.S.Citizen,BornInPuertoRicoOrU.S.IslandAreas"
+        004: "Citizen_U.S.Citizen,BornAbroadOfAmericanParent(s)"
+        005: "Citizen_U.S.CitizenByNaturalization"
+        006: "Non-Citizen_NotAU.S.Citizen"
 
 
