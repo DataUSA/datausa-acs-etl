@@ -1,42 +1,42 @@
----
-name: acs_ygi_industry_for_median_earnings
-acs_table:
-  id: B24031
-  value_label: industry_median_earnings_dollars
-  dimension_labels:
-    - "industry::industry_group"
-    - "industry::industry"
-  columns:
-    1: "Total_ "
-    2: "Agriculture,Forestry,FishingAndHunting,AndMining_ "
-    3: "Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
-    4: "Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
-    5: Construction_Construction
-    6: Manufacturing_Manufacturing
-    7: WholesaleTrade_WholesaleTrade
-    8: RetailTrade_RetailTrade
-    9: "TransportationAndWarehousing,AndUtilities_ "
-    10: "TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
-    11: "TransportationAndWarehousing,AndUtilities_Utilities"
-    12: Information_Information
-    13: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_ "
-    14: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
-    15: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
-    16: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ "
-    17: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
-    18: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
-    19: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
-    20: "EducationalServices,AndHealthCareAndSocialAssistance_ "
-    21: "EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
-    22: "EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
-    23: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
-    24: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation"
-    25: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
-    26: OtherServicesExceptPublicAdministration_OtherServicesExceptPublicAdministration
-    27: PublicAdministration_PublicAdministration
+name: "acs_ygi_industry_for_median_earnings"
+tag: "acs"
 min_year: 2009
 max_year: 2017
-non_agg: true
-hide_member_if: IfBlankName
-explode: true
+acs_table:
+    id: "B24031"
+    value_label: "industry_median_earnings_dollars"
+    dimension_labels: [
+        "industry::industry_group",
+        "industry::industry",
+    ]
+    columns:
+        001: "Total_Total"
+        002: "Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting,AndMining"
+        003: "Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
+        004: "Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
+        005: "Construction(Group)_Construction"
+        006: "Manufacturing(Group)_Manufacturing"
+        007: "WholesaleTrade(Group)_WholesaleTrade"
+        008: "RetailTrade(Group)_RetailTrade"
+        009: "TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing,AndUtilities"
+        010: "TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
+        011: "TransportationAndWarehousing,AndUtilities_Utilities"
+        012: "Information(Group)_Information"
+        013: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing"
+        014: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
+        015: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
+        016: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices:"
+        017: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
+        018: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_ManagementOfCompaniesAndEnterprises"
+        019: "Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_AdministrativeAndSupportAndWasteManagementServices"
+        020: "EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices,AndHealthCareAndSocialAssistance:"
+        021: "EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
+        022: "EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
+        023: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices(Group)_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
+        024: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation"
+        025: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
+        026: "OtherServicesExceptPublicAdministration(Group)_OtherServicesExceptPublicAdministration"
+        027: "PublicAdministration(Group)_PublicAdministration"
 
+non_agg: true
+explode: true

@@ -40,7 +40,7 @@
         </InlineTable>
       {%- for level in dim_context.levels -%}
       {#  This should be coupled to Value loop #}
-      <Level column="member_{{ loop.index0 }}_code" hideMemberIf="{{ hide_member_if }}" name="{{ level }}" nameColumn="member_{{  loop.index0 }}" uniqueMembers="true"/>
+      <Level column="member_{{ loop.index0 }}_code" hideMemberIf="IfParentsName" name="{{ level }}" nameColumn="member_{{  loop.index0 }}" uniqueMembers="true"/>
       {%- endfor %}
       </Hierarchy>
     </Dimension>
