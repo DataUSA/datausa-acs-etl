@@ -3,17 +3,30 @@
   <Cube name="{{ cube_name }}">
     <Annotations>
       <Annotation name="source_name">Census Bureau</Annotation>
-      <Annotation name="source_link">http://www.census.gov/programs-surveys/acs/</Annotation>
+      <Annotation name="source_description">Census Bureau conducts surveys of the United States Population, including the American Community Survey</Annotation>
       <Annotation name="dataset_name">ACS {{ acs_est }}-year Estimate</Annotation>
+      <Annotation name="dataset_link">http://www.census.gov/programs-surveys/acs/</Annotation>
       <Annotation name="table_id">{{ acs_table_id }}</Annotation>
+      <Annotation name="topic">{{ metadata.topic }}</Annotation>
+      {%- if metadata.subtopic %}
+      <Annotation name="topic">{{ metadata.subtopic }}</Annotation>
+      {%- endif %}
     </Annotations>
     <Table name="{{ db_table_name }}" schema="{{ db_schema }}"/>
 
     <DimensionUsage foreignKey="geoid" name="Geography" source="geography"/>
+      <Annotations>
+        <Annotation name="dim_type">GEOGRAPHY</Annotation>
+      </Annotations>
+    </DimensionUsage>
+
     <Dimension name="Year">
       <Hierarchy hasAll="true">
         <Level column="year" levelType="TimeYears" name="Year" type="Numeric" uniqueMembers="true"/>
       </Hierarchy>
+      <Annotations>
+        <Annotation name="dim_type">TIME</Annotation>
+      </Annotations>
     </Dimension>
 
   {%- for dim_context in dim_contexts %}
