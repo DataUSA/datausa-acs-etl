@@ -11,12 +11,12 @@ acs_table:
         "transportation::transportation_means",
     ]
     columns:
-        003: "Car,Truck,OrVan_Car,Truck,OrVan_DroveAlone"
-        005: "Car,Truck,OrVan_Carpooled_In2-personCarpool"
-        006: "Car,Truck,OrVan_Carpooled_In3-personCarpool"
-        007: "Car,Truck,OrVan_Carpooled_In4-personCarpool"
-        008: "Car,Truck,OrVan_Carpooled_In5-Or6-personCarpool"
-        009: "Car,Truck,OrVan_Carpooled_In7-or-more-personCarpool"
+        003: "DroveAlone_DroveAloneSubgroup_DroveAlone"
+        005: "Carpooled_Carpooled_In2-personCarpool"
+        006: "Carpooled_Carpooled_In3-personCarpool"
+        007: "Carpooled_Carpooled_In4-personCarpool"
+        008: "Carpooled_Carpooled_In5-Or6-personCarpool"
+        009: "Carpooled_Carpooled_In7-or-more-personCarpool"
         011: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_BusOrTrolleyBus"
         012: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_StreetcarOrTrolleyCar(carroPublicoInPuertoRico)"
         013: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_SubwayOrElevated"
