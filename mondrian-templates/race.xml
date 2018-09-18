@@ -22,7 +22,7 @@
               <Value column="race_code">2</Value>
             </Row>
             <Row>
-              <Value column="race">NativeAmerican</Value>
+              <Value column="race">Native American</Value>
               <Value column="race_code">3</Value>
             </Row>
             <Row>
@@ -30,7 +30,7 @@
               <Value column="race_code">4</Value>
             </Row>
             <Row>
-              <Value column="race">PacificIslander</Value>
+              <Value column="race">Pacific Islander</Value>
               <Value column="race_code">5</Value>
             </Row>
             <Row>
@@ -38,11 +38,11 @@
               <Value column="race_code">6</Value>
             </Row>
             <Row>
-              <Value column="race">TwoOrMore</Value>
+              <Value column="race">Two Or More</Value>
               <Value column="race_code">7</Value>
             </Row>
             <Row>
-              <Value column="race">WhiteNonHispanic</Value>
+              <Value column="race">White Non-Hispanic</Value>
               <Value column="race_code">8</Value>
             </Row>
             <Row>
