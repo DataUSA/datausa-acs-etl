@@ -13,3 +13,7 @@ acs_table:
         003: "RenterOccupied"
 
 
+metadata:
+  topic: "Housing & Living"
+  subtopic: Housing
+  units_of_measure: People

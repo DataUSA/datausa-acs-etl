@@ -49,3 +49,7 @@ max_year: 2017
 non_agg: true
 explode: true
 
+metadata:
+  topic: Diversity
+  subtopic: Heritage
+  units_of_measure: People

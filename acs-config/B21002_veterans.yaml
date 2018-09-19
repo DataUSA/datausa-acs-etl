@@ -30,3 +30,7 @@ acs_table:
 tag: "acs"
 #TODO check this first
 
+metadata:
+  topic: Diversity
+  subtopic: Military
+  units_of_measure: People

@@ -68,3 +68,7 @@ non_agg: true
 hide_member_if: IfBlankName
 explode: true
 
+metadata:
+  topic: Diversity
+  subtopic: Heritage
+  units_of_measure: People

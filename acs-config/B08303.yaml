@@ -22,3 +22,7 @@ acs_table:
         011: "45-59 Minutes"
         012: "60-89 Minutes"
         013: "90+ Minutes"
+metadata:
+  topic: "Housing & Living"
+  subtopic: Transportation
+  units_of_measure: People

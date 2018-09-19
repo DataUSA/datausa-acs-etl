@@ -29,3 +29,7 @@ acs_table:
         020: "Other_Other_OtherMeans"
         021: "WorkedAtHome_WorkedAtHome_WorkedAtHome"
 
+metadata:
+  topic: "Housing & Living"
+  subtopic: Transportation
+  units_of_measure: People

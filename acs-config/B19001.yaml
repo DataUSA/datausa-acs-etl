@@ -25,3 +25,7 @@ acs_table:
         015: "$125,000-$149,999"
         016: "$150,000-$199,999"
         017: "$200,000+"
+metadata:
+  topic: "Housing & Living"
+  subtopic: Income
+  units_of_measure: Households

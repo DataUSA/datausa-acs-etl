@@ -32,3 +32,7 @@ acs_table:
 
 
 health_insurance_tag: "with_medicare_coverage"
+metadata:
+  topic: "Health & Safety"
+  subtopic: Coverage
+  units_of_measure: People

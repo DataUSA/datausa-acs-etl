@@ -38,3 +38,7 @@ acs_table:
         049: "Female_Walked_Walked_Walked"
         050: "Female_Taxicab,Motorcycle,OrOtherMeans_Taxicab,Motorcycle,OrOtherMeans_Taxicab,Motorcycle,OrOtherMeans"
         051: "Female_WorkedAtHome_WorkedAtHome_WorkedAtHome"
+metadata:
+  topic: "Housing & Living"
+  subtopic: Transportation
+  units_of_measure: People

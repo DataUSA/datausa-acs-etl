@@ -14,3 +14,7 @@ acs_table:
 
 
 calc_percent: true
+metadata:
+  topic: "Housing & Living"
+  subtopic: Housing
+  units_of_measure: "Occupied Households"

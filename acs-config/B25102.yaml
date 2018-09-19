@@ -23,3 +23,7 @@ acs_table:
         014: "NotMortgaged_$3,000OrMore"
         015: "NotMortgaged_NoRealEstateTaxesPaid"
 
+metadata:
+  topic: "Housing & Living"
+  subtopic: Housing
+  units_of_measure: People

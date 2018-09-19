@@ -49,3 +49,7 @@ acs_table:
         057: "Female_75YearsAndOver_NoHealthInsuranceCoverage"
 
 
+metadata:
+  topic: "Health & Safety"
+  subtopic: Coverage
+  units_of_measure: People

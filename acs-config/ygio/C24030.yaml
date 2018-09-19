@@ -53,3 +53,7 @@ max_year: 2017
 calc_rca: true
 hide_member_if: Never
 
+metadata:
+  topic: Diversity
+  subtopic: Heritage
+  units_of_measure: People

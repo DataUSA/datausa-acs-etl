@@ -11,3 +11,6 @@ acs_table:
         001: "TotalPopulation"
 
 
+metadata:
+  topic: Diversity
+  units_of_measure: People

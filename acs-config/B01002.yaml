@@ -14,3 +14,7 @@ acs_table:
         003: "Female"
 
 
+metadata:
+  topic: Diversity
+  subtopic: Heritage
+  units_of_measure: Years

@@ -22,3 +22,7 @@ acs_table:
         019: "Female_3VehiclesAvailable"
         020: "Female_4VehiclesAvailable"
         021: "Female_5OrMoreVehiclesAvailable"
+metadata:
+  topic: "Housing & Living"
+  subtopic: Transportation
+  units_of_measure: People

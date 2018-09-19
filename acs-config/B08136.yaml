@@ -19,3 +19,7 @@ acs_table:
         010: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_RailroadOrFerryboat"
         011: "Walked_Walked_Walked"
         012: "Taxicab,Motorcycle,Bicycle,OrOtherMeans_Taxicab,Motorcycle,Bicycle,OrOtherMeans_Taxicab,Motorcycle,Bicycle,OrOtherMeans"
+metadata:
+  topic: "Housing & Living"
+  subtopic: Transportation
+  units_of_measure: Minutes

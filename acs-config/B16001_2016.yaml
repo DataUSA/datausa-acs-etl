@@ -97,3 +97,7 @@ acs_table:
         128: "OtherAndUnspecifiedLanguages_SpeakEnglishLessThan\"veryWell\""
  
 calc_rca: true
+metadata:
+  topic: Diversity
+  subtopic: Heritage
+  units_of_measure: People
