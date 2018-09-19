@@ -7,5 +7,9 @@ with open("measure_changes.txt", 'r') as f:
         new_measure = line[2]
         with open("acs-config/" + config_file, 'r+') as config_f:
             contents = config_f.read()
-            contents.replace(old_measure, new_measure)
+            contents = contents.replace(old_measure, new_measure)
+
+            config_f.seek(0)
             config_f.write(contents)
+            config_f.truncate()
+            config_f.close()
