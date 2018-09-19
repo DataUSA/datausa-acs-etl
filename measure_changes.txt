@@ -1,204 +1,68 @@
-B03002.yaml
-7: value_label: "hispanic_race_population" -> "Hispanic Population"
-
-B01003.yaml
-7: value_label: "total_population" -> "Population"
-
-B05001.yaml
-7: value_label: "citizenship_status_population" -> "Citizenship Status"
-
-B05004.yaml
-7: value_label: "citizenship_median_age" -> "Median Age by Citizenship"
-
-B05006.yaml
-7: value_label: "foreign_born_population" -> "Foreign-Born Citizens"
-
-B06001.yaml
-7: value_label: "place_of_birth_population" -> "Birthplace"
-
-B08013-mean-transportation.yaml
-8: value_label: "mean_transportation_time_to_work_minutes" -> "Average Commute Time"
-
-B08006-mean-transportation.yaml
-8: value_label: "mean_transportation_time_to_work_minutes" -> "Average Commute Time"
-
-B08013.yaml
-7: value_label: "aggregate_travel_time_to_work_minutes" -> "Total Commute Time"
-
-B08014.yaml
-7: value_label: "vehicles_available_population" -> "Commute Means by Gender"
-
-B08136.yaml
-7: value_label: "aggregate_travel_time_to_work_minutes" -> "Total Commute Time"
-
-B08301.yaml
-7: value_label: "means_of_work_transportation_population" -> "Commute Means"
-
-B08303.yaml
-7: value_label: "minutes" -> "Commute Time"
-
-B16001.yaml
-7: value_label: "language_population" -> "Languages Spoken"
-
-B08006.yaml
-7: value_label: "work_transportation_population" -> "Commute Means by Gender"
-
-B16001_2016.yaml
-7: value_label: "language_population" -> "Languages Spoken"
-
-B17001_poverty_sex_age.yaml
-7: value_label: "poverty_status_population" -> "Population in Poverty"
-
-B19013.yaml
-7: value_label: "household_income_dollars" -> "Household Income by Race"
-
-B19013A.yaml
-8: value_label: "household_income_dollars" -> "Household Income by Race"
-
-B19013B.yaml
-8: value_label: "household_income_dollars" -> "Household Income by Race"
-
-B19001.yaml
-7: value_label: "income_households" -> "Household Income"
-
-B19013C.yaml
-8: value_label: "household_income_dollars" -> "Household Income by Race"
-
-B19013F.yaml
-8: value_label: "household_income_dollars" -> "Household Income by Race"
-
-B19013E.yaml
-8: value_label: "household_income_dollars" -> "Household Income by Race"
-
-B19013H.yaml
-8: value_label: "household_income_dollars" -> "Household Income by Race"
-
-B19013I.yaml
-8: value_label: "household_income_dollars" -> "Household Income by Race"
-
-B19013G.yaml
-8: value_label: "household_income_dollars" -> "Household Income by Race"
-
-B19083.yaml
-6: value_label: "gini" -> "Wage GINI" (it's wages, right?)
-
-B25003.yaml
-7: value_label: "tenure_population" -> "Household Ownership"
-
-B25075.yaml
-7: value_label: "housing_units" -> "Property Value by Bucket"
-
-B19013D.yaml
-8: value_label: "household_income_dollars" -> "Household Income by Race"
-
-B25077.yaml
-7: value_label: "housing_median_value" -> "Property Value"
-
-B25102.yaml
-7: value_label: "mortgage_status_population" -> "Real Estate Taxes by Mortgage"
-
-B27001.yaml
-7: value_label: "health_insurance_coverage_population" -> "Health Insurance by Gender and Age"
-
-B27003-concat.yaml
-8: value_label: "health_care_coverage_population" -> "Health Insurance by Gender and Age"
-
-B27004-concat.yaml
-8: value_label: "health_care_coverage_population" -> "Health Insurance by Gender and Age"
-
-B21002_veterans.yaml
-6: value_label: "veteran_population" -> "Veterans"
-
-B27005-concat.yaml
-8: value_label: "health_care_coverage_population" -> "Health Insurance by Gender and Age"
-
-B27006-concat.yaml
-8: value_label: "health_care_coverage_population" -> "Health Insurance by Gender and Age"
-
-B27008-concat.yaml
-8: value_label: "health_care_coverage_population" -> "Health Insurance by Gender and Age"
-
-C24010.yaml
-7: value_label: "occupation_population" -> "Workforce by Occupation and Gender"
-
-C24030.yaml
-7: value_label: "industry_population" -> "Workforce by Industry and Gender"
-
-poverty-sex-age-asianalone.yaml
-8: value_label: "population" -> "Population in Poverty by Gender, Age, and Race"
-
-poverty-sex-age-blackalone.yaml
-8: value_label: "population" -> "Population in Poverty by Gender, Age, and Race"
-
-B27002-concat.yaml
-8: value_label: "health_care_coverage_population" -> "Population in Poverty by Gender, Age, and Race"
-
-poverty-sex-age-hispanic.yaml
-8: value_label: "population" -> "Population in Poverty by Gender, Age, and Race"
-
-poverty-sex-age-nativealone.yaml
-8: value_label: "population" -> "Population in Poverty by Gender, Age, and Race"
-
-poverty-sex-age-pacificislanderalone.yaml
-8: value_label: "population" -> "Population in Poverty by Gender, Age, and Race"
-
-B27009-concat.yaml
-8: value_label: "health_care_coverage_population" -> "Health Insurance by Gender and Age"
-
-B27007-concat.yaml
-8: value_label: "health_care_coverage_population" -> "Health Insurance by Gender and Age"
-
-poverty-sex-age-twoormore.yaml
-8: value_label: "population" -> "Population in Poverty by Gender, Age, and Race"
-
-poverty-sex-age-whitealone.yaml
-8: value_label: "population" -> "Population in Poverty by Gender, Age, and Race"
-
-health/B25048.yaml
-7: value_label: "occupied_households" -> "Households by Plumbing Type"
-
-health/B25052.yaml
-7: value_label: "occupied_households" -> "Households by Kitchen Type"
-
-health/B25074.yaml
-7: value_label: "renter_population" -> "Renters by Income Percentage"
-
-health/B25092.yaml
-7: value_label: "housing_unit_with_mortgage" -> "Homeowners by Mortgage"
-
-poverty-sex-age-otheralone.yaml
-8: value_label: "population" -> "Population in Poverty by Gender, Age, and Race"
-
-health/B27010.yaml
-7: value_label: "health_care_coverage_population" -> "Health Insurance"
-
-health/B28002.yaml
-7: value_label: "internet_households" -> "Households by Internet Access"
-
-health/C25074.yaml
-7: value_label: "renters_population" -> "Renters by Income Percentage"
-
-ygio/B24011.yaml
-5: value_label: occupation_median_earnings -> "Median Earnings by Occupation"
-
-poverty-sex-age-whitealonenothispanic.yaml
-8: value_label: "population" -> "Population in Poverty by Gender, Age, and Race"
-
-ygio/B24012.yaml
-5: value_label: occupation_median_earnings -> "Median Earnings by Occupation and Gender"
-
-ygio/B24032.yaml
-5: value_label: industry_median_earnings_dollars -> "Median Earnings by Industry and Gender"
-
-ygio/B24030.yaml
-5: value_label: industry_population -> "Workforce by Industry and Gender"
-
-ygio/C24010.yaml
-5: value_label: occupation_population -> "Workforce by Occupation and Gender"
-
-ygio/C24030.yaml
-5: value_label: industry_population -> "Workforce by Industry and Gender"
-
-ygio/B24031.yaml
-7: value_label: "industry_median_earnings_dollars" -> "Median Earnings by Industry"
-
+B03002.yaml "hispanic_race_population" "Hispanic Population"
+B01003.yaml "total_population" "Population"
+B05001.yaml "citizenship_status_population" "Citizenship Status"
+B05004.yaml "citizenship_median_age" "Median Age by Citizenship"
+B05006.yaml "foreign_born_population" "Foreign-Born Citizens"
+B06001.yaml "place_of_birth_population" "Birthplace"
+B08013-mean-transportation.yaml "mean_transportation_time_to_work_minutes" "Average Commute Time"
+B08006-mean-transportation.yaml "mean_transportation_time_to_work_minutes" "Average Commute Time"
+B08013.yaml "aggregate_travel_time_to_work_minutes" "Total Commute Time"
+B08014.yaml "vehicles_available_population" "Commute Means by Gender"
+B08136.yaml "aggregate_travel_time_to_work_minutes" "Total Commute Time"
+B08301.yaml "means_of_work_transportation_population" "Commute Means"
+B08303.yaml "minutes" "Commute Time"
+B16001.yaml "language_population" "Languages Spoken"
+B08006.yaml "work_transportation_population" "Commute Means by Gender"
+B16001_2016.yaml "language_population" "Languages Spoken"
+B17001_poverty_sex_age.yaml "poverty_status_population" "Population in Poverty"
+B19013.yaml "household_income_dollars" "Household Income by Race"
+B19013A.yaml "household_income_dollars" "Household Income by Race"
+B19013B.yaml "household_income_dollars" "Household Income by Race"
+B19001.yaml "income_households" "Household Income"
+B19013C.yaml "household_income_dollars" "Household Income by Race"
+B19013F.yaml "household_income_dollars" "Household Income by Race"
+B19013E.yaml "household_income_dollars" "Household Income by Race"
+B19013H.yaml "household_income_dollars" "Household Income by Race"
+B19013I.yaml "household_income_dollars" "Household Income by Race"
+B19013G.yaml "household_income_dollars" "Household Income by Race"
+B19083.yaml "gini" "Wage GINI"
+B25003.yaml "tenure_population" "Household Ownership"
+B25075.yaml "housing_units" "Property Value by Bucket"
+B19013D.yaml "household_income_dollars" "Household Income by Race"
+B25077.yaml "housing_median_value" "Property Value"
+B25102.yaml "mortgage_status_population" "Real Estate Taxes by Mortgage"
+B27001.yaml "health_insurance_coverage_population" "Health Insurance by Gender and Age"
+B27003-concat.yaml "health_care_coverage_population" "Health Insurance by Gender and Age"
+B27004-concat.yaml "health_care_coverage_population" "Health Insurance by Gender and Age"
+B21002_veterans.yaml "veteran_population" "Veterans"
+B27005-concat.yaml "health_care_coverage_population" "Health Insurance by Gender and Age"
+B27006-concat.yaml "health_care_coverage_population" "Health Insurance by Gender and Age"
+B27008-concat.yaml "health_care_coverage_population" "Health Insurance by Gender and Age"
+C24010.yaml "occupation_population" "Workforce by Occupation and Gender"
+C24030.yaml "industry_population" "Workforce by Industry and Gender"
+poverty-sex-age-asianalone.yaml "population" "Population in Poverty by Gender, Age, and Race"
+poverty-sex-age-blackalone.yaml "population" "Population in Poverty by Gender, Age, and Race"
+B27002-concat.yaml "health_care_coverage_population" "Population in Poverty by Gender, Age, and Race"
+poverty-sex-age-hispanic.yaml "population" "Population in Poverty by Gender, Age, and Race"
+poverty-sex-age-nativealone.yaml "population" "Population in Poverty by Gender, Age, and Race"
+poverty-sex-age-pacificislanderalone.yaml "population" "Population in Poverty by Gender, Age, and Race"
+B27009-concat.yaml "health_care_coverage_population" "Health Insurance by Gender and Age"
+B27007-concat.yaml "health_care_coverage_population" "Health Insurance by Gender and Age"
+poverty-sex-age-twoormore.yaml "population" "Population in Poverty by Gender, Age, and Race"
+poverty-sex-age-whitealone.yaml "population" "Population in Poverty by Gender, Age, and Race"
+health/B25048.yaml "occupied_households" "Households by Plumbing Type"
+health/B25052.yaml "occupied_households" "Households by Kitchen Type"
+health/B25074.yaml "renter_population" "Renters by Income Percentage"
+health/B25092.yaml "housing_unit_with_mortgage" "Homeowners by Mortgage"
+poverty-sex-age-otheralone.yaml "population" "Population in Poverty by Gender, Age, and Race"
+health/B27010.yaml "health_care_coverage_population" "Health Insurance"
+health/B28002.yaml "internet_households" "Households by Internet Access"
+health/C25074.yaml "renters_population" "Renters by Income Percentage"
+ygio/B24011.yaml "occupation_median_earnings" "Median Earnings by Occupation"
+poverty-sex-age-whitealonenothispanic.yaml "population" "Population in Poverty by Gender, Age, and Race"
+ygio/B24012.yaml occupation_median_earnings" "Median Earnings by Occupation and Gender"
+ygio/B24032.yaml industry_median_earnings_dollars" "Median Earnings by Industry and Gender"
+ygio/B24030.yaml industry_population" "Workforce by Industry and Gender"
+ygio/C24010.yaml occupation_population" "Workforce by Occupation and Gender"
+ygio/C24030.yaml industry_population" "Workforce by Industry and Gender"
+ygio/B24031.yaml "industry_median_earnings_dollars" "Median Earnings by Industry"
