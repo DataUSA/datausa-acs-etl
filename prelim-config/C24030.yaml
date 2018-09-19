@@ -54,3 +54,8 @@ acs_table:
 
 calc_rca: true
 hide_member_if: "never"
+
+metadata:
+  topic: Economy
+  subtopic: Industries
+  unit_of_measure: People

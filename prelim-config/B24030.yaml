@@ -194,3 +194,8 @@ acs_table:
         209: "Female_PublicAdministration"
 
 calc_rca: true
+
+metadata:
+  topic: Economy
+  subtopic: Industries
+  unit_of_measure: People

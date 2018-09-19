@@ -246,3 +246,8 @@ acs_table:
         303: "Female_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations_MaterialMovingWorkersExceptSupervisorsAndLaborersAndMaterialMovers,Hand"
 
 calc_rca: true
+
+metadata:
+  topic: Economy
+  subtopic: Occupation
+  unit_of_measure: People

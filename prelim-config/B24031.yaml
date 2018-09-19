@@ -40,3 +40,8 @@ acs_table:
 
 non_agg: true
 explode: true
+
+metadata:
+  topic: Economy
+  subtopic: Industries
+  unit_of_measure: Dollars

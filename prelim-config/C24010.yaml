@@ -64,3 +64,8 @@ acs_table:
         073: "Female_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations"
 
 calc_rca: true
+
+metadata:
+  topic: Economy
+  subtopic: Occupations
+  unit_of_measure: People

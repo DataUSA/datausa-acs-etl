@@ -50,6 +50,6 @@ non_agg: true
 explode: true
 
 metadata:
-  topic: Diversity
-  subtopic: Heritage
-  unit_of_measure: People
+  topic: Economy
+  subtopic: Occupation
+  unit_of_measure: Dollars
