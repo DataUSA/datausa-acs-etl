@@ -33,4 +33,4 @@ non_agg: true
 metadata:
   topic: Diversity
   subtopic: Heritage
-  units_of_measure: Years
+  unit_of_measure: Years

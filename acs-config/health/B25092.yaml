@@ -17,4 +17,4 @@ calc_percent: true
 metadata:
   topic: "Housing & Living"
   subtopic: Housing
-  units_of_measure: "Housing Units"
+  unit_of_measure: "Housing Units"

@@ -35,4 +35,4 @@ health_insurance_tag: "with_medicaid_public_coverage"
 metadata:
   topic: "Health & Safety"
   subtopic: Coverage
-  units_of_measure: People
+  unit_of_measure: People

@@ -69,4 +69,4 @@ calc_percent: true
 metadata:
   topic: "Health & Safety"
   subtopic: Coverage
-  units_of_measure: People
+  unit_of_measure: People

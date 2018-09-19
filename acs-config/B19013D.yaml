@@ -13,4 +13,4 @@ acs_table:
 metadata:
   topic: "Housing & Living"
   subtopic: Income
-  units_of_measure: Dollars
+  unit_of_measure: Dollars

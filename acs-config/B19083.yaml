@@ -18,4 +18,4 @@ tag: "acs"
 metadata:
   topic: "Housing & Living"
   subtopic: Income
-  units_of_measure: Gini Index
+  unit_of_measure: Gini Index

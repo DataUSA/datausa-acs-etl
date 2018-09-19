@@ -28,4 +28,4 @@ acs_table:
 metadata:
   topic: "Housing & Living"
   subtopic: Income
-  units_of_measure: Households
+  unit_of_measure: Households

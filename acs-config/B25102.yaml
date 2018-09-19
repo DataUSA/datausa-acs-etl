@@ -26,4 +26,4 @@ acs_table:
 metadata:
   topic: "Housing & Living"
   subtopic: Housing
-  units_of_measure: People
+  unit_of_measure: People

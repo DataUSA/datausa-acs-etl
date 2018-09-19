@@ -52,4 +52,4 @@ acs_table:
 metadata:
   topic: "Health & Safety"
   subtopic: Coverage
-  units_of_measure: People
+  unit_of_measure: People
