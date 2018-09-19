@@ -4,7 +4,7 @@ min_year: 2015
 max_year: 2017
 acs_table:
     id: "B25075"
-    value_label: "housing_units"
+    value_label: "Property Value by Bucket"
     dimension_labels: [
         "value_bucket",
     ]

@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B19001"
-    value_label: "income_households"
+    value_label: "Household Income"
     dimension_labels: [
         "household_income_bucket",
     ]

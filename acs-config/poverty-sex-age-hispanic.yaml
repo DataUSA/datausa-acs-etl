@@ -5,7 +5,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B17001I"
-    value_label: "population"
+    value_label: "Population in Poverty by Gender, Age, and Race"
     dimension_labels: [
         "poverty_status", "sex", "age"
     ]

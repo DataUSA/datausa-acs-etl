@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B08301"
-    value_label: "means_of_work_transportation_population"
+    value_label: "Commute Means"
     dimension_labels: [
         "transportation::group",
         "transportation::subgroup",

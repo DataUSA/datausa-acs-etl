@@ -4,7 +4,7 @@ min_year: 2015
 max_year: 2017
 acs_table:
     id: "B05006"
-    value_label: "foreign_born_population"
+    value_label: "Foreign-Born Citizens"
     dimension_labels: [
         "place_of_birth::continent",
         "place_of_birth::subcontinent",

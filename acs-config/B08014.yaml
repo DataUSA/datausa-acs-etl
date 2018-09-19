@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B08014"
-    value_label: "vehicles_available_population"
+    value_label: "Commute Means by Gender"
     dimension_labels: [
         "sex",
         "vehicles_available",

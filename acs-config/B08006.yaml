@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B08006"
-    value_label: "work_transportation_population"
+    value_label: "Commute Means by Gender"
     dimension_labels: [
         "sex",
         "transportation::group",

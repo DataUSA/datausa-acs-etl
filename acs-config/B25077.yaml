@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B25077"
-    value_label: "housing_median_value"
+    value_label: "Property Value"
     dimension_labels: [
     ]
     columns:

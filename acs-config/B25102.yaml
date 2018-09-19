@@ -4,7 +4,7 @@ min_year: 2010
 max_year: 2017
 acs_table:
     id: "B25102"
-    value_label: "mortgage_status_population"
+    value_label: "Real Estate Taxes by Mortgage"
     dimension_labels: [
         "mortgage_status",
         "real_estate_taxes_paid",

@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B25003"
-    value_label: "tenure_population"
+    value_label: "Household Ownership"
     dimension_labels: [
         "occupied_by",
     ]

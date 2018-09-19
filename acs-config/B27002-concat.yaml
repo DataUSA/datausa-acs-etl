@@ -5,7 +5,7 @@ min_year: 2012
 max_year: 2017
 acs_table:
     id: "B27002"
-    value_label: "health_care_coverage_population"
+    value_label: "Population in Poverty by Gender, Age, and Race"
     dimension_labels: [
         "sex",
         "age",

@@ -4,7 +4,7 @@ min_year: 2012
 max_year: 2017
 acs_table:
     id: "C25074"
-    value_label: "renters_population"
+    value_label: "Renters by Income Percentage"
     dimension_labels: [
         "household_income",
         "gross_rent_percent_of_income",

@@ -5,7 +5,7 @@ min_year: 2012
 max_year: 2017
 acs_table:
     id: "B27003"
-    value_label: "health_care_coverage_population"
+    value_label: "Health Insurance by Gender and Age"
     dimension_labels: [
         "sex",
         "age",

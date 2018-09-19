@@ -4,7 +4,7 @@ min_year: 2015
 max_year: 2017
 acs_table:
     id: "B08136"
-    value_label: "aggregate_travel_time_to_work_minutes"
+    value_label: "Total Commute Time"
     dimension_labels: [
         "transportation::group",
         "transportation::subgroup",

@@ -3,7 +3,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B19083"
-    value_label: "gini"
+    value_label: "Wage GINI"
     columns:
         001: "GiniIndex"
 

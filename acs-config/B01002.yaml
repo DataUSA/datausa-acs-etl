@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B01002"
-    value_label: "median_age"
+    value_label: "Median Age"
     dimension_labels: [
         "sex",
     ]

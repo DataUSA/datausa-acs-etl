@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B25092"
-    value_label: "housing_unit_with_mortgage"
+    value_label: "Homeowners by Mortgage"
     dimension_labels: [
         "mortgage_status",
     ]

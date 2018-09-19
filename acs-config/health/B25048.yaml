@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B25048"
-    value_label: "occupied_households"
+    value_label: "Households by Plumbing Type"
     dimension_labels: [
         "plumbing facilities",
     ]

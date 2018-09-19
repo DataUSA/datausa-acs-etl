@@ -4,7 +4,7 @@ min_year: 2016
 max_year: 2017
 acs_table:
     id: "B16001"
-    value_label: "language_population"
+    value_label: "Languages Spoken"
     dimension_labels: [
         "language_spoken_at_home",
         "english_ability",

@@ -3,7 +3,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B21002"
-    value_label: "veteran_population"
+    value_label: "Veterans"
     columns:
         002: "GulfWar(2001-)_GulfWar(9/2001OrLater),NoGulfWar(8/1990To8/2001),NoVietnamEra"
         003: "GulfWar(2001-)_GulfWar(9/2001OrLater)AndGulfWar(8/1990To8/2001),NoVietnamEra"

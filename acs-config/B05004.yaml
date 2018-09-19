@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B05004"
-    value_label: "citizenship_median_age"
+    value_label: "Median Age by Citizenship"
     dimension_labels: [
         "nativity_status",
         "naturalized_status",

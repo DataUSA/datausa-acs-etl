@@ -5,7 +5,7 @@ max_year: 2017
 acs_table:
     id: "B08006"
     # for mean transportation time
-    value_label: "mean_transportation_time_to_work_minutes"
+    value_label: "Average Commute Time"
     dimension_labels: [
     ]
     columns:

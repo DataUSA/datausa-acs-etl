@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B03002"
-    value_label: "hispanic_race_population"
+    value_label: "Hispanic Population"
     dimension_labels: [
         "ethnicity",
         "race::race",
