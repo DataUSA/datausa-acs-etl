@@ -72,4 +72,4 @@ explode: true
 metadata:
   topic: Economy
   subtopic: Industries
-  unit_of_measure: Dollars
+  unit_of_measure: USD
