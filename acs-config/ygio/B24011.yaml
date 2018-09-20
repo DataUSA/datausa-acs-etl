@@ -2,7 +2,7 @@
 name: acs_ygo_occupation_for_median_earnings
 acs_table:
   id: B24011
-  value_label: "Median Earnings by Occupation"
+  value_label: occupation_median_earnings
   dimension_labels:
     - "occupation::occupation_group"
     - "occupation::occupation_subgroup"
@@ -48,8 +48,8 @@ min_year: 2009
 max_year: 2017
 non_agg: true
 explode: true
-
 metadata:
   topic: Economy
   subtopic: Occupation
   unit_of_measure: USD
+

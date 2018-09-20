@@ -2,7 +2,7 @@
 name: acs_ygsi_sex_by_industry_c
 acs_table:
   id: C24030
-  value_label: "Workforce by Industry and Gender"
+  value_label: industry_population
   dimension_labels:
     - sex
     - "industry::group"
@@ -10,13 +10,13 @@ acs_table:
   columns:
     4: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
     5: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
-    6: Male_Construction_Construction
-    7: Male_Manufacturing_Manufacturing
-    8: Male_WholesaleTrade_WholesaleTrade
-    9: Male_RetailTrade_RetailTrade
+    6: Male_Construction(Group)_Construction
+    7: Male_Manufacturing(Group)_Manufacturing
+    8: Male_WholesaleTrade(Group)_WholesaleTrade
+    9: Male_RetailTrade(Group)_RetailTrade
     11: "Male_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
     12: "Male_TransportationAndWarehousing,AndUtilities_Utilities"
-    13: Male_Information_Information
+    13: Male_Information(Group)_Information
     15: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
     16: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
     18: "Male_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
@@ -26,17 +26,17 @@ acs_table:
     23: "Male_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
     25: "Male_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_Arts,Entertainment,AndRecreation"
     26: "Male_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_AccommodationAndFoodServices"
-    27: "Male_OtherServices,ExceptPublicAdministration_OtherServices,ExceptPublicAdministration"
-    28: Male_PublicAdministration_PublicAdministration
+    27: "Male_OtherServices,ExceptPublicAdministration(Group)_OtherServices,ExceptPublicAdministration"
+    28: Male_PublicAdministration(Group)_PublicAdministration
     31: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
     32: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
-    33: Female_Construction_Construction
-    34: Female_Manufacturing_Manufacturing
-    35: Female_WholesaleTrade_WholesaleTrade
-    36: Female_RetailTrade_RetailTrade
+    33: Female_Construction(Group)_Construction
+    34: Female_Manufacturing(Group)_Manufacturing
+    35: Female_WholesaleTrade(Group)_WholesaleTrade
+    36: Female_RetailTrade(Group)_RetailTrade
     38: "Female_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
     39: "Female_TransportationAndWarehousing,AndUtilities_Utilities"
-    40: Female_Information_Information
+    40: Female_Information(Group)_Information
     42: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
     43: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
     45: "Female_Professional,Scientific,AndManagement,AndAdministrativeAndWasteManagementServices_Professional,Scientific,AndTechnicalServices"
@@ -46,14 +46,13 @@ acs_table:
     50: "Female_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
     52: "Female_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_Arts,Entertainment,AndRecreation"
     53: "Female_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_AccommodationAndFoodServices"
-    54: "Female_OtherServices,ExceptPublicAdministration_OtherServices,ExceptPublicAdministration"
-    55: Female_PublicAdministration_PublicAdministration
+    54: "Female_OtherServices,ExceptPublicAdministration(Group)_OtherServices,ExceptPublicAdministration"
+    55: Female_PublicAdministration(Group)_PublicAdministration
 min_year: 2009
 max_year: 2017
 calc_rca: true
-hide_member_if: Never
-
 metadata:
   topic: Economy
   subtopic: Industries
   unit_of_measure: People
+
