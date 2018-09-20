@@ -52,4 +52,4 @@ explode: true
 metadata:
   topic: Economy
   subtopic: Occupation
-  unit_of_measure: Dollars
+  unit_of_measure: USD
