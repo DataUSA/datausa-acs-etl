@@ -80,7 +80,7 @@
       {%- if is_non_agg %}
         <Annotation name="pre_aggregation_method">{{ acs_agg_method }}</Annotation>
       {%- endif %}
-        <Annotation name="units_of_measure">{{ metadata.units_of_measure }}</Annotation>
+        <Annotation name="units_of_measurement">{{ metadata.unit_of_measure }}</Annotation>
       </Annotations>
     </CalculatedMember>
 
@@ -108,6 +108,6 @@
       <Annotations>
         <Annotation name="aggregation_method">MOE</Annotation>
         <Annotation name="error_for_measure">{{ value_label_title }}</Annotation>
-        <Annotation name="units_of_measure">{{ metadata.units_of_measure }}</Annotation>
+        <Annotation name="units_of_measurement">{{ metadata.unit_of_measure }}</Annotation>
       </Annotations>
     </CalculatedMember>
