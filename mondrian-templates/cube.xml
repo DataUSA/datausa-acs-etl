@@ -14,7 +14,7 @@
     </Annotations>
     <Table name="{{ db_table_name }}" schema="{{ db_schema }}"/>
 
-    <DimensionUsage foreignKey="geoid" name="Geography" source="geography"/>
+    <DimensionUsage foreignKey="geoid" name="Geography" source="geography">
       <Annotations>
         <Annotation name="dim_type">GEOGRAPHY</Annotation>
       </Annotations>
