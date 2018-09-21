@@ -31,23 +31,28 @@ cubes: process-cubes remove-empty-cubes upload-schema
 #  acs-pipe -f acs-config/ygio/B24011.yaml load --schema acs --database datausa
 #  acs-pipe -f acs-config/ygio/B24011.yaml mondrian cube --db-schema acs --mondrian-schema datausa --stdout
 
-#clear-ygio-tables:
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_for_median_earnings_1'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_for_median_earnings_5'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_c_1'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_c_5'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_c_1'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_c_5'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygo_occupation_for_median_earnings_1'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygo_occupation_for_median_earnings_5'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_1'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_5'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_1'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_5'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygi_industry_for_median_earnings_1'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygi_industry_for_median_earnings_5'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_for_median_earnings_1'
-#    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_for_median_earnings_5'
+clear-ygio-tables:
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_for_median_earnings_1'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_for_median_earnings_5'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_c_1'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_c_5'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_c_1'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_c_5'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygo_occupation_for_median_earnings_1'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygo_occupation_for_median_earnings_5'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_1'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygso_sex_by_occupation_5'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_1'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_5'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygi_industry_for_median_earnings_1'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygi_industry_for_median_earnings_5'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_for_median_earnings_1'
+    mclient -h canon-api.datausa.io -d datausa -s 'drop table acs.acs_ygsi_sex_by_industry_for_median_earnings_5'
+
+ygio-ingest:
+    time acs-pipe -m "acs-config/ygio/*" process --years "2013-"
+    time acs-pipe -m "acs-config/ygio/*" sql --schema acs
+    time acs-pipe -m "acs-config/ygio/*" load --schema acs --database datausa
 
 #process-example:
 #  acs-pipe -f acs-config/ygio/B24031.yaml process --years "2015-"
