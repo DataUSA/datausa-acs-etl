@@ -2,7 +2,7 @@
 name: acs_ygi_industry_for_median_earnings
 acs_table:
   id: B24031
-  value_label: industry_median_earnings_dollars
+  value_label: Median Earnings by Industry
   dimension_labels:
     - "industry::industry_group"
     - "industry::industry"

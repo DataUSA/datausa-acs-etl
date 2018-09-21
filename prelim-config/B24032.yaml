@@ -4,7 +4,7 @@ min_year: 2009
 max_year: 2017
 acs_table:
     id: "B24032"
-    value_label: "industry_median_earnings_dollars"
+    value_label: "Median Earnings by Industry and Gender"
     dimension_labels: [
         "sex",
         "industry::industry_group",

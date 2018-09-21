@@ -2,7 +2,7 @@
 name: acs_ygso_sex_by_occupation
 acs_table:
   id: B24010
-  value_label: occupation population
+  value_label: Workforce by Occupation and Gender
   dimension_labels:
     - sex
     - "occupation::occupation_group_0"

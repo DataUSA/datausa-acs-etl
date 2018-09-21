@@ -2,7 +2,7 @@
 name: acs_ygo_occupation_for_median_earnings
 acs_table:
   id: B24011
-  value_label: occupation_median_earnings
+  value_label: Median Earnings by Occupation
   dimension_labels:
     - "occupation::occupation_group"
     - "occupation::occupation_subgroup"

@@ -4,7 +4,7 @@ min_year: 2010
 max_year: 2017
 acs_table:
     id: "C24010"
-    value_label: "occupation_population"
+    value_label: "Workforce by Occupation and Gender"
     dimension_labels: [
         "sex",
         "occupation::group",

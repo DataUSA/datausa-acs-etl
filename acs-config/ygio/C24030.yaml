@@ -2,7 +2,7 @@
 name: acs_ygsi_sex_by_industry_c
 acs_table:
   id: C24030
-  value_label: industry_population
+  value_label: Workforce by Industry and Gender
   dimension_labels:
     - sex
     - "industry::group"

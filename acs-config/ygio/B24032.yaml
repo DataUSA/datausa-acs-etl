@@ -2,7 +2,7 @@
 name: acs_ygsi_sex_by_industry_for_median_earnings
 acs_table:
   id: B24032
-  value_label: industry_median_earnings_dollars
+  value_label: Median Earnings by Industry and Gender
   dimension_labels:
     - sex
     - "industry::industry_group"
