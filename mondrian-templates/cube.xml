@@ -30,8 +30,9 @@
     </Dimension>
 
   {%- for dim_context in dim_contexts %}
+  {# defaultMember hack, need to check for Sex because B24032 etc. (sex by i/o median earnings) has Total in different table #}
     <Dimension foreignKey="dim_{{ dim_context.code }}" name="{{ dim_context.title }}">
-      <Hierarchy hasAll="true"{% if is_non_agg %} defaultMember="[{{ dim_context.title }}].[Total]"{% endif %}>
+      <Hierarchy hasAll="true"{% if is_non_agg and dim_context.title != "Sex" %} defaultMember="[{{ dim_context.title }}].[Total]"{% endif %}>
         <InlineTable alias="dim_{{ dim_context.code }}_table">
           <ColumnDefs>
           {%- for member_idx in range(end=dim_context.num_levels) %}
@@ -57,7 +58,7 @@
       {%- endfor %}
       </Hierarchy>
     </Dimension>
-  {% endfor %}
+  {%- endfor %}
 
 {%- if is_race_cube %}
 {% include "race.xml" %}
