@@ -8,14 +8,21 @@ smooth:
     acs-pipe -f prelim-config/C24010.yaml config smooth --strategy pushdown --start-index 1 > acs-config/ygio/C24010.yaml
     acs-pipe -f prelim-config/C24030.yaml config smooth --strategy pushdown --start-index 1 > acs-config/ygio/C24030.yaml
 
+process-cubes:
+    acs-pipe mondrian cube --db-schema acs --mondrian-schema datausa
+    acs-pipe --mean-transportation mondrian cube --db-schema acs --mondrian-schema datausa
+
 remove-empty-cubes:
     rm acs-out/acs_ygh_households_with_no_internet_5.xml
     rm acs-out/acs_ygh_renters_with_gross_rent_30_percent_of_household_income_c_5.xml
     rm acs-out/acs_ygso_sex_by_occupation_5.xml
     rm acs-out/acs_ygsi_sex_by_industry_5.xml
 
-upload-schema: remove-empty-cubes
-    scp acs-out/* zeus:~/datausa-mondrian/frags/acs/.
+upload-schema: process-cubes remove-empty-cubes
+    scp acs-out/*.xml canon-deploy:~/datausa-mondrian/frags/acs/.
+
+cubes: process-cubes remove-empty-cubes upload-schema
+    echo "finished processing and uploading cubes"
 
 
 #process-example:
