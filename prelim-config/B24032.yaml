@@ -7,8 +7,8 @@ acs_table:
     value_label: "Median Earnings by Industry and Gender"
     dimension_labels: [
         "sex",
-        "industry::industry_group",
-        "industry::industry",
+        "industry_ACS_B24032::industry_group",
+        "industry_ACS_B24032::industry",
     ]
     columns:
         001: "Male:"

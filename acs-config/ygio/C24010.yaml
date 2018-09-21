@@ -5,9 +5,9 @@ acs_table:
   value_label: Workforce by Occupation and Gender
   dimension_labels:
     - sex
-    - "occupation::group"
-    - "occupation::subgroup"
-    - "occupation::occupation"
+    - "occupation_ACS_C24010::group"
+    - "occupation_ACS_C24010::subgroup"
+    - "occupation_ACS_C24010::occupation"
   columns:
     5: "Male_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_ManagementOccupations"
     6: "Male_Management,Business,Science,AndArtsOccupations_Management,Business,AndFinancialOccupations_BusinessAndFinancialOperationsOccupations"

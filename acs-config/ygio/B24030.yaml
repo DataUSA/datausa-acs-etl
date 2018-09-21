@@ -5,13 +5,13 @@ acs_table:
   value_label: Workforce by Industry and Gender
   dimension_labels:
     - sex
-    - "industry::group"
-    - "industry::subgroup"
-    - "industry::industry"
+    - "industry_ACS_B24030::group"
+    - "industry_ACS_B24030::subgroup"
+    - "industry_ACS_B24030::industry"
   columns:
     4: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
     5: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
-    6: Male_Construction_Construction(Subgroup)_Construction
+    6: Male_Construction_Construction(subgroup)_Construction
     8: Male_Manufacturing_Manufacturing_Food
     9: Male_Manufacturing_Manufacturing_BeverageAndTobaccoProducts
     10: Male_Manufacturing_Manufacturing_TextileMillsAndTextileProducts
@@ -98,10 +98,10 @@ acs_table:
     102: "Male_OtherServices,ExceptPublicAdministration_OtherServices,ExceptPublicAdministration_PersonalAndLaundryServices"
     103: "Male_OtherServices,ExceptPublicAdministration_OtherServices,ExceptPublicAdministration_Religious,Grantmaking,Civic,Professional,AndSimilarOrganizations"
     104: "Male_OtherServices,ExceptPublicAdministration_OtherServices,ExceptPublicAdministration_PrivateHouseholds"
-    105: Male_PublicAdministration_PublicAdministration(Subgroup)_PublicAdministration
+    105: Male_PublicAdministration_PublicAdministration(subgroup)_PublicAdministration
     108: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
     109: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
-    110: Female_Construction_Construction(Subgroup)_Construction
+    110: Female_Construction_Construction(subgroup)_Construction
     112: Female_Manufacturing_Manufacturing_Food
     113: Female_Manufacturing_Manufacturing_BeverageAndTobaccoProducts
     114: Female_Manufacturing_Manufacturing_TextileMillsAndTextileProducts
@@ -188,7 +188,7 @@ acs_table:
     206: "Female_OtherServices,ExceptPublicAdministration_OtherServices,ExceptPublicAdministration_PersonalAndLaundryServices"
     207: "Female_OtherServices,ExceptPublicAdministration_OtherServices,ExceptPublicAdministration_Religious,Grantmaking,Civic,Professional,AndSimilarOrganizations"
     208: "Female_OtherServices,ExceptPublicAdministration_OtherServices,ExceptPublicAdministration_PrivateHouseholds"
-    209: Female_PublicAdministration_PublicAdministration(Subgroup)_PublicAdministration
+    209: Female_PublicAdministration_PublicAdministration(subgroup)_PublicAdministration
 min_year: 2009
 max_year: 2017
 calc_rca: true

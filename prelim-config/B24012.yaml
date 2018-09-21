@@ -7,9 +7,9 @@ acs_table:
     value_label: "Median Earnings by Occupation and Gender"
     dimension_labels: [
         "sex",
-        "occupation::occupation_group",
-        "occupation::occupation_subgroup",
-        "occupation::occupation",
+        "occupation_ACS_B24012::occupation_group",
+        "occupation_ACS_B24012::occupation_subgroup",
+        "occupation_ACS_B24012::occupation",
     ]
     columns:
         001: "Total:"

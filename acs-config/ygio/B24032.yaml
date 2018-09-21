@@ -5,21 +5,21 @@ acs_table:
   value_label: Median Earnings by Industry and Gender
   dimension_labels:
     - sex
-    - "industry::industry_group"
-    - "industry::industry"
+    - "industry_ACS_B24032::industry_group"
+    - "industry_ACS_B24032::industry"
   columns:
     1: Male_Total_Total
     2: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting,AndMining"
     3: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
     4: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
-    5: Male_Construction(Group)_Construction
-    6: Male_Manufacturing(Group)_Manufacturing
-    7: Male_WholesaleTrade(Group)_WholesaleTrade
-    8: Male_RetailTrade(Group)_RetailTrade
+    5: Male_Construction(group)_Construction
+    6: Male_Manufacturing(group)_Manufacturing
+    7: Male_WholesaleTrade(group)_WholesaleTrade
+    8: Male_RetailTrade(group)_RetailTrade
     9: "Male_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing,AndUtilities"
     10: "Male_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
     11: "Male_TransportationAndWarehousing,AndUtilities_Utilities"
-    12: Male_Information(Group)_Information
+    12: Male_Information(group)_Information
     13: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing"
     14: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
     15: "Male_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
@@ -30,23 +30,23 @@ acs_table:
     20: "Male_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices,AndHealthCareAndSocialAssistance"
     21: "Male_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
     22: "Male_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
-    23: "Male_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices(Group)_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
+    23: "Male_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices(group)_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
     24: "Male_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation"
     25: "Male_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
-    26: Male_OtherServicesExceptPublicAdministration(Group)_OtherServicesExceptPublicAdministration
-    27: Male_PublicAdministration(Group)_PublicAdministration
+    26: Male_OtherServicesExceptPublicAdministration(group)_OtherServicesExceptPublicAdministration
+    27: Male_PublicAdministration(group)_PublicAdministration
     28: Female_Total_Total
     29: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting,AndMining"
     30: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
     31: "Female_Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
-    32: Female_Construction(Group)_Construction
-    33: Female_Manufacturing(Group)_Manufacturing
-    34: Female_WholesaleTrade(Group)_WholesaleTrade
-    35: Female_RetailTrade(Group)_RetailTrade
+    32: Female_Construction(group)_Construction
+    33: Female_Manufacturing(group)_Manufacturing
+    34: Female_WholesaleTrade(group)_WholesaleTrade
+    35: Female_RetailTrade(group)_RetailTrade
     36: "Female_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing,AndUtilities"
     37: "Female_TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
     38: "Female_TransportationAndWarehousing,AndUtilities_Utilities"
-    39: Female_Information(Group)_Information
+    39: Female_Information(group)_Information
     40: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing"
     41: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
     42: "Female_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
@@ -57,11 +57,11 @@ acs_table:
     47: "Female_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices,AndHealthCareAndSocialAssistance"
     48: "Female_EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
     49: "Female_EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
-    50: "Female_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices(Group)_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
+    50: "Female_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices(group)_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
     51: "Female_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation"
     52: "Female_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
-    53: Female_OtherServicesExceptPublicAdministration(Group)_OtherServicesExceptPublicAdministration
-    54: Female_PublicAdministration(Group)_PublicAdministration
+    53: Female_OtherServicesExceptPublicAdministration(group)_OtherServicesExceptPublicAdministration
+    54: Female_PublicAdministration(group)_PublicAdministration
 min_year: 2009
 max_year: 2017
 non_agg: true

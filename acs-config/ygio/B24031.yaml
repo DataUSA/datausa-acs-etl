@@ -4,21 +4,21 @@ acs_table:
   id: B24031
   value_label: Median Earnings by Industry
   dimension_labels:
-    - "industry::industry_group"
-    - "industry::industry"
+    - "industry_ACS_B24031::industry_group"
+    - "industry_ACS_B24031::industry"
   columns:
     1: Total_Total
     2: "Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting,AndMining"
     3: "Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
     4: "Agriculture,Forestry,FishingAndHunting,AndMining_Mining,Quarrying,AndOilAndGasExtraction"
-    5: Construction(Group)_Construction
-    6: Manufacturing(Group)_Manufacturing
-    7: WholesaleTrade(Group)_WholesaleTrade
-    8: RetailTrade(Group)_RetailTrade
+    5: Construction(group)_Construction
+    6: Manufacturing(group)_Manufacturing
+    7: WholesaleTrade(group)_WholesaleTrade
+    8: RetailTrade(group)_RetailTrade
     9: "TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing,AndUtilities"
     10: "TransportationAndWarehousing,AndUtilities_TransportationAndWarehousing"
     11: "TransportationAndWarehousing,AndUtilities_Utilities"
-    12: Information(Group)_Information
+    12: Information(group)_Information
     13: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance,AndRealEstateAndRentalAndLeasing"
     14: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_FinanceAndInsurance"
     15: "FinanceAndInsurance,AndRealEstateAndRentalAndLeasing_RealEstateAndRentalAndLeasing"
@@ -29,11 +29,11 @@ acs_table:
     20: "EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices,AndHealthCareAndSocialAssistance"
     21: "EducationalServices,AndHealthCareAndSocialAssistance_EducationalServices"
     22: "EducationalServices,AndHealthCareAndSocialAssistance_HealthCareAndSocialAssistance"
-    23: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices(Group)_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
+    23: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices(group)_Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices"
     24: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_Arts,Entertainment,AndRecreation"
     25: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
-    26: OtherServicesExceptPublicAdministration(Group)_OtherServicesExceptPublicAdministration
-    27: PublicAdministration(Group)_PublicAdministration
+    26: OtherServicesExceptPublicAdministration(group)_OtherServicesExceptPublicAdministration
+    27: PublicAdministration(group)_PublicAdministration
 min_year: 2009
 max_year: 2017
 non_agg: true

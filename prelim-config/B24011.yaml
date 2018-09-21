@@ -6,9 +6,9 @@ acs_table:
     id: "B24011"
     value_label: "Median Earnings by Occupation"
     dimension_labels: [
-        "occupation::occupation_group",
-        "occupation::occupation_subgroup",
-        "occupation::occupation",
+        "occupation_ACS_B24011::occupation_group",
+        "occupation_ACS_B24011::occupation_subgroup",
+        "occupation_ACS_B24011::occupation",
     ]
     columns:
         001: "Total:"

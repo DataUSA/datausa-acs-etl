@@ -6,8 +6,8 @@ acs_table:
     id: "B24031"
     value_label: "Median Earnings by Industry"
     dimension_labels: [
-        "industry::industry_group",
-        "industry::industry",
+        "industry_ACS_B24031::industry_group",
+        "industry_ACS_B24031::industry",
     ]
     columns:
         001: "Total:"

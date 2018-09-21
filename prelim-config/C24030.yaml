@@ -7,8 +7,8 @@ acs_table:
     value_label: "Workforce by Industry and Gender"
     dimension_labels: [
         "sex",
-        "industry::group",
-        "industry::industry",
+        "industry_ACS_C24030::group",
+        "industry_ACS_C24030::industry",
     ]
     columns:
         004: "Male_Agriculture,Forestry,FishingAndHunting,AndMining_Agriculture,Forestry,FishingAndHunting"
