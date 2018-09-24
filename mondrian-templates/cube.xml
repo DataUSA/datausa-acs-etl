@@ -9,7 +9,7 @@
       <Annotation name="table_id">{{ acs_table_id }}</Annotation>
       <Annotation name="topic">{{ metadata.topic }}</Annotation>
       {%- if metadata.subtopic %}
-      <Annotation name="topic">{{ metadata.subtopic }}</Annotation>
+      <Annotation name="subtopic">{{ metadata.subtopic }}</Annotation>
       {%- endif %}
     </Annotations>
     <Table name="{{ db_table_name }}" schema="{{ db_schema }}"/>
