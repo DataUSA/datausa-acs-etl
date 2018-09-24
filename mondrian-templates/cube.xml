@@ -21,12 +21,12 @@
     </DimensionUsage>
 
     <Dimension name="Year">
-      <Hierarchy hasAll="true">
-        <Level column="year" levelType="TimeYears" name="Year" type="Numeric" uniqueMembers="true"/>
-      </Hierarchy>
       <Annotations>
         <Annotation name="dim_type">TIME</Annotation>
       </Annotations>
+      <Hierarchy hasAll="true">
+        <Level column="year" levelType="TimeYears" name="Year" type="Numeric" uniqueMembers="true"/>
+      </Hierarchy>
     </Dimension>
 
   {%- for dim_context in dim_contexts %}

@@ -100,6 +100,10 @@
     </CalculatedMember>
 
     <CalculatedMember dimension="Measures" name="{{ value_label_title }} Moe" visible="true">
+      <Annotations>
+        <Annotation name="error_for_measure">{{ value_label_title }}</Annotation>
+        <Annotation name="error_type">MOE</Annotation>
+      </Annotations>
       <Formula>CASE
 {% for level in explode_dim.levels %}
         WHEN [Geography].[Tract].Level is [Geography].[Tract].[State]
@@ -169,8 +173,4 @@
         WHEN 1 = 1 THEN [Measures].[moe_nation_lvl_0]
         END
       </Formula>
-      <Annotations>
-        <Annotation name="error_for_measure">{{ value_label_title }}</Annotation>
-        <Annotation name="error_type">MOE</Annotation>
-      </Annotations>
     </CalculatedMember>
