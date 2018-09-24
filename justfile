@@ -24,6 +24,8 @@ upload-schema: process-cubes remove-empty-cubes
 cubes: process-cubes remove-empty-cubes upload-schema
     echo "finished processing and uploading cubes"
 
+cubes-local: process-cubes remove-empty-cubes
+    echo "finished processing cubes"
 
 #process-example:
 #  acs-pipe -f acs-config/ygio/B24011.yaml process --years "2015-"
