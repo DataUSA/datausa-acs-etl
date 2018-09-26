@@ -13,6 +13,7 @@ acs_table:
         002: "Male"
         003: "Female"
 
+non_agg: true
 
 metadata:
   topic: Diversity
