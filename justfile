@@ -66,3 +66,5 @@ ygio-ingest:
 #  find acs-config/* -type f -exec sh -c "echo \"metadata:\n  topic: Diversity\n  subtopic: Heritage\n  units_of_measure: People\" >> {}" \;
 #  find acs-config/* -type f -exec vim -p {} +
 
+get-annotations:
+    ripgrep --no-filename --only-matching 'Annotation name=".+"' | runiq -
