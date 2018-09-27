@@ -54,8 +54,8 @@
     <CalculatedMember dimension="Measures" name="{{ dim.title }} yg RCA" visible="true">
       <Annotations>
         <Annotation name="aggregation_method">RCA</Annotation>
-        <Annotation name="dimensions">Year,Geography,{{ dim.title }}</Annotation>
-        <Annotation name="measure">{{ value_label_title }}</Annotation>
+        <Annotation name="rca_dimensions">Year,Geography,{{ dim.title }}</Annotation>
+        <Annotation name="rca_measure">{{ value_label_title }}</Annotation>
       </Annotations>
       <Formula>
         IIF([Measures].[{{ dim.title }} yg_rca_c] > 0 and [Measures].[{{ dim.title }} yg_rca_d] > 0,
