@@ -1,0 +1,63 @@
+old_name;old_geoid;new_geoid;notes
+Bedford city, VA;05000US51515;05000US51019;Added to Bedford County 2013
+Wade Hampton Census Area, AK;05000US02270;05000US02158;changed name to Kusilvak Census Area 2015
+Shannon County, SD;05000US46113;05000US46102;changed name to Oglala Lakota County 2015
+Los Angeles-Long Beach-Santa Ana, CA Metro Area;31000US31100;31000US31080;from looking up Los Angeles
+Santa Barbara-Santa Maria-Goleta, CA Metro Area;31000US42060;31000US42200;from looking up Santa Barbara
+Honolulu, HI Metro Area;31000US26180;31000US46520;from looking up Honolulu
+Bloomington-Normal, IL Metro Area;31000US14060;31000US14010;from looking up Bloomington and check Normal
+Anderson, IN Metro Area;31000US11300;31000US26900;from looking up Anderson
+Lafayette, IN Metro Area;31000US29140;31000US29200;from looking up Lafayette
+Holland-Grand Haven, MI Metro Area;31000US26100;31000US26090;from looking up Holland
+Anderson, SC Metro Area;31000US11340;31000US24860;from looking up Anderson
+Pendleton-Hermiston, OR Micro Area;31000US37820;31000US25840;from looking up Pendleton
+Chester, SC Micro Area;31000US16900;31000US16740;changes list
+Lancaster, SC Micro Area;31000US29580;31000US16740;changes list
+Union, SC Micro Area;31000US46420;31000US46420;changes list
+Dillon, SC Micro Area;31000US19900;;dropped changes list
+Walterboro, SC Micro Area;31000US47500;;dropped changes list
+La Follette, TN Micro Area;31000US29220;31000US28940;changes list
+Columbia, TN Micro Area;31000US17940;31000US34980;changes list
+Granbury, TX Micro Area;31000US24180;31000US19100;changes list
+Brigham City, UT Micro Area;31000US14940;31000US36260;changes list
+Oak Hill, WV Micro Area;31000US36060;31000US13220;changes list
+Monroe, WI Micro Area;31000US33820;31000US31540;changes list
+Lebanon, NH-VT Micro Area;31000US30100;31000US17200;from looking up Lebanon
+Kodiak, AK Micro Area;31000US28980;;dropped changes list
+Bishop, CA Micro Area;31000US13860;;dropped changes list
+Phoenix Lake-Cedar Ridge, CA Micro Area;31000US38020;31000US43760;changes list
+Silverthorne, CO Micro Area;31000US43540;31000US14720;changes list
+Willimantic, CT Micro Area;31000US48740;31000US49340;changes list
+Seaford, DE Micro Area;31000US42580;31000US41540;from wikipedia
+Palm Coast, FL Metro Area;31000US37380;31000US19660;merged to bigger, from wikipedia
+Harrisburg, IL Micro Area;31000US25380;;dropped changes list
+Marion-Herrin, IL Micro Area;31000US32060;31000US16060;changes list
+Scottsburg, IN Micro Area;31000US42500;31000US42500;changes list
+Winfield, KS Micro Area;31000US49060;31000US11680;changes list
+Corbin, KY Micro Area;31000US18340;31000US30940;changes list
+Pierre Part, LA Micro Area;31000US38200;;dropped
+Abbeville, LA Micro Area;31000US10020;31000US29180;changes list
+Crowley, LA Micro Area;31000US18940;31000US29180;changes list
+New Iberia, LA Micro Area;31000US35340;31000US29180;changes list
+Minden, LA Micro Area;31000US33380;31000US43340;changes list
+Tallulah, LA Micro Area;31000US45260;;dropped changes list
+Rockland, ME Micro Area;31000US40500;;dropped changes list
+Ocean Pines, MD Micro Area;31000US36180;31000US41540;changes list
+Lexington Park, MD Micro Area;31000US30500;31000US15680;changes list
+Allegan, MI Micro Area;31000US10880;31000US26090;changes list
+Yazoo City, MS Micro Area;31000US49540;31000US27140;changes list
+Havre, MT Micro Area;31000US25660;;dropped changes list
+Lincolnton, NC Micro Area;31000US30740;31000US16740;changes list
+Salisbury, NC Micro Area;31000US41580;31000US16740;changes list
+Statesville-Mooresville, NC Micro Area;31000US44380;31000US16740;changes list
+Southern Pines-Pinehurst, NC Micro Area;31000US43860;31000US38240;changes list
+East Liverpool-Salem, OH Micro Area;31000US20620;31000US41400;changes list
+Pascagoula, MS Metro Area;31000US37700;31000US25060;changes list one county dropped
+Poughkeepsie-Newburgh-Middletown, NY Metro Area;31000US39100;31000US35620;changes list
+Harriman, TN Micro Area;31000US25340;31000US28940;changes list
+Fort Valley, GA Micro Area;31000US22980;31000US47580;changes list
+Tuskegee, AL Micro Area;31000US46260;;dropped changes list
+Humboldt, TN Micro Area;31000US26480;;dropped changes list
+Thomasville-Lexington, NC Micro Area;31000US45640;31000US49180;changes list
+Culpeper, VA Micro Area;31000US19020;31000US47900;changes list
+Marshfield-Wisconsin Rapids, WI Micro Area;31000US32270;31000US49220;changes list

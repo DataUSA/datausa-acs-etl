@@ -68,3 +68,9 @@ ygio-ingest:
 
 get-annotations:
     ripgrep --no-filename --only-matching 'Annotation name=".+"' | runiq -
+
+missing-geo:
+    rm -f missing-geo/migrate-geo.csv
+    cat missing-geo/missing-geo.csv | tr '\n' '\0' | xargs -0 -I {} sh -c "curl -L https://api.datausa.io/attrs/geo/{}/ | rg data | jq -r '.data[0] | \"\\(.[1]);\\(.[8])\"' >> missing-geo/migrate-geo.csv"
+
+# xsv select -d ';' 2,3 migrate-geo-map.csv | xsv search -s 2 "310|050" > migrate-geo-final.csv
