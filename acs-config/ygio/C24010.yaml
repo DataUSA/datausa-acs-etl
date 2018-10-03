@@ -64,6 +64,6 @@ max_year: 2017
 calc_rca: true
 metadata:
   topic: Economy
-  subtopic: Occupations
+  subtopic: Occupation
   unit_of_measure: People
 
