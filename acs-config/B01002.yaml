@@ -20,6 +20,7 @@ metadata:
   subtopic: Heritage
   unit_of_measure: Years
 geos: [
+    tract,
     place,
     county,
     state,

@@ -1,3 +1,11 @@
+ingest: cubes
+    acs-pipe --mean-transportation process --years "2013-"
+    acs-pipe --mean-transportation sql --schema acs
+    acs-pipe --mean-transportation load --schema acs --database datausa
+    acs-pipe process --years "2013-"
+    acs-pipe sql --schema acs
+    acs-pipe load --schema acs --database datausa
+
 smooth:
     acs-pipe -f prelim-config/B24010.yaml config smooth --strategy pushdown --start-index 1 > acs-config/ygio/B24010.yaml
     acs-pipe -f prelim-config/B24011.yaml config smooth --strategy non-agg  --start-index 0 > acs-config/ygio/B24011.yaml

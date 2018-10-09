@@ -16,6 +16,7 @@ metadata:
   subtopic: Housing
   unit_of_measure: USD
 geos: [
+    tract,
     place,
     county,
     state,

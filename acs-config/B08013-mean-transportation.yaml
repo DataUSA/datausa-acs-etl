@@ -17,6 +17,7 @@ metadata:
   subtopic: Transportation
   unit_of_measure: Minutes
 geos: [
+    tract,
     place,
     county,
     state,

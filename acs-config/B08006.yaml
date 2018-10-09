@@ -43,6 +43,7 @@ metadata:
   subtopic: Transportation
   unit_of_measure: People
 geos: [
+    tract,
     place,
     county,
     state,

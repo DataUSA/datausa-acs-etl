@@ -14,6 +14,7 @@ metadata:
   subtopic: Income
   unit_of_measure: Households
 geos: [
+    tract,
     place,
     county,
     state,

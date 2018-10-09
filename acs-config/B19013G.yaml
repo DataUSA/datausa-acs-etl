@@ -15,6 +15,7 @@ metadata:
   subtopic: Income
   unit_of_measure: USD
 geos: [
+    tract,
     place,
     county,
     state,

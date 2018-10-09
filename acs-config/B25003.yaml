@@ -18,6 +18,7 @@ metadata:
   subtopic: Housing
   unit_of_measure: People
 geos: [
+    tract,
     place,
     county,
     state,
