@@ -34,3 +34,11 @@ metadata:
   topic: Diversity
   subtopic: Heritage
   unit_of_measure: Years
+geos: [
+    place,
+    county,
+    state,
+    msa,
+    puma,
+    nation
+]

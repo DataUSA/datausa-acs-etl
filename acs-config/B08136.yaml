@@ -23,3 +23,11 @@ metadata:
   topic: "Housing & Living"
   subtopic: Transportation
   unit_of_measure: Minutes
+geos: [
+    place,
+    county,
+    state,
+    msa,
+    puma,
+    nation
+]

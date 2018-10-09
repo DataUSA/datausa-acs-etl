@@ -29,3 +29,11 @@ metadata:
   topic: "Housing & Living"
   subtopic: Income
   unit_of_measure: Households
+geos: [
+    place,
+    county,
+    state,
+    msa,
+    puma,
+    nation
+]

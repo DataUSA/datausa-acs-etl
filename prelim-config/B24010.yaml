@@ -251,3 +251,11 @@ metadata:
   topic: Economy
   subtopic: Occupation
   unit_of_measure: People
+geos: [
+    place,
+    county,
+    state,
+    msa,
+    puma,
+    nation
+]

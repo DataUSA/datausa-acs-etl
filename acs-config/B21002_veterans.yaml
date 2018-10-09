@@ -34,3 +34,11 @@ metadata:
   topic: Diversity
   subtopic: Military
   unit_of_measure: People
+geos: [
+    place,
+    county,
+    state,
+    msa,
+    puma,
+    nation
+]

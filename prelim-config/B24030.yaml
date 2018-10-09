@@ -199,3 +199,11 @@ metadata:
   topic: Economy
   subtopic: Industries
   unit_of_measure: People
+geos: [
+    place,
+    county,
+    state,
+    msa,
+    puma,
+    nation
+]

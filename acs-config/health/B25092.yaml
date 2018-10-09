@@ -18,3 +18,11 @@ metadata:
   topic: "Housing & Living"
   subtopic: Housing
   unit_of_measure: "Housing Units"
+geos: [
+    place,
+    county,
+    state,
+    msa,
+    puma,
+    nation
+]

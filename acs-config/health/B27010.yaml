@@ -70,3 +70,11 @@ metadata:
   topic: "Health & Safety"
   subtopic: Coverage
   unit_of_measure: People
+geos: [
+    place,
+    county,
+    state,
+    msa,
+    puma,
+    nation
+]

@@ -91,3 +91,11 @@ metadata:
   subtopic: Occupation
   unit_of_measure: USD
 
+geos: [
+    place,
+    county,
+    state,
+    msa,
+    puma,
+    nation
+]
