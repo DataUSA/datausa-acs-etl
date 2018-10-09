@@ -19,13 +19,11 @@
           [{{ dim.title }}].[{{ dim.title }}].CurrentMember,
           [Geography].[Tract].[All Tracts],
           [Geography].[Place].[All Places],
-          [Geography].[Zip].[All Zips],
           [Geography].[County].[All Countys],
           [Geography].[State].[All States],
           [Geography].[Nation].[All Nations],
           [Geography].[Puma].[All Pumas],
           [Geography].[Msa].[All Msas],
-          [Geography].[County Subdivision].[All County Subdivisions]
         )
       </Formula>
     </CalculatedMember>
@@ -39,13 +37,11 @@
           [{{ dim.title }}].[{{ dim.title }}].[All {{ dim.title }}s],
           [Geography].[Tract].[All Tracts],
           [Geography].[Place].[All Places],
-          [Geography].[Zip].[All Zips],
           [Geography].[County].[All Countys],
           [Geography].[State].[All States],
           [Geography].[Nation].[All Nations],
           [Geography].[Puma].[All Pumas],
           [Geography].[Msa].[All Msas],
-          [Geography].[County Subdivision].[All County Subdivisions]
         )
       </Formula>
     </CalculatedMember>
