@@ -1,4 +1,4 @@
-    <Measure aggregator="sum" column="mea" name="{{ value_label_title }}" visible="false">
+    <Measure aggregator="sum" column="mea" name="{{ value_label_title }}" visible="true">
       <Annotations>
         <Annotation name="aggregation_method">{% if is_non_agg %}NONE{% else %}SUM{% endif %}</Annotation>
       {%- if is_non_agg %}
@@ -8,7 +8,7 @@
       </Annotations>
     </Measure>
 
-    <Measure aggregator="None" dataType="Numeric" name="{{ value_label_title }} Moe" visible="false">
+    <Measure aggregator="None" dataType="Numeric" name="{{ value_label_title }} Moe" visible="true">
       <Annotations>
         <Annotation name="error_for_measure">{{ value_label_title }}</Annotation>
         <Annotation name="error_type">MOE</Annotation>
