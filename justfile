@@ -27,7 +27,7 @@ remove-empty-cubes:
     rm acs-out/acs_ygsi_sex_by_industry_5.xml
 
 upload-schema: process-cubes remove-empty-cubes
-    scp acs-out/*.xml canon-deploy:~/datausa-mondrian/frags/acs/.
+    scp acs-out/*.xml fossil-deploy:~/datausa-mondrian/frags/acs/.
 
 cubes: process-cubes remove-empty-cubes upload-schema
     echo "finished processing and uploading cubes"
