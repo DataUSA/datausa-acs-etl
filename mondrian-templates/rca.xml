@@ -23,7 +23,7 @@
           [Geography].[State].[All States],
           [Geography].[Nation].[All Nations],
           [Geography].[Puma].[All Pumas],
-          [Geography].[Msa].[All Msas],
+          [Geography].[Msa].[All Msas]
         )
       </Formula>
     </CalculatedMember>
@@ -41,7 +41,7 @@
           [Geography].[State].[All States],
           [Geography].[Nation].[All Nations],
           [Geography].[Puma].[All Pumas],
-          [Geography].[Msa].[All Msas],
+          [Geography].[Msa].[All Msas]
         )
       </Formula>
     </CalculatedMember>
