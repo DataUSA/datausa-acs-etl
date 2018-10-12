@@ -28,7 +28,7 @@ process-cubes:
 
 remove-empty-cubes:
     rm acs-out/acs_ygh_households_with_no_internet_5.xml
-    rm acs-out/acs_ygh_renters_with_gross_rent_30_percent_of_household_income_c_5.xml
+    rm acs-out/acs_ygh_renters_by_income_percentage_c_5.xml
     rm acs-out/acs_ygso_sex_by_occupation_5.xml
     rm acs-out/acs_ygsi_sex_by_industry_5.xml
 
@@ -86,6 +86,11 @@ get-annotations:
 missing-geo:
     rm -f missing-geo/migrate-geo.csv
     cat missing-geo/missing-geo.csv | tr '\n' '\0' | xargs -0 -I {} sh -c "curl -L https://api.datausa.io/attrs/geo/{}/ | rg data | jq -r '.data[0] | \"\\(.[1]);\\(.[8])\"' >> missing-geo/migrate-geo.csv"
+
+test-default-member:
+    cp ../acs-etl-rs/mondrian-templates/* mondrian-templates/.
+    just cubes-local
+    rg defaultMember acs-out
 
 # xsv select -d ';' 2,3 migrate-geo-map.csv | xsv search -s 2 "310|050" > migrate-geo-final.csv
 # find * -type f -exec sh -c 'echo geos: [\\n"    place,"\\n"    county,"\\n"    state,"\\n"    msa,"\\n"    puma,"\\n"    nation"\\n]>> {}' \;

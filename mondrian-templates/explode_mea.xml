@@ -9,6 +9,7 @@
         WHEN [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ explode_dim.title }}].[{{ level }}]
             THEN [Measures].[mea_lvl_{{ loop.index0 }}]
 {% endfor %}
+        WHEN 1 = 1 THEN [Measures].[mea_lvl_{{explode_dim.levels | length - 1}}]
         END
       </Formula>
       <Annotations>
@@ -30,6 +31,7 @@
         WHEN [{{ explode_dim.title }}].Level is [{{ explode_dim.title }}].[{{ explode_dim.title }}].[{{ level }}]
             THEN [Measures].[moe_lvl_{{ loop.index0 }}]
 {% endfor %}
+        WHEN 1 = 1 THEN [Measures].[moe_lvl_{{explode_dim.levels | length - 1}}]
         END
       </Formula>
     </CalculatedMember>
