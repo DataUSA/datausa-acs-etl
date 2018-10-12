@@ -1,4 +1,4 @@
-name: "acs_ygh_renters_with_gross_rent_30_percent_of_household_income"
+name: "acs_ygh_renters_by_income_percentage"
 tag: "acs"
 min_year: 2014
 max_year: 2017

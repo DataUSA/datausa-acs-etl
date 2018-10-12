@@ -1,4 +1,4 @@
-name: "acs_ygt_aggregate_travel_time_workers_by_transportation_to_work"
+name: "acs_ygt_aggregate_travel_time_to_work_by_transportation"
 tag: "acs"
 min_year: 2015
 max_year: 2017
