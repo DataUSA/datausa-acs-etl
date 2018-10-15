@@ -1,16 +1,34 @@
 # mean-transportation goes last, it needs to overwrite some files from regular ingest
-ingest: cubes
+# Need to double check, why does mean transportation load fail if the table already exist
+# from the "Incorrect" load from before?
+ingest-monet: cubes
     acs-pipe process --years "2013-"
     acs-pipe sql --schema acs
-    acs-pipe load --schema acs --database datausa
+    acs-pipe load --schema acs --database datausa --dbms monet
+    mclient -h fossil-lake-api.datausa.io -d datausa -s 'drop table acs.acs_ygt_mean_transportation_time_to_work_1'
+    mclient -h fossil-lake-api.datausa.io -d datausa -s 'drop table acs.acs_ygt_mean_transportation_time_to_work_5'
+    acs-pipe --mean-transportation process --years "2013-"
+    acs-pipe --mean-transportation load --schema acs --database datausa --dbms monet
+
+ingest-postgres: cubes
+    acs-pipe process --years "2013-"
+    acs-pipe sql --schema acs
+    acs-pipe load --schema acs --database datausa --dbms psql
+    psql -h fossil-lake-api.datausa.io -d datausa -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_1'
+    psql -h fossil-lake-api.datausa.io -d datausa -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_5'
+    acs-pipe --mean-transportation process --years "2013-"
+    acs-pipe --mean-transportation load --schema acs --database datausa --dbms psql
+
+ingest-mean-transportation-monet:
     acs-pipe --mean-transportation process --years "2013-"
     acs-pipe --mean-transportation sql --schema acs
     acs-pipe --mean-transportation load --schema acs --database datausa
 
-process-mean-transportation:
+ingest-mean-transportation-postgres:
+    ssh fossil-deploy "psql -h localhost -d datausa -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_1'"
+    ssh fossil-deploy "psql -h localhost -d datausa -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_5'"
     acs-pipe --mean-transportation process --years "2013-"
-    acs-pipe --mean-transportation sql --schema acs
-    acs-pipe --mean-transportation load --schema acs --database datausa
+    acs-pipe --mean-transportation load --schema acs --database datausa --dbms psql
 
 smooth:
     acs-pipe -f prelim-config/B24010.yaml config smooth --strategy pushdown --start-index 1 > acs-config/ygio/B24010.yaml
