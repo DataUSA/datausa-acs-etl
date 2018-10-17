@@ -1,3 +1,4 @@
+server = "gila-cliff"
 # mean-transportation goes last, it needs to overwrite some files from regular ingest
 # Need to double check, why does mean transportation load fail if the table already exist
 # from the "Incorrect" load from before?
@@ -25,8 +26,6 @@ ingest-mean-transportation-monet:
     acs-pipe --mean-transportation load --schema acs --database datausa
 
 ingest-mean-transportation-postgres:
-    ssh fossil-deploy "psql -h localhost -d datausa -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_1'"
-    ssh fossil-deploy "psql -h localhost -d datausa -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_5'"
     acs-pipe --mean-transportation process --years "2013-"
     acs-pipe --mean-transportation load --schema acs --database datausa --dbms psql
 
@@ -51,7 +50,7 @@ remove-empty-cubes:
     rm acs-out/acs_ygsi_sex_by_industry_5.xml
 
 upload-schema: process-cubes remove-empty-cubes
-    scp acs-out/*.xml fossil-deploy:~/datausa-mondrian/frags/acs/.
+    scp acs-out/*.xml {{server}}:~/datausa-mondrian/frags/acs/.
 
 cubes: process-cubes remove-empty-cubes upload-schema
     echo "finished processing and uploading cubes"
