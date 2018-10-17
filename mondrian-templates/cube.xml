@@ -79,7 +79,6 @@
 {% include "default_mea.xml" %}
 {%- endif %}
 
-    <!-- Here add in rca and percent calc if asked for -->
 {%- if calc_rca %}
 {% include "rca.xml" %}
 {%- endif %}

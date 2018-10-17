@@ -49,10 +49,20 @@ remove-empty-cubes:
     rm acs-out/acs_ygso_sex_by_occupation_5.xml
     rm acs-out/acs_ygsi_sex_by_industry_5.xml
 
-upload-schema: process-cubes remove-empty-cubes
+upload-schema:
     scp acs-out/*.xml {{server}}:~/datausa-mondrian/frags/acs/.
 
-cubes: process-cubes remove-empty-cubes upload-schema
+multi-table-cubes-annotate:
+    sed -i '' -E 's/"table_id">B27.+</"table_id">B27001,B27002,B27003,B27004,B27005,B27006,B27007,B27008,B27009</g' acs-out/acs_yghsa_health_coverage_type_by_sex_by_age_5.xml
+    sed -i '' -E 's/"table_id">B17.+</"table_id">B17001,B17001A,B17001B,B17001C,B17001D,B17001E,B17001F,B17001G,B17001H</g' acs-out/acs_ygpsar_poverty_by_sex_age_race_1.xml
+    sed -i '' -E 's/"table_id">B17.+</"table_id">B17001,B17001A,B17001B,B17001C,B17001D,B17001E,B17001F,B17001G,B17001H</g' acs-out/acs_ygpsar_poverty_by_sex_age_race_5.xml
+    sed -i '' -E 's/"table_id">B19.+</"table_id">B19013,B19013A,B19013B,B19013C,B19013D,B19013E,B19013F,B19013G,B19013H</g' acs-out/acs_ygr_median_household_income_race_1.xml
+    sed -i '' -E 's/"table_id">B19.+</"table_id">B19013,B19013A,B19013B,B19013C,B19013D,B19013E,B19013F,B19013G,B19013H</g' acs-out/acs_ygr_median_household_income_race_5.xml
+    sed -i '' -E 's/"table_id">B08.+</"table_id">B08006,B08013</g' acs-out/acs_ygt_mean_transportation_time_to_work_1.xml
+    sed -i '' -E 's/"table_id">B08.+</"table_id">B08006,B08013</g' acs-out/acs_ygt_mean_transportation_time_to_work_5.xml
+
+
+cubes: process-cubes remove-empty-cubes multi-table-cubes-annotate upload-schema
     echo "finished processing and uploading cubes"
 
 cubes-local: process-cubes remove-empty-cubes
