@@ -10,9 +10,21 @@
     </Hierarchy>
     <Hierarchy hasAll="true" name="Tract">
       <Table name="tracts" schema="{{ db_schema }}"/>
-      <Level column="state_id" name="State" nameColumn="state_name" uniqueMembers="true"/>
-      <Level column="county_id" name="County" nameColumn="county_name" uniqueMembers="true"/>
-      <Level column="geoid" name="Tract" nameColumn="name" uniqueMembers="true"/>
+      <Level column="state_id" name="State" nameColumn="state_name" uniqueMembers="true">
+        <Annotations>
+          <Annotation name="hide_in_ui">true</Annotation>
+        </Annotations>
+      </Level>
+      <Level column="county_id" name="County" nameColumn="county_name" uniqueMembers="true">
+        <Annotations>
+          <Annotation name="hide_in_ui">true</Annotation>
+        </Annotations>
+      </Level>
+      <Level column="geoid" name="Tract" nameColumn="name" uniqueMembers="true">
+        <Annotations>
+          <Annotation name="hide_in_ui">true</Annotation>
+        </Annotations>
+      </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="Place">
       <Table name="places" schema="{{ db_schema }}"/>
@@ -21,7 +33,11 @@
     </Hierarchy>
     <Hierarchy hasAll="true" name="Zip">
       <Table name="zips" schema="{{ db_schema }}"/>
-      <Level column="geoid" name="Zip" nameColumn="zcta5ce10" uniqueMembers="true"/>
+      <Level column="geoid" name="Zip" nameColumn="zcta5ce10" uniqueMembers="true">
+        <Annotations>
+          <Annotation name="hide_in_ui">true</Annotation>
+        </Annotations>
+      </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="County">
       <Table name="counties" schema="{{ db_schema }}"/>
