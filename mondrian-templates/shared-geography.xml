@@ -32,14 +32,14 @@
       <Table name="states" schema="{{ db_schema }}"/>
       <Level column="geoid" name="State" nameColumn="name" uniqueMembers="true"/>
     </Hierarchy>
-    <Hierarchy hasAll="true" name="Msa">
+    <Hierarchy hasAll="true" name="MSA">
       <Table name="msas" schema="{{ db_schema }}"/>
-      <Level column="geoid" name="Msa" nameColumn="name" uniqueMembers="true"/>
+      <Level column="geoid" name="MSA" nameColumn="name" uniqueMembers="true"/>
     </Hierarchy>
-    <Hierarchy hasAll="true" name="Puma">
+    <Hierarchy hasAll="true" name="PUMA">
       <Table name="pumas" schema="{{ db_schema }}"/>
       <Level column="state_id" name="State" nameColumn="state_name" uniqueMembers="true"/>
-      <Level column="geoid" name="Puma" nameColumn="name" uniqueMembers="true"/>
+      <Level column="geoid" name="PUMA" nameColumn="name" uniqueMembers="true"/>
     </Hierarchy>
     <Hierarchy hasAll="true" name="County Subdivision">
       <Table name="county_subdivisions" schema="{{ db_schema }}"/>
