@@ -22,8 +22,8 @@
           [Geography].[County].[All Countys],
           [Geography].[State].[All States],
           [Geography].[Nation].[All Nations],
-          [Geography].[Puma].[All Pumas],
-          [Geography].[Msa].[All Msas]
+          [Geography].[PUMA].[All PUMAs],
+          [Geography].[MSA].[All MSAs]
         )
       </Formula>
     </CalculatedMember>
@@ -40,8 +40,8 @@
           [Geography].[County].[All Countys],
           [Geography].[State].[All States],
           [Geography].[Nation].[All Nations],
-          [Geography].[Puma].[All Pumas],
-          [Geography].[Msa].[All Msas]
+          [Geography].[PUMA].[All PUMAs],
+          [Geography].[MSA].[All MSAs]
         )
       </Formula>
     </CalculatedMember>
