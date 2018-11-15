@@ -1,4 +1,4 @@
-server = "gila-cliff"
+server = "katahdin"
 # mean-transportation goes last, it needs to overwrite some files from regular ingest
 # Need to double check, why does mean transportation load fail if the table already exist
 # from the "Incorrect" load from before?
