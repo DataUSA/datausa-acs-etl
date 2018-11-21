@@ -4,7 +4,7 @@ min_year: 2012
 max_year: 2017
 acs_table:
     id: "B08303"
-    value_label: "Commute Time"
+    value_label: "Commuter Population"
     value_details: "Travel time to work among workers 16 years and over who did not work at home."
     dimension_labels: [
         "travel_time",
