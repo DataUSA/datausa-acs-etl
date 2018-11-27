@@ -1,10 +1,10 @@
 ---
-name: acs_ygsi_sex_by_industry_for_median_earnings
+name: acs_ygsi_gender_by_industry_for_median_earnings
 acs_table:
   id: B24032
   value_label: Median Earnings by Industry and Gender
   dimension_labels:
-    - sex
+    - gender
     - "industry_ACS_B24032::industry_group"
     - "industry_ACS_B24032::industry"
   columns:

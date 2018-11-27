@@ -6,7 +6,7 @@ acs_table:
     id: "B01002"
     value_label: "Median Age"
     dimension_labels: [
-        "sex",
+        "gender",
     ]
     columns:
         001: "Total"

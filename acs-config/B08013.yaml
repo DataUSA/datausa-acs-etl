@@ -6,7 +6,7 @@ acs_table:
     id: "B08013"
     value_label: "Total Commute Time"
     dimension_labels: [
-        "sex",
+        "gender",
     ]
     columns:
         002: "Male"

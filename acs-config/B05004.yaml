@@ -1,4 +1,4 @@
-name: "acs_ygcs_median_age_by_citizenship_status_by_sex"
+name: "acs_ygcs_median_age_by_citizenship_status_by_gender"
 tag: "acs"
 min_year: 2009
 max_year: 2017
@@ -8,7 +8,7 @@ acs_table:
     dimension_labels: [
         "nativity_status",
         "naturalized_status",
-        "sex",
+        "gender",
     ]
     columns:
         001: "Total_Total_Total"

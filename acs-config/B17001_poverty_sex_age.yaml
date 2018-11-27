@@ -1,4 +1,4 @@
-name: "acs_ygpsar_poverty_by_sex_age_race"
+name: "acs_ygpsar_poverty_by_gender_age_race"
 tag: "acs"
 min_year: 2009
 max_year: 2017
@@ -6,7 +6,7 @@ acs_table:
     id: "B17001"
     value_label: "Population in Poverty"
     dimension_labels: [
-        "poverty_status", "sex", "age"
+        "poverty_status", "gender", "age"
     ]
     columns:
         004: "IncomeInThePast12MonthsBelowPovertyLevel_Male_Under5Years"

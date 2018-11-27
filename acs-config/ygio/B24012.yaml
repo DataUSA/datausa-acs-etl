@@ -1,10 +1,10 @@
 ---
-name: acs_ygso_sex_by_occupation_for_median_earnings
+name: acs_ygso_gender_by_occupation_for_median_earnings
 acs_table:
   id: B24012
   value_label: Median Earnings by Occupation and Gender
   dimension_labels:
-    - sex
+    - gender
     - "occupation_ACS_B24012::occupation_group"
     - "occupation_ACS_B24012::occupation_subgroup"
     - "occupation_ACS_B24012::occupation"

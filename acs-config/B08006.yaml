@@ -1,4 +1,4 @@
-name: "acs_ygst_sex_of_workers_by_transportation_to_work"
+name: "acs_ygst_gender_of_workers_by_transportation_to_work"
 tag: "acs"
 min_year: 2009
 max_year: 2017
@@ -6,7 +6,7 @@ acs_table:
     id: "B08006"
     value_label: "Commute Means by Gender"
     dimension_labels: [
-        "sex",
+        "gender",
         "transportation::group",
         "transportation::subgroup",
         "transportation::transportation_means",

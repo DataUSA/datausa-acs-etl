@@ -1,10 +1,10 @@
 ---
-name: acs_ygsi_sex_by_industry_c
+name: acs_ygsi_gender_by_industry_c
 acs_table:
   id: C24030
   value_label: Workforce by Industry and Gender
   dimension_labels:
-    - sex
+    - gender
     - "industry_ACS_C24030::group"
     - "industry_ACS_C24030::industry"
   columns:

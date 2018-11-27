@@ -1,10 +1,10 @@
 ---
-name: acs_ygso_sex_by_occupation_c
+name: acs_ygso_gender_by_occupation_c
 acs_table:
   id: C24010
   value_label: Workforce by Occupation and Gender
   dimension_labels:
-    - sex
+    - gender
     - "occupation_ACS_C24010::group"
     - "occupation_ACS_C24010::subgroup"
     - "occupation_ACS_C24010::occupation"
