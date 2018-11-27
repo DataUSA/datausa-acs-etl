@@ -1,5 +1,5 @@
 {% for dim in dim_contexts %}
-    <CalculatedMember dimension="Measures" name="Percent by {{ dim.title }}">
+    <CalculatedMember dimension="Measures" name="{{ value_label_title }}, Percent by {{ dim.title }}">
         <Annotations>
             <Annotation name="percent_for">{{ dim.title }}</Annotation>
         </Annotations>
