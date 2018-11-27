@@ -51,6 +51,7 @@ acs_table:
 min_year: 2009
 max_year: 2017
 calc_rca: true
+calc_percent: true
 metadata:
   topic: Economy
   subtopic: Industries

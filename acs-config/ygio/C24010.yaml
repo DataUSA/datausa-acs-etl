@@ -62,6 +62,7 @@ acs_table:
 min_year: 2010
 max_year: 2017
 calc_rca: true
+calc_percent: true
 metadata:
   topic: Economy
   subtopic: Occupation
