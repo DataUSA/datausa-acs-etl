@@ -82,6 +82,8 @@
 {%- if calc_rca %}
 {% include "rca.xml" %}
 {%- endif %}
-{% if calc_percent %}Calculate percent{% endif %}
+{% if calc_percent %}
+{% include "percent.xml" %}
+{% endif %}
   </Cube>
 </Schema>
