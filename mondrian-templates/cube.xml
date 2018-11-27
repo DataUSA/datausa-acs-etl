@@ -17,6 +17,7 @@
     <DimensionUsage foreignKey="geoid" name="Geography" source="geography">
       <Annotations>
         <Annotation name="dim_type">GEOGRAPHY</Annotation>
+        <Annotation name="is_required">true</Annotation>
       </Annotations>
     </DimensionUsage>
 
@@ -30,12 +31,12 @@
     </Dimension>
 
   {%- for dim_context in dim_contexts %}
-  {# defaultMember hack, need to check for Gender because B24032 etc. (sex by i/o median earnings) has Total in different table #}
+  {# defaultMember hack, need to check for Sex because B24032 etc. (sex by i/o median earnings) has Total in different table #}
     <Dimension foreignKey="dim_{{ dim_context.code }}" name="{{ dim_context.title }}">
       {#- Economy (ygio) don't have total in sex dims, so must drill down
         no parens, but and has higher precedence than or
-        if (is_non_agg and metadata.topic != "Economy") or (is_non_agg and metadata.topic == "Economy" and dim_context.title != "Gender") #}
-      <Hierarchy hasAll="true"{% if is_non_agg and metadata.topic != "Economy" or is_non_agg and metadata.topic == "Economy" and dim_context.title != "Gender" %} defaultMember="[{{ dim_context.title }}].[Total]"{% endif %}>
+        if (is_non_agg and metadata.topic != "Economy") or (is_non_agg and metadata.topic == "Economy" and dim_context.title != "Sex") #}
+      <Hierarchy hasAll="true"{% if is_non_agg and metadata.topic != "Economy" or is_non_agg and metadata.topic == "Economy" and dim_context.title != "Sex" %} defaultMember="[{{ dim_context.title }}].[Total]"{% endif %}>
         <InlineTable alias="dim_{{ dim_context.code }}_table">
           <ColumnDefs>
           {%- for member_idx in range(end=dim_context.num_levels) %}
