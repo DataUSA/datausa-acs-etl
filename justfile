@@ -121,3 +121,6 @@ test-default-member:
 
 # xsv select -d ';' 2,3 migrate-geo-map.csv | xsv search -s 2 "310|050" > migrate-geo-final.csv
 # find * -type f -exec sh -c 'echo geos: [\\n"    place,"\\n"    county,"\\n"    state,"\\n"    msa,"\\n"    puma,"\\n"    nation"\\n]>> {}' \;
+
+open-configs search:
+    vim -p `rg {{search}} -l acs-config | tr '\n' ' '`

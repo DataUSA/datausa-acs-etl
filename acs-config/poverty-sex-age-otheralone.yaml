@@ -75,3 +75,4 @@ geos: [
     puma,
     nation
 ]
+calc_percent: true
