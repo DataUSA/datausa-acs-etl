@@ -18,7 +18,7 @@
       </MeasureExpression>
     </Measure>
 
-    <CalculatedMember name="Area sq miles" dimension="Measures">
+    <CalculatedMember name="Area sq miles" dimension="Measures" visible="false">
       <Formula> CASE
             WHEN [Geography].[Tract].Level is [Geography].[Tract].[Tract] THEN (cast([Geography].[Tract].CurrentMember.Properties("Area") as integer) / 2589988)
             WHEN [Geography].[Place].Level is [Geography].[Place].[Place] THEN (cast([Geography].[Place].CurrentMember.Properties("Area") as integer) / 2589988)
