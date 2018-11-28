@@ -6,7 +6,9 @@
     </Annotations>
     <Hierarchy hasAll="true" name="Nation">
       <Table name="us" schema="{{ db_schema }}"/>
-      <Level column="geoid" name="Nation" nameColumn="name" uniqueMembers="true"/>
+      <Level column="geoid" name="Nation" nameColumn="name" uniqueMembers="true">
+        <Property name="Area" column="aland" />
+      </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="Tract">
       <Table name="tracts" schema="{{ db_schema }}"/>
@@ -24,12 +26,15 @@
         <Annotations>
           <Annotation name="hide_in_ui">true</Annotation>
         </Annotations>
+        <Property name="Area" column="aland" />
       </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="Place">
       <Table name="places" schema="{{ db_schema }}"/>
       <Level column="state_id" name="State" nameColumn="state_name" uniqueMembers="true"/>
-      <Level column="geoid" name="Place" nameColumn="name" uniqueMembers="true"/>
+      <Level column="geoid" name="Place" nameColumn="name" uniqueMembers="true">
+        <Property name="Area" column="aland" />
+      </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="Zip">
       <Table name="zips" schema="{{ db_schema }}"/>
@@ -37,31 +42,42 @@
         <Annotations>
           <Annotation name="hide_in_ui">true</Annotation>
         </Annotations>
+        <Property name="Area" column="aland" />
       </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="County">
       <Table name="counties" schema="{{ db_schema }}"/>
       <Level column="state_id" name="State" nameColumn="state_name" uniqueMembers="true"/>
-      <Level column="geoid" name="County" nameColumn="name" uniqueMembers="true"/>
+      <Level column="geoid" name="County" nameColumn="name" uniqueMembers="true">
+        <Property name="Area" column="aland" />
+      </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="State">
       <Table name="states" schema="{{ db_schema }}"/>
-      <Level column="geoid" name="State" nameColumn="name" uniqueMembers="true"/>
+      <Level column="geoid" name="State" nameColumn="name" uniqueMembers="true">
+        <Property name="Area" column="aland" />
+      </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="MSA">
       <Table name="msas" schema="{{ db_schema }}"/>
-      <Level column="geoid" name="MSA" nameColumn="name" uniqueMembers="true"/>
+      <Level column="geoid" name="MSA" nameColumn="name" uniqueMembers="true">
+        <Property name="Area" column="aland" />
+      </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="PUMA">
       <Table name="pumas" schema="{{ db_schema }}"/>
       <Level column="state_id" name="State" nameColumn="state_name" uniqueMembers="true"/>
-      <Level column="geoid" name="PUMA" nameColumn="name" uniqueMembers="true"/>
+      <Level column="geoid" name="PUMA" nameColumn="name" uniqueMembers="true">
+        <Property name="Area" column="aland" />
+      </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="County Subdivision">
       <Table name="county_subdivisions" schema="{{ db_schema }}"/>
       <Level column="state_id" name="State" nameColumn="state_name" uniqueMembers="true"/>
       <Level column="county_id" name="County" nameColumn="county_name" uniqueMembers="true"/>
-      <Level column="geoid" name="County Subdivision" nameColumn="name" uniqueMembers="true"/>
+      <Level column="geoid" name="County Subdivision" nameColumn="name" uniqueMembers="true">
+        <Property name="Area" column="aland" />
+      </Level>
     </Hierarchy>
   </Dimension>
 </Schema>
