@@ -42,7 +42,7 @@
         <Annotations>
           <Annotation name="hide_in_ui">true</Annotation>
         </Annotations>
-        <Property name="Area" column="aland" />
+        <Property name="Area" column="aland10" />
       </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="County">
@@ -68,7 +68,7 @@
       <Table name="pumas" schema="{{ db_schema }}"/>
       <Level column="state_id" name="State" nameColumn="state_name" uniqueMembers="true"/>
       <Level column="geoid" name="PUMA" nameColumn="name" uniqueMembers="true">
-        <Property name="Area" column="aland" />
+        <Property name="Area" column="aland10" />
       </Level>
     </Hierarchy>
     <Hierarchy hasAll="true" name="County Subdivision">
