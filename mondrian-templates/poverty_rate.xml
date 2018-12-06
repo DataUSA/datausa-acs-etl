@@ -1,5 +1,7 @@
 <CalculatedMember name="Poverty Rate" dimension="Measures">
   <Annotations>
+      <Annotation name="aggregation_method">NONE</Annotation>
+      <Annotation name="pre_aggregation_method">RATE</Annotation>
   </Annotations>
   <Formula> CASE
       WHEN [Poverty Status].[Poverty Status].Level is [Poverty Status].[Poverty Status].[Poverty Status] THEN 0
