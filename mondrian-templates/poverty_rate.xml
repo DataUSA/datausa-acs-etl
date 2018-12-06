@@ -1,0 +1,9 @@
+<CalculatedMember name="Poverty Rate" dimension="Measures">
+  <Annotations>
+  </Annotations>
+  <Formula> CASE
+      WHEN [Poverty Status].[Poverty Status].Level is [Poverty Status].[Poverty Status].[Poverty Status] THEN 0
+      WHEN 1 = 1 THEN ([Poverty Status].[Poverty Status].&amp;[0], [Measures].[Poverty Population]) / [Measures].[Poverty Population]
+      END
+  </Formula>
+</CalculatedMember>

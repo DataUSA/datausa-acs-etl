@@ -83,8 +83,12 @@
 {%- if calc_rca %}
 {% include "rca.xml" %}
 {%- endif %}
-{% if calc_percent %}
-{% include "percent.xml" %}
-{% endif %}
+
+{# special case, just for poverty cube. Hardcoded here #}
+{%- if cube_name == "acs_ygpsar_poverty_by_gender_age_race_1"
+      or cube_name == "acs_ygpsar_poverty_by_gender_age_race_5"
+%}
+{% include "poverty_rate.xml" %}
+{%- endif %}
   </Cube>
 </Schema>
