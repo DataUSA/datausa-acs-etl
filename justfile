@@ -1,15 +1,24 @@
-server = "mammoth"
+server = "pinnacles"
+cache-dir = "$HOME/data/acs-cache"
+out-dir = "$HOME/out/acs-out"
+
+
+# Make sure that .envrc is updated to use correct acs host!
+# This it the default run-everythin recipe for datausa.
 # mean-transportation goes last, it needs to overwrite some files from regular ingest
 # Need to double check, why does mean transportation load fail if the table already exist
 # from the "Incorrect" load from before?
 ingest-monet: cubes
-    acs-pipe process --years "2013-"
-    acs-pipe sql --schema acs
-    acs-pipe load --schema acs --database datausa --dbms monet
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} process --years "2013-"
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} sql --schema acs
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} load --schema acs --database datausa --dbms monet
     mclient -h {{server}}-api.datausa.io -d datausa -s 'drop table acs.acs_ygt_mean_transportation_time_to_work_1'
     mclient -h {{server}}-api.datausa.io -d datausa -s 'drop table acs.acs_ygt_mean_transportation_time_to_work_5'
-    acs-pipe --mean-transportation process --years "2013-"
-    acs-pipe --mean-transportation load --schema acs --database datausa --dbms monet
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} --mean-transportation process --years "2013-"
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} --mean-transportation load --schema acs --database datausa --dbms monet
+
+fetch-latest year=2017:
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} fetch --years "{{year}}-{{year}}"
 
 ingest-postgres: cubes
     acs-pipe process --years "2013-"
@@ -40,26 +49,36 @@ smooth:
     acs-pipe -f prelim-config/C24030.yaml config smooth --strategy pushdown --start-index 1 > acs-config/ygio/C24030.yaml
 
 process-cubes:
-    acs-pipe mondrian cube --db-schema acs --mondrian-schema datausa
-    acs-pipe --mean-transportation mondrian cube --db-schema acs --mondrian-schema datausa
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} mondrian cube --db-schema acs --mondrian-schema datausa
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} --mean-transportation mondrian cube --db-schema acs --mondrian-schema datausa
 
 remove-empty-cubes:
-    rm acs-out/acs_ygh_households_with_no_internet_5.xml
-    rm acs-out/acs_ygh_renters_by_income_percentage_c_5.xml
-    rm acs-out/acs_ygso_gender_by_occupation_5.xml
-    rm acs-out/acs_ygsi_gender_by_industry_5.xml
+    rm {{out-dir}}/acs_ygh_households_with_no_internet_5.xml
+    rm {{out-dir}}/acs_ygh_renters_by_income_percentage_c_5.xml
+    rm {{out-dir}}/acs_ygso_gender_by_occupation_5.xml
+    rm {{out-dir}}/acs_ygsi_gender_by_industry_5.xml
 
 upload-schema:
-    scp acs-out/*.xml {{server}}:~/datausa-mondrian/frags/acs/.
+    scp {{out-dir}}/*.xml {{server}}:~/datausa-mondrian/frags/acs/.
 
 multi-table-cubes-annotate:
-    sed -i '' -E 's/"table_id">B27.+</"table_id">B27001,B27002,B27003,B27004,B27005,B27006,B27007,B27008,B27009</g' acs-out/acs_yghsa_health_coverage_type_by_gender_by_age_5.xml
-    sed -i '' -E 's/"table_id">B17.+</"table_id">B17001,B17001A,B17001B,B17001C,B17001D,B17001E,B17001F,B17001G,B17001H</g' acs-out/acs_ygpsar_poverty_by_gender_age_race_1.xml
-    sed -i '' -E 's/"table_id">B17.+</"table_id">B17001,B17001A,B17001B,B17001C,B17001D,B17001E,B17001F,B17001G,B17001H</g' acs-out/acs_ygpsar_poverty_by_gender_age_race_5.xml
-    sed -i '' -E 's/"table_id">B19.+</"table_id">B19013,B19013A,B19013B,B19013C,B19013D,B19013E,B19013F,B19013G,B19013H</g' acs-out/acs_ygr_median_household_income_race_1.xml
-    sed -i '' -E 's/"table_id">B19.+</"table_id">B19013,B19013A,B19013B,B19013C,B19013D,B19013E,B19013F,B19013G,B19013H</g' acs-out/acs_ygr_median_household_income_race_5.xml
-    sed -i '' -E 's/"table_id">B08.+</"table_id">B08006,B08013</g' acs-out/acs_ygt_mean_transportation_time_to_work_1.xml
-    sed -i '' -E 's/"table_id">B08.+</"table_id">B08006,B08013</g' acs-out/acs_ygt_mean_transportation_time_to_work_5.xml
+    sed -i -E 's/"table_id">B27.+</"table_id">B27001,B27002,B27003,B27004,B27005,B27006,B27007,B27008,B27009</g' {{out-dir}}/acs_yghsa_health_coverage_type_by_gender_by_age_5.xml
+    sed -i -E 's/"table_id">B17.+</"table_id">B17001,B17001A,B17001B,B17001C,B17001D,B17001E,B17001F,B17001G,B17001H</g' {{out-dir}}/acs_ygpsar_poverty_by_gender_age_race_1.xml
+    sed -i -E 's/"table_id">B17.+</"table_id">B17001,B17001A,B17001B,B17001C,B17001D,B17001E,B17001F,B17001G,B17001H</g' {{out-dir}}/acs_ygpsar_poverty_by_gender_age_race_5.xml
+    sed -i -E 's/"table_id">B19.+</"table_id">B19013,B19013A,B19013B,B19013C,B19013D,B19013E,B19013F,B19013G,B19013H</g' {{out-dir}}/acs_ygr_median_household_income_race_1.xml
+    sed -i -E 's/"table_id">B19.+</"table_id">B19013,B19013A,B19013B,B19013C,B19013D,B19013E,B19013F,B19013G,B19013H</g' {{out-dir}}/acs_ygr_median_household_income_race_5.xml
+    sed -i -E 's/"table_id">B08.+</"table_id">B08006,B08013</g' {{out-dir}}/acs_ygt_mean_transportation_time_to_work_1.xml
+    sed -i -E 's/"table_id">B08.+</"table_id">B08006,B08013</g' {{out-dir}}/acs_ygt_mean_transportation_time_to_work_5.xml
+
+# osx sed
+#multi-table-cubes-annotate-osx:
+#    sed -i '' -E 's/"table_id">B27.+</"table_id">B27001,B27002,B27003,B27004,B27005,B27006,B27007,B27008,B27009</g' {{out-dir}}/acs_yghsa_health_coverage_type_by_gender_by_age_5.xml
+#    sed -i '' -E 's/"table_id">B17.+</"table_id">B17001,B17001A,B17001B,B17001C,B17001D,B17001E,B17001F,B17001G,B17001H</g' {{out-dir}}/acs_ygpsar_poverty_by_gender_age_race_1.xml
+#    sed -i '' -E 's/"table_id">B17.+</"table_id">B17001,B17001A,B17001B,B17001C,B17001D,B17001E,B17001F,B17001G,B17001H</g' {{out-dir}}/acs_ygpsar_poverty_by_gender_age_race_5.xml
+#    sed -i '' -E 's/"table_id">B19.+</"table_id">B19013,B19013A,B19013B,B19013C,B19013D,B19013E,B19013F,B19013G,B19013H</g' {{out-dir}}/acs_ygr_median_household_income_race_1.xml
+#    sed -i '' -E 's/"table_id">B19.+</"table_id">B19013,B19013A,B19013B,B19013C,B19013D,B19013E,B19013F,B19013G,B19013H</g' {{out-dir}}/acs_ygr_median_household_income_race_5.xml
+#    sed -i '' -E 's/"table_id">B08.+</"table_id">B08006,B08013</g' {{out-dir}}/acs_ygt_mean_transportation_time_to_work_1.xml
+#    sed -i '' -E 's/"table_id">B08.+</"table_id">B08006,B08013</g' {{out-dir}}/acs_ygt_mean_transportation_time_to_work_5.xml
 
 
 cubes: process-cubes remove-empty-cubes multi-table-cubes-annotate upload-schema
