@@ -17,7 +17,7 @@ ingest-monet: cubes
     acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} --mean-transportation process --years "2013-"
     acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} --mean-transportation load --schema acs --database datausa --dbms monet
 
-fetch-latest year=2017:
+fetch-latest year="2017":
     acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} fetch --years "{{year}}-{{year}}"
 
 ingest-postgres: cubes
