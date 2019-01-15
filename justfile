@@ -1,6 +1,6 @@
-server = "pinnacles"
+server = "quincy"
 cache-dir = "$HOME/data/acs-cache"
-out-dir = "$HOME/out/acs-out"
+out-dir = "$HOME/out/datausa-acs-out"
 
 
 # Make sure that .envrc is updated to use correct acs host!
