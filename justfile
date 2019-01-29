@@ -1,6 +1,8 @@
-server = "quincy"
-cache-dir = "$HOME/data/acs-cache"
+server = ""
+cache-dir = "/data1/acs-cache"
 out-dir = "$HOME/out/datausa-acs-out"
+database = "datausa"
+user = "deploy"
 
 
 # Make sure that .envrc is updated to use correct acs host!
@@ -21,13 +23,13 @@ fetch-latest year="2017":
     acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} fetch --years "{{year}}-{{year}}"
 
 ingest-postgres: cubes
-    acs-pipe process --years "2013-"
-    acs-pipe sql --schema acs
-    acs-pipe load --schema acs --database datausa --dbms psql
-    psql -h {{server}}-api.datausa.io -d datausa -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_1'
-    psql -h {{server}}-api.datausa.io -d datausa -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_5'
-    acs-pipe --mean-transportation process --years "2013-"
-    acs-pipe --mean-transportation load --schema acs --database datausa --dbms psql
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} process --years "2013-"
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} sql --schema acs
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} load --schema acs --database {{database}} --dbms psql
+    psql -h {{server}}-api.datausa.io -d {{database}} -U {{user}} -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_1'
+    psql -h {{server}}-api.datausa.io -d {{database}} -U {{user}} -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_5'
+    acs-pipe ---cache-dir={{cache-dir}} --out-dir={{out-dir}} -mean-transportation process --years "2013-"datausa
+    acs-pipe ---cache-dir={{cache-dir}} --out-dir={{out-dir}} -mean-transportation load --schema acs --database {{database}} --dbms psql
 
 ingest-mean-transportation-monet:
     acs-pipe --mean-transportation process --years "2013-"
