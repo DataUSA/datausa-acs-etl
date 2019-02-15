@@ -28,8 +28,8 @@ ingest-postgres: cubes
     acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} load --schema acs --database {{database}} --dbms psql
     psql -h {{server}}-api.datausa.io -d {{database}} -U {{user}} -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_1'
     psql -h {{server}}-api.datausa.io -d {{database}} -U {{user}} -c 'drop table acs.acs_ygt_mean_transportation_time_to_work_5'
-    acs-pipe ---cache-dir={{cache-dir}} --out-dir={{out-dir}} -mean-transportation process --years "2013-"datausa
-    acs-pipe ---cache-dir={{cache-dir}} --out-dir={{out-dir}} -mean-transportation load --schema acs --database {{database}} --dbms psql
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} --mean-transportation process --years "2013-"
+    acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} --mean-transportation load --schema acs --database {{database}} --dbms psql
 
 ingest-mean-transportation-monet:
     acs-pipe --mean-transportation process --years "2013-"
