@@ -19,6 +19,11 @@ ingest-monet: cubes
     acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} --mean-transportation process --years "2013-"
     acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} --mean-transportation load --schema acs --database datausa --dbms monet
 
+one-db-ingest-monet configpath:
+    acs-pipe -f {{configpath}} --cache-dir={{cache-dir}} --out-dir={{out-dir}} process --years "2013-"
+    acs-pipe -f {{configpath}} --cache-dir={{cache-dir}} --out-dir={{out-dir}} sql --schema acs
+    acs-pipe -f {{configpath}} --cache-dir={{cache-dir}} --out-dir={{out-dir}} load --schema acs --database datausa --dbms monet
+
 fetch-latest year="2017":
     acs-pipe --cache-dir={{cache-dir}} --out-dir={{out-dir}} fetch --years "{{year}}-{{year}}"
 
