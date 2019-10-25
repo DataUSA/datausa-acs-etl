@@ -1,7 +1,7 @@
 name: "acs_ygpsar_poverty_by_gender_age_race"
 tag: "acs"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B17001"
     value_label: "Poverty Population"
@@ -72,6 +72,7 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]
 calc_percent: true

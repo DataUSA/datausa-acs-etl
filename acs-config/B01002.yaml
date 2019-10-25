@@ -1,7 +1,7 @@
 name: "acs_ygs_median_age_total"
 tag: "acs"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B01002"
     value_label: "Median Age"
@@ -26,5 +26,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

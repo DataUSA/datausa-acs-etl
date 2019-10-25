@@ -1,7 +1,7 @@
 name: "acs_ygt_aggregate_travel_time_to_work_by_transportation"
 tag: "acs"
 min_year: 2015
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B08136"
     value_label: "Total Commute Time"
@@ -29,5 +29,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

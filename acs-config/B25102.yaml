@@ -1,7 +1,7 @@
 name: "acs_ygmt_mortgage_status_by_real_estate_taxes"
 tag: "acs"
 min_year: 2010
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B25102"
     value_label: "Real Estate Taxes by Mortgage"
@@ -33,5 +33,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

@@ -1,7 +1,7 @@
 name: "acs_ygt_mean_transportation_time_to_work"
 tag: "acs"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B08013"
     # for mean transportation time
@@ -23,5 +23,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

@@ -1,7 +1,7 @@
 name: "acs_ygh_health_care_coverage_overall"
 tag: "acs"
 min_year: 2012
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B27010"
     value_label: "Health Insurance"
@@ -76,5 +76,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

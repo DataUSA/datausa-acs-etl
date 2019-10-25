@@ -1,7 +1,7 @@
 name: "acs_ygo_housing_value_bucket"
 tag: "acs"
 min_year: 2015
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B25075"
     value_label: "Property Value by Bucket"
@@ -47,5 +47,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

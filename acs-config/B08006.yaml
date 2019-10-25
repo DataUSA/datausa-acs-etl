@@ -1,7 +1,7 @@
 name: "acs_ygst_gender_of_workers_by_transportation_to_work"
 tag: "acs"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B08006"
     value_label: "Commute Means by Gender"
@@ -49,5 +49,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

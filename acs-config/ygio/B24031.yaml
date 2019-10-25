@@ -35,7 +35,7 @@ acs_table:
     26: OtherServicesExceptPublicAdministration(group)_OtherServicesExceptPublicAdministration
     27: PublicAdministration(group)_PublicAdministration
 min_year: 2009
-max_year: 2017
+max_year: 2018
 non_agg: true
 explode: true
 metadata:
@@ -49,5 +49,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

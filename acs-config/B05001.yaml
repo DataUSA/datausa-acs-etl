@@ -1,7 +1,7 @@
 name: "acs_ygc_citizenship_status"
 tag: "acs"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B05001"
     value_label: "Citizenship Status"
@@ -28,5 +28,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

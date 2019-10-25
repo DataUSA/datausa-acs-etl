@@ -2,7 +2,7 @@ name: "acs_ygr_median_household_income_race"
 tag: "acs"
 race_tag: "native_alone"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B19013C"
     value_label: "Household Income by Race"
@@ -21,5 +21,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

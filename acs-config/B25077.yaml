@@ -1,7 +1,7 @@
 name: "acs_yg_housing_median_value"
 tag: "acs"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B25077"
     value_label: "Property Value"
@@ -22,5 +22,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

@@ -1,7 +1,7 @@
 name: "acs_ygf_place_of_birth_for_foreign_born"
 tag: "acs"
 min_year: 2015
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B05006"
     value_label: "Foreign-Born Citizens"
@@ -30,7 +30,7 @@ acs_table:
         022: "Europe_SouthernEurope_SouthernEurope_Greece"
         023: "Europe_SouthernEurope_SouthernEurope_Italy"
         024: "Europe_SouthernEurope_SouthernEurope_Portugal"
-        025: "Europe_SouthernEurope_SouthernEurope_Portugal,AzoresIslands"
+        025: "Europe_SouthernEurope_SouthernEurope_AzoresIslands"
         026: "Europe_SouthernEurope_SouthernEurope_Spain"
         027: "Europe_SouthernEurope_SouthernEurope_OtherSouthernEurope"
         029: "Europe_EasternEurope_EasternEurope_Albania"
@@ -159,5 +159,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]
