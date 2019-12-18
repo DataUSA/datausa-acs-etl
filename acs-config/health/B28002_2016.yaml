@@ -7,17 +7,11 @@ acs_table:
     value_label: "Households by Internet Access"
     dimension_labels: [
         "internet_access::access_group",
-        "internet_access::access_subgroup",
-        "internet_access::access_type",
     ]
     columns:
-        003: "WithAnInternetSubscription_Dial-upAlone_Dial-upAlone"
-        005: "WithAnInternetSubscription_DSL_DSLWithMobileBroadband"
-        006: "WithAnInternetSubscription_DSL_DSLWithoutMobileBroadband"
-        008: "WithAnInternetSubscription_CableModem_CableModemWithMobileBroadband"
-        009: "WithAnInternetSubscription_CableModem_CableModemWithoutMobileBroadband"
-        011: "WithAnInternetSubscription_Fiber-optic_Fiber-opticWithMobileBroadband"
-        012: "WithAnInternetSubscription_Fiber-optic_Fiber-opticWithoutMobileBroadband"
+        002: "WithAnInternetSubscription"
+        012: "InternetAccessWithoutASubscription"
+        013: "NoInternetAccess"
 
 
 calc_percent: true

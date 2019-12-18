@@ -10,8 +10,6 @@ acs_table:
     ]
     columns:
         001: "Total"
-
-
 metadata:
   topic: "Housing & Living"
   subtopic: Transportation
