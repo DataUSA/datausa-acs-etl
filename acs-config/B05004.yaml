@@ -1,7 +1,7 @@
 name: "acs_ygcs_median_age_by_citizenship_status_by_gender"
 tag: "acs"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B05004"
     value_label: "Median Age by Citizenship"
@@ -40,5 +40,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

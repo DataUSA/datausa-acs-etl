@@ -1,7 +1,7 @@
 name: "acs_ygl_language_spoken_at_home_by_english_ability_2016"
 tag: "acs"
 min_year: 2016
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B16001"
     value_label: "Languages Spoken"
@@ -108,5 +108,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

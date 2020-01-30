@@ -1,6 +1,6 @@
 name: "acs_ygv_veterans"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B21002"
     value_label: "Veterans"
@@ -40,5 +40,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

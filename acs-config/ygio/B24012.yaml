@@ -22,7 +22,7 @@ acs_table:
     11: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations"
     12: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_CommunityAndSocialServiceOccupations"
     13: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_LegalOccupations"
-    14: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Training,AndLibraryOccupations"
+    14: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_EducationInstruction,AndLibraryOccupations"
     15: "Male_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Arts,Design,Entertainment,Sports,AndMediaOccupations"
     16: "Male_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthcarePractitionersAndTechnicalOccupations"
     17: "Male_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthDiagnosingAndTreatingPractitionersAndOtherTechnicalOccupations"
@@ -58,7 +58,7 @@ acs_table:
     47: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations"
     48: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_CommunityAndSocialServiceOccupations"
     49: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_LegalOccupations"
-    50: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Education,Training,AndLibraryOccupations"
+    50: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_EducationInstruction,AndLibraryOccupations"
     51: "Female_Management,Business,Science,AndArtsOccupations_Education,Legal,CommunityService,Arts,AndMediaOccupations_Arts,Design,Entertainment,Sports,AndMediaOccupations"
     52: "Female_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthcarePractitionersAndTechnicalOccupations"
     53: "Female_Management,Business,Science,AndArtsOccupations_HealthcarePractitionersAndTechnicalOccupations_HealthDiagnosingAndTreatingPractitionersAndOtherTechnicalOccupations"
@@ -83,7 +83,7 @@ acs_table:
     72: "Female_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_TransportationOccupations"
     73: "Female_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 non_agg: true
 explode: true
 metadata:
@@ -97,5 +97,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

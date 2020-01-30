@@ -2,7 +2,7 @@
 name: "acs_yghsa_health_coverage_type_by_gender_by_age"
 tag: "acs"
 min_year: 2012
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B27004"
     value_label: "Health Insurance by Gender and Age"
@@ -41,5 +41,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

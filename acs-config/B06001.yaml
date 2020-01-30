@@ -1,7 +1,7 @@
 name: "acs_ygpa_place_of_birth_by_age"
 tag: "acs"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B06001"
     value_label: "Birthplace"
@@ -66,5 +66,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

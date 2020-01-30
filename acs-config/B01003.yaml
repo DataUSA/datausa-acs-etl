@@ -1,7 +1,7 @@
 name: "acs_yg_total_population"
 tag: "acs"
 min_year: 2009
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B01003"
     value_label: "Population"
@@ -21,5 +21,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]

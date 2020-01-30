@@ -1,7 +1,7 @@
 name: "acs_ygh_renters_by_income_percentage"
 tag: "acs"
 min_year: 2014
-max_year: 2017
+max_year: 2018
 acs_table:
     id: "B25074"
     value_label: "Renters by Income Percentage"
@@ -79,5 +79,6 @@ geos: [
     state,
     msa,
     puma,
-    nation
+    nation,
+    cd
 ]
