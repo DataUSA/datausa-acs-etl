@@ -59,8 +59,9 @@ acs_table:
     71: "Female_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_ProductionOccupations"
     72: "Female_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_TransportationOccupations"
     73: "Female_Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations"
-min_year: 2010
+min_year: 2018
 max_year: 2018
+estimate: 5
 calc_rca: true
 calc_percent: true
 metadata:

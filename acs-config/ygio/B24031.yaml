@@ -34,8 +34,9 @@ acs_table:
     25: "Arts,Entertainment,AndRecreation,AndAccommodationsAndFoodServices_AccommodationAndFoodServices"
     26: OtherServicesExceptPublicAdministration(group)_OtherServicesExceptPublicAdministration
     27: PublicAdministration(group)_PublicAdministration
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
 non_agg: true
 explode: true
 metadata:

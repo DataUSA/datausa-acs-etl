@@ -1,7 +1,8 @@
 name: "acs_ygh_occupied_households_lacking_kitchen"
 tag: "acs"
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B25052"
     value_label: "Households by Kitchen Type"

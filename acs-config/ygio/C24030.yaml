@@ -48,8 +48,9 @@ acs_table:
     53: "Female_Arts,Entertainment,AndRecreation,AndAccommodationAndFoodServices_AccommodationAndFoodServices"
     54: "Female_OtherServices,ExceptPublicAdministration(group)_OtherServices,ExceptPublicAdministration"
     55: Female_PublicAdministration(group)_PublicAdministration
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
 calc_rca: true
 calc_percent: true
 metadata:

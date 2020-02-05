@@ -1,7 +1,8 @@
 name: "acs_ygf_place_of_birth_for_foreign_born"
 tag: "acs"
-min_year: 2015
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B05006"
     value_label: "Foreign-Born Citizens"

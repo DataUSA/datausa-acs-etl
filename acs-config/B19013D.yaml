@@ -1,8 +1,9 @@
 name: "acs_ygr_median_household_income_race"
 tag: "acs"
 race_tag: "asian_alone"
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B19013D"
     value_label: "Household Income by Race"

@@ -1,8 +1,9 @@
 name: "acs_ygpsar_poverty_by_gender_age_race"
 tag: "acs"
 race_tag: "white_alone_nothispanic"
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B17001H"
     value_label: "Poverty Population"

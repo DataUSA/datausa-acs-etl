@@ -1,7 +1,8 @@
 name: "acs_ygt_means_of_transportation_to_work"
 tag: "acs"
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B08301"
     value_label: "Commute Means"

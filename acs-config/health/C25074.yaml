@@ -1,7 +1,8 @@
 name: "acs_ygh_renters_by_income_percentage_c"
 tag: "acs"
-min_year: 2012
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "C25074"
     value_label: "Renters by Income Percentage"

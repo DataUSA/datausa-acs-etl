@@ -44,8 +44,9 @@ acs_table:
     34: "Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_ProductionOccupations"
     35: "Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_TransportationOccupations"
     36: "Production,Transportation,AndMaterialMovingOccupations_Production,Transportation,AndMaterialMovingOccupations_MaterialMovingOccupations"
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
 non_agg: true
 explode: true
 metadata:

@@ -1,7 +1,8 @@
 name: "acs_ygmt_mortgage_status_by_real_estate_taxes"
 tag: "acs"
-min_year: 2010
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B25102"
     value_label: "Real Estate Taxes by Mortgage"

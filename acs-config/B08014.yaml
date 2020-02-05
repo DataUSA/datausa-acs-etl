@@ -1,7 +1,8 @@
 name: "acs_ygsv_gender_of_workers_by_vehicles_available"
 tag: "acs"
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B08014"
     value_label: "Commute Means by Gender"

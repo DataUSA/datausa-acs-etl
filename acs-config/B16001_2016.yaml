@@ -1,7 +1,8 @@
 name: "acs_ygl_language_spoken_at_home_by_english_ability_2016"
 tag: "acs"
-min_year: 2016
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B16001"
     value_label: "Languages Spoken"

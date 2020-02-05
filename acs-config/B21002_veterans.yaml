@@ -1,6 +1,7 @@
 name: "acs_ygv_veterans"
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B21002"
     value_label: "Veterans"

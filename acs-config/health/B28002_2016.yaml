@@ -1,7 +1,8 @@
 name: "acs_ygh_households_with_no_internet_2016"
 tag: "acs"
-min_year: 2016
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B28002"
     value_label: "Households by Internet Access"

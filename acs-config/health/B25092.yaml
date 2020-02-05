@@ -1,7 +1,8 @@
 name: "acs_ygh_homeowners_with_mortgage_spending_30_percent_on_costs"
 tag: "acs"
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
 acs_table:
     id: "B25092"
     value_label: "Homeowners by Mortgage"
