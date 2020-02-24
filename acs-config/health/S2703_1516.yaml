@@ -1,0 +1,60 @@
+name: "acs_health_coverage_s"
+metadata:
+  topic: Health Care
+  unit_of_measure: Health Care Coverage Plans
+tag: "acs"
+min_year: 2016
+max_year: 2016
+geos: [
+    nation,
+    state,
+    county,
+    "puma",
+    "msa",
+    "place",
+    "tract"
+]
+explicit_col_mode: true
+acs_table:
+    id: "S2701_S2703_S2704"
+    value_label_list: ["num_covered", "pop_under_19", "pop_19to64", "pop_65plus", "pop_total"]
+    dimension_labels: [
+        "health_coverage",
+        "age_group",
+    ]
+    add_to_all_rows: [S2703_C01_021, S2703_C01_022, S2703_C01_023, S2703_C01_001]
+    columns:
+        S2703_C02_021: "Employer_Under18"
+        S2703_C02_022: "Employer_18-64"
+        S2703_C02_023: "Employer_65+"
+
+        S2703_C02_024: "DirectPurchase_Under18"
+        S2703_C02_025: "DirectPurchase_18-64"
+        S2703_C02_026: "DirectPurchase_65+"
+
+        S2703_C02_027: "MilitaryHealthInsurance_Under18"
+        S2703_C02_028: "MilitaryHealthInsurance_18-64"
+        S2703_C02_029: "MilitaryHealthInsurance_65+"
+
+        S2704_C02_020: "Medicare_Under18"
+        S2704_C02_021: "Medicare_18-64"
+        S2704_C02_022: "Medicare_65+"
+
+        S2704_C02_023: "Medicaid_Under18"
+        S2704_C02_024: "Medicaid_18-64"
+        S2704_C02_025: "Medicaid_65+"
+
+        S2704_C02_026: "VeteransAffairs_Under18"
+        S2704_C02_027: "VeteransAffairs_18-64"
+        S2704_C02_028: "VeteransAffairs_65+"
+
+        S2701_C04_002: "Uninsured_Under18"
+        S2701_C04_005: "Uninsured_18-64"
+        S2701_C04_011: "Uninsured_65+"
+
+        S2703_C01_021: "!!IGNORE!!PopUnder18"
+        S2703_C01_022: "!!IGNORE!!Pop19to64"
+        S2703_C01_023: "!!IGNORE!!Pop65+"
+        S2703_C01_001: "!!IGNORE!!PopTotal"
+
+
