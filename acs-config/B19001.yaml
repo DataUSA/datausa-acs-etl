@@ -31,11 +31,11 @@ metadata:
   subtopic: Income
   unit_of_measure: Households
 geos: [
-    place,
-    county,
-    state,
-    msa,
-    puma,
-    nation,
-    cd
+    #place,
+    #county,
+    #state,
+    #msa,
+    #puma,
+    nation
+    #cd
 ]

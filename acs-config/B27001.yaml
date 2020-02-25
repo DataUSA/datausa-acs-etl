@@ -1,7 +1,8 @@
 name: "acs_yghsa_health_coverage_status_by_gender_by_age"
 tag: "acs"
-min_year: 2012
+min_year: 2018
 max_year: 2018
+estimates: 5
 acs_table:
     id: "B27001"
     value_label: "Health Insurance by Gender and Age"

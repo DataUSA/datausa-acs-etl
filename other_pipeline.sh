@@ -1,8 +1,10 @@
-files=(B01002 B01003 B03002 B05001 B05004 B05006 B06001 B08013-mean-transportation B08013 B08014 B08136 B08301 B08303 B16001_2016) 
-files=(B17001_poverty_sex_age B19001 B19013 B19013A B19013B B19013C B19013D B19013E B19013F B19013G B19013H B19013I B19083 B21002_veterans B25003 B25075 B25077 B25102) 
-files=(poverty-sex-age-asianalone poverty-sex-age-blackalone poverty-sex-age-hispanic) 
-files=(poverty-sex-age-nativealone poverty-sex-age-otheralone poverty-sex-age-pacificislanderalone poverty-sex-age-twoormore poverty-sex-age-whitealone) 
-files=(poverty-sex-age-whitealonenothispanic)
+#files=(B01002 B01003 B03002 B05001 B05004 B05006 B06001 B08013-mean-transportation B08013 B08014 B08136 B08301 B08303 B16001_2016) 
+#files=(B17001_poverty_sex_age B19001 B19013 B19013A B19013B B19013C B19013D B19013E B19013F B19013G B19013H B19013I B19083 B21002_veterans B25003 B25075 B25077 B25102) 
+#files=(poverty-sex-age-asianalone poverty-sex-age-blackalone poverty-sex-age-hispanic) 
+#files=(poverty-sex-age-nativealone poverty-sex-age-otheralone poverty-sex-age-pacificislanderalone poverty-sex-age-twoormore poverty-sex-age-whitealone) 
+#files=(poverty-sex-age-whitealonenothispanic)
+
+files=(B01003)
 
 for f in "${files[@]}"
 do
