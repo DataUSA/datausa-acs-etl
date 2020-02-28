@@ -3,6 +3,7 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B25003"
     value_label: "Household Ownership"
@@ -10,8 +11,8 @@ acs_table:
         "occupied_by",
     ]
     columns:
-        002: "OwnerOccupied"
-        003: "RenterOccupied"
+        B25003_002: "OwnerOccupied"
+        B25003_003: "RenterOccupied"
 
 
 metadata:

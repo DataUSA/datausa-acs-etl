@@ -3,6 +3,7 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B01002"
     value_label: "Median Age"
@@ -10,9 +11,9 @@ acs_table:
         "gender",
     ]
     columns:
-        001: "Total"
-        002: "Male"
-        003: "Female"
+        B01002_001: "Total"
+        B01002_002: "Male"
+        B01002_003: "Female"
 
 non_agg: true
 

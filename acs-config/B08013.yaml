@@ -3,6 +3,7 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B08013"
     value_label: "Total Commute Time"
@@ -10,8 +11,8 @@ acs_table:
         "gender",
     ]
     columns:
-        002: "Male"
-        003: "Female"
+        B08013_002: "Male"
+        B08013_003: "Female"
 
 
 metadata:

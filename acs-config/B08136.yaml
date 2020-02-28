@@ -3,6 +3,7 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B08136"
     value_label: "Total Commute Time"
@@ -12,14 +13,14 @@ acs_table:
         "transportation::transportation_means",
     ]
     columns:
-        003: "Car,Truck,OrVan_Car,Truck,OrVan_DroveAlone"
-        005: "Car,Truck,OrVan_Carpooled_In2-personCarpool"
-        006: "Car,Truck,OrVan_Carpooled_In3-or-more-personCarpool"
-        008: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_BusOrTrolleyBus"
-        009: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_StreetcarOrTrolleyCar(carroPublicoInPuertoRico),SubwayOrElevated"
-        010: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_RailroadOrFerryboat"
-        011: "Walked_Walked_Walked"
-        012: "Taxicab,Motorcycle,Bicycle,OrOtherMeans_Taxicab,Motorcycle,Bicycle,OrOtherMeans_Taxicab,Motorcycle,Bicycle,OrOtherMeans"
+        B08136_003: "Car,Truck,OrVan_Car,Truck,OrVan_DroveAlone"
+        B08136_005: "Car,Truck,OrVan_Carpooled_In2-personCarpool"
+        B08136_006: "Car,Truck,OrVan_Carpooled_In3-or-more-personCarpool"
+        B08136_008: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_BusOrTrolleyBus"
+        B08136_009: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_StreetcarOrTrolleyCar(carroPublicoInPuertoRico),SubwayOrElevated"
+        B08136_010: "PublicTransportation(excludingTaxicab)_PublicTransportation(excludingTaxicab)_RailroadOrFerryboat"
+        B08136_011: "Walked_Walked_Walked"
+        B08136_012: "Taxicab,Motorcycle,Bicycle,OrOtherMeans_Taxicab,Motorcycle,Bicycle,OrOtherMeans_Taxicab,Motorcycle,Bicycle,OrOtherMeans"
 metadata:
   topic: "Housing & Living"
   subtopic: Transportation

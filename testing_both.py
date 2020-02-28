@@ -1,7 +1,7 @@
 import pymonetdb
 import psycopg2
 
-table_list = ["acs_yg_household_income_5"]
+table_list = ["acs_health_coverage_s_5"]
 
 # MONETDB
 

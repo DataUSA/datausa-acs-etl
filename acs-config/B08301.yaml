@@ -3,6 +3,7 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B08301"
     value_label: "Commute Means"
@@ -12,23 +13,23 @@ acs_table:
         "transportation::transportation_means",
     ]
     columns:
-        003: "DroveAlone_DroveAlone(subgroup)_DroveAlone"
-        005: "Carpooled_Carpooled_In2-personCarpool"
-        006: "Carpooled_Carpooled_In3-personCarpool"
-        007: "Carpooled_Carpooled_In4-personCarpool"
-        008: "Carpooled_Carpooled_In5-Or6-personCarpool"
-        009: "Carpooled_Carpooled_In7-or-more-personCarpool"
-        011: "PublicTransit_PublicTransit_BusOrTrolleyBus"
-        012: "PublicTransit_PublicTransit_StreetcarOrTrolleyCar"
-        013: "PublicTransit_PublicTransit_SubwayOrElevated"
-        014: "PublicTransit_PublicTransit_Railroad"
-        015: "PublicTransit_PublicTransit_Ferryboat"
-        016: "Taxi_TaxiSubgroup_Taxi"
-        017: "Motorcycle_Motorcycle(subgroup)_Motorcycle"
-        018: "Bicycle_Bicycle(subgroup)_Bicycle"
-        019: "Walked_Walked(subgroup)_Walked"
-        020: "Other_Other_OtherMeans"
-        021: "WorkedAtHome_WorkedAtHome_WorkedAtHome"
+        B08301_003: "DroveAlone_DroveAlone(subgroup)_DroveAlone"
+        B08301_005: "Carpooled_Carpooled_In2-personCarpool"
+        B08301_006: "Carpooled_Carpooled_In3-personCarpool"
+        B08301_007: "Carpooled_Carpooled_In4-personCarpool"
+        B08301_008: "Carpooled_Carpooled_In5-Or6-personCarpool"
+        B08301_009: "Carpooled_Carpooled_In7-or-more-personCarpool"
+        B08301_011: "PublicTransit_PublicTransit_BusOrTrolleyBus"
+        B08301_012: "PublicTransit_PublicTransit_StreetcarOrTrolleyCar"
+        B08301_013: "PublicTransit_PublicTransit_SubwayOrElevated"
+        B08301_014: "PublicTransit_PublicTransit_Railroad"
+        B08301_015: "PublicTransit_PublicTransit_Ferryboat"
+        B08301_016: "Taxi_TaxiSubgroup_Taxi"
+        B08301_017: "Motorcycle_Motorcycle(subgroup)_Motorcycle"
+        B08301_018: "Bicycle_Bicycle(subgroup)_Bicycle"
+        B08301_019: "Walked_Walked(subgroup)_Walked"
+        B08301_020: "Other_Other_OtherMeans"
+        B08301_021: "WorkedAtHome_WorkedAtHome_WorkedAtHome"
 
 metadata:
   topic: "Housing & Living"

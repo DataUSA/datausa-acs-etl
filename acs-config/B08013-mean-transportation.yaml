@@ -3,6 +3,7 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B08013"
     # for mean transportation time
@@ -10,7 +11,7 @@ acs_table:
     dimension_labels: [
     ]
     columns:
-        001: "Total"
+        B08013_001: "Total"
 metadata:
   topic: "Housing & Living"
   subtopic: Transportation

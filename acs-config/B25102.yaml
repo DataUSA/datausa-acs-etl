@@ -3,6 +3,7 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B25102"
     value_label: "Real Estate Taxes by Mortgage"
@@ -11,18 +12,18 @@ acs_table:
         "real_estate_taxes_paid",
     ]
     columns:
-        003: "WithAMortgage_LessThan$800"
-        004: "WithAMortgage_$800To$1,499"
-        005: "WithAMortgage_$1,500To$1,999"
-        006: "WithAMortgage_$2,000To$2,999"
-        007: "WithAMortgage_$3,000OrMore"
-        008: "WithAMortgage_NoRealEstateTaxesPaid"
-        010: "NotMortgaged_LessThan$800"
-        011: "NotMortgaged_$800To$1,499"
-        012: "NotMortgaged_$1,500To$1,999"
-        013: "NotMortgaged_$2,000To$2,999"
-        014: "NotMortgaged_$3,000OrMore"
-        015: "NotMortgaged_NoRealEstateTaxesPaid"
+        B25102_003: "WithAMortgage_LessThan$800"
+        B25102_004: "WithAMortgage_$800To$1,499"
+        B25102_005: "WithAMortgage_$1,500To$1,999"
+        B25102_006: "WithAMortgage_$2,000To$2,999"
+        B25102_007: "WithAMortgage_$3,000OrMore"
+        B25102_008: "WithAMortgage_NoRealEstateTaxesPaid"
+        B25102_010: "NotMortgaged_LessThan$800"
+        B25102_011: "NotMortgaged_$800To$1,499"
+        B25102_012: "NotMortgaged_$1,500To$1,999"
+        B25102_013: "NotMortgaged_$2,000To$2,999"
+        B25102_014: "NotMortgaged_$3,000OrMore"
+        B25102_015: "NotMortgaged_NoRealEstateTaxesPaid"
 
 metadata:
   topic: "Housing & Living"

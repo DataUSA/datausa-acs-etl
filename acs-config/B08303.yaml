@@ -3,6 +3,7 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B08303"
     value_label: "Commuter Population"
@@ -11,18 +12,18 @@ acs_table:
         "travel_time",
     ]
     columns:
-        002: "< 5 Minutes"
-        003: "5-9 Minutes"
-        004: "10-14 Minutes"
-        005: "15-19 Minutes"
-        006: "20-24 Minutes"
-        007: "25-29 Minutes"
-        008: "30-34 Minutes"
-        009: "35-39 Minutes"
-        010: "40-44 Minutes"
-        011: "45-59 Minutes"
-        012: "60-89 Minutes"
-        013: "90+ Minutes"
+        B08303_002: "< 5 Minutes"
+        B08303_003: "5-9 Minutes"
+        B08303_004: "10-14 Minutes"
+        B08303_005: "15-19 Minutes"
+        B08303_006: "20-24 Minutes"
+        B08303_007: "25-29 Minutes"
+        B08303_008: "30-34 Minutes"
+        B08303_009: "35-39 Minutes"
+        B08303_010: "40-44 Minutes"
+        B08303_011: "45-59 Minutes"
+        B08303_012: "60-89 Minutes"
+        B08303_013: "90+ Minutes"
 metadata:
   topic: "Housing & Living"
   subtopic: Transportation

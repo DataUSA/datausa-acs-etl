@@ -3,6 +3,7 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B08014"
     value_label: "Commute Means by Gender"
@@ -11,18 +12,18 @@ acs_table:
         "vehicles_available",
     ]
     columns:
-        009: "Male_NoVehicleAvailable"
-        010: "Male_1VehicleAvailable"
-        011: "Male_2VehiclesAvailable"
-        012: "Male_3VehiclesAvailable"
-        013: "Male_4VehiclesAvailable"
-        014: "Male_5OrMoreVehiclesAvailable"
-        016: "Female_NoVehicleAvailable"
-        017: "Female_1VehicleAvailable"
-        018: "Female_2VehiclesAvailable"
-        019: "Female_3VehiclesAvailable"
-        020: "Female_4VehiclesAvailable"
-        021: "Female_5OrMoreVehiclesAvailable"
+        B08014_009: "Male_NoVehicleAvailable"
+        B08014_010: "Male_1VehicleAvailable"
+        B08014_011: "Male_2VehiclesAvailable"
+        B08014_012: "Male_3VehiclesAvailable"
+        B08014_013: "Male_4VehiclesAvailable"
+        B08014_014: "Male_5OrMoreVehiclesAvailable"
+        B08014_016: "Female_NoVehicleAvailable"
+        B08014_017: "Female_1VehicleAvailable"
+        B08014_018: "Female_2VehiclesAvailable"
+        B08014_019: "Female_3VehiclesAvailable"
+        B08014_020: "Female_4VehiclesAvailable"
+        B08014_021: "Female_5OrMoreVehiclesAvailable"
 metadata:
   topic: "Housing & Living"
   subtopic: Transportation

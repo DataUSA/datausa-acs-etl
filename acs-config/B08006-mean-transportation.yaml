@@ -1,7 +1,9 @@
 name: "acs_ygt_mean_transportation_time_to_work"
 tag: "acs"
-min_year: 2009
+min_year: 2018
 max_year: 2018
+estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B08006"
     # for mean transportation time
@@ -9,7 +11,7 @@ acs_table:
     dimension_labels: [
     ]
     columns:
-        001: "Total"
+        B08006_001: "Total"
 metadata:
   topic: "Housing & Living"
   subtopic: Transportation

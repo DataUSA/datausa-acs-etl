@@ -3,20 +3,20 @@ metadata:
   topic: Health Care
   unit_of_measure: Health Care Coverage Plans
 tag: "acs"
-min_year: 2018
-max_year: 2018
-estimate: 1
+min_year: 2017
+max_year: 2017
+estimate: 5
 geos: [
-    #nation,
-    #state,
-    #county,
-    #puma,
-    #msa,
-    #place,
-    #tract,
-    cd #,
+    nation,
+    state,
+    county,
+    puma,
+    msa,
+    place,
+    tract,
+    cd
 ]
-explicit_col_mode: true
+explicit_col_mode: false
 acs_table:
     id: "S2701_S2703_S2704"
     value_label_list: ["num_covered", "pop_under_19", "pop_19to64", "pop_65plus", "pop_total"]

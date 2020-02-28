@@ -3,6 +3,7 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B05004"
     value_label: "Median Age by Citizenship"
@@ -12,22 +13,21 @@ acs_table:
         "gender",
     ]
     columns:
-        001: "Total_Total_Total"
-        002: "Total_Total_Male"
-        003: "Total_Total_Female"
-        004: "Native_Total_Total"
-        005: "Native_Total_Male"
-        006: "Native_Total_Female"
-
-        007: "ForeignBorn_Total_Total"
-        008: "ForeignBorn_Total_Male"
-        009: "ForeignBorn_Total_Female"
-        010: "ForeignBorn_NaturalizedU.S.Citizen_Total"
-        011: "ForeignBorn_NaturalizedU.S.Citizen_Male"
-        012: "ForeignBorn_NaturalizedU.S.Citizen_Female"
-        014: "ForeignBorn_NotAU.S.Citizen_Total"
-        014: "ForeignBorn_NotAU.S.Citizen_Male"
-        015: "ForeignBorn_NotAU.S.Citizen_Female"
+        B05004_001: "Total_Total_Total"
+        B05004_002: "Total_Total_Male"
+        B05004_003: "Total_Total_Female"
+        B05004_004: "Native_Total_Total"
+        B05004_005: "Native_Total_Male"
+        B05004_006: "Native_Total_Female"
+        B05004_007: "ForeignBorn_Total_Total"
+        B05004_008: "ForeignBorn_Total_Male"
+        B05004_009: "ForeignBorn_Total_Female"
+        B05004_010: "ForeignBorn_NaturalizedU.S.Citizen_Total"
+        B05004_011: "ForeignBorn_NaturalizedU.S.Citizen_Male"
+        B05004_012: "ForeignBorn_NaturalizedU.S.Citizen_Female"
+        B05004_013: "ForeignBorn_NotAU.S.Citizen_Total"
+        B05004_014: "ForeignBorn_NotAU.S.Citizen_Male"
+        B05004_015: "ForeignBorn_NotAU.S.Citizen_Female"
 
 
 non_agg: true

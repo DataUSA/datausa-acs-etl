@@ -2,25 +2,26 @@ name: "acs_ygv_veterans"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B21002"
     value_label: "Veterans"
     columns:
-        002: "GulfWar(2001-)_GulfWar(9/2001OrLater),NoGulfWar(8/1990To8/2001),NoVietnamEra"
-        003: "GulfWar(2001-)_GulfWar(9/2001OrLater)AndGulfWar(8/1990To8/2001),NoVietnamEra"
-        004: "GulfWar(2001-)_GulfWar(9/2001OrLater),AndGulfWar(8/1990To8/2001),AndVietnamEra"
-        005: "GulfWar(1990s)_GulfWar(8/1990To8/2001),NoVietnamEra"
-        006: "GulfWar(1990s)_GulfWar(8/1990To8/2001)AndVietnamEra"
-        007: "Vietnam_VietnamEra,NoKoreanWar,NoWorldWarII"
-        008: "Vietnam_VietnamEraAndKoreanWar,NoWorldWarII"
-        009: "Vietnam_VietnamEraAndKoreanWarAndWorldWarII"
-        010: "Korea_KoreanWar,NoVietnamEra,NoWorldWarII"
-        011: "Korea_KoreanWarAndWorldWarII,NoVietnamEra"
-        012: "WorldWarII_WorldWarII,NoKoreanWar,NoVietnamEra"
-        013: "Other_BetweenGulfWarAndVietnamEraOnly"
-        014: "Other_BetweenVietnamEraAndKoreanWarOnly"
-        015: "Other_BetweenKoreanWarAndWorldWarIIOnly"
-        016: "Other_Pre-WorldWarIIOnly"
+        B21002_002: "GulfWar(2001-)_GulfWar(9/2001OrLater),NoGulfWar(8/1990To8/2001),NoVietnamEra"
+        B21002_003: "GulfWar(2001-)_GulfWar(9/2001OrLater)AndGulfWar(8/1990To8/2001),NoVietnamEra"
+        B21002_004: "GulfWar(2001-)_GulfWar(9/2001OrLater),AndGulfWar(8/1990To8/2001),AndVietnamEra"
+        B21002_005: "GulfWar(1990s)_GulfWar(8/1990To8/2001),NoVietnamEra"
+        B21002_006: "GulfWar(1990s)_GulfWar(8/1990To8/2001)AndVietnamEra"
+        B21002_007: "Vietnam_VietnamEra,NoKoreanWar,NoWorldWarII"
+        B21002_008: "Vietnam_VietnamEraAndKoreanWar,NoWorldWarII"
+        B21002_009: "Vietnam_VietnamEraAndKoreanWarAndWorldWarII"
+        B21002_010: "Korea_KoreanWar,NoVietnamEra,NoWorldWarII"
+        B21002_011: "Korea_KoreanWarAndWorldWarII,NoVietnamEra"
+        B21002_012: "WorldWarII_WorldWarII,NoKoreanWar,NoVietnamEra"
+        B21002_013: "Other_BetweenGulfWarAndVietnamEraOnly"
+        B21002_014: "Other_BetweenVietnamEraAndKoreanWarOnly"
+        B21002_015: "Other_BetweenKoreanWarAndWorldWarIIOnly"
+        B21002_016: "Other_Pre-WorldWarIIOnly"
 
     # order matters, should be same as column labels
     dimension_labels: [

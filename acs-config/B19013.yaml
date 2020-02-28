@@ -3,13 +3,14 @@ tag: "acs"
 min_year: 2018
 max_year: 2018
 estimate: 5
+explicit_col_mode: true
 acs_table:
     id: "B19013"
     value_label: "Household Income by Race"
     dimension_labels: [
     ]
     columns:
-        001: "MedianHouseholdIncome"
+        B19013_001: "MedianHouseholdIncome"
 metadata:
   topic: "Housing & Living"
   subtopic: Income

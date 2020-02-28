@@ -1,8 +1,9 @@
 name: "acs_ygh_households_with_no_internet_2016"
 tag: "acs"
-min_year: 2018
-max_year: 2018
+min_year: 2016
+max_year: 2016
 estimate: 5
+explicit_col_mode: false
 acs_table:
     id: "B28002"
     value_label: "Households by Internet Access"
@@ -10,9 +11,9 @@ acs_table:
         "internet_access::access_group",
     ]
     columns:
-        002: "WithAnInternetSubscription"
-        012: "InternetAccessWithoutASubscription"
-        013: "NoInternetAccess"
+        B28002_002: "WithAnInternetSubscription"
+        B28002_012: "InternetAccessWithoutASubscription"
+        B28002_013: "NoInternetAccess"
 
 
 calc_percent: true
