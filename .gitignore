@@ -1,4 +1,5 @@
 acs-cache/
+.DS_Store
 acs-out/
 *.log
 .envrc
